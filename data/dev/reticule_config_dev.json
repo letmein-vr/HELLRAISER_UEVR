@@ -1,0 +1,49 @@
+{
+    "uevr_reticule_add_widget_use_button_override": false,
+    "uevr_reticule_delete_mesh_override": false,
+    "uevr_reticule_delete_widget_override": false,
+    "uevr_reticule_list": 4,
+    "uevr_reticule_material_finder_list": 1,
+    "uevr_reticule_material_finder_search_text": "",
+    "uevr_reticule_mesh_class": "",
+    "uevr_reticule_mesh_collisionChannel": 0,
+    "uevr_reticule_mesh_finder_list": 1,
+    "uevr_reticule_mesh_finder_search_text": "",
+    "uevr_reticule_mesh_id": "",
+    "uevr_reticule_mesh_ignorePawn": true,
+    "uevr_reticule_mesh_label": "",
+    "uevr_reticule_mesh_materialName": "",
+    "uevr_reticule_mesh_minHitDistance": 10,
+    "uevr_reticule_mesh_position_2d": [
+        0.0,
+        0.0
+    ],
+    "uevr_reticule_mesh_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_reticule_mesh_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_reticule_target_method": 6,
+    "uevr_reticule_widget_class": "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Crosshair/W_WeaponCrosshairs.W_WeaponCrosshairs_C",
+    "uevr_reticule_widget_collisionChannel": 0,
+    "uevr_reticule_widget_finder_list": 1,
+    "uevr_reticule_widget_finder_search_text": "",
+    "uevr_reticule_widget_id": "5c1e7a3b-9d2f-4b8e-a6c4-hr0crosshair",
+    "uevr_reticule_widget_ignorePawn": true,
+    "uevr_reticule_widget_label": "Weapon Crosshair",
+    "uevr_reticule_widget_position_2d": [
+        0.0,
+        0.0
+    ],
+    "uevr_reticule_widget_removeFromViewport": true,
+    "uevr_reticule_widget_scale_2d": [
+        1.0,
+        1.0
+    ],
+    "uevr_reticule_widget_twoSided": true
+}

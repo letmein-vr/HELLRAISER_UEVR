@@ -1,0 +1,692 @@
+{
+    "BP_AK-47_C_SK_AK-47": {
+        "fraction": 0.55,
+        "leftPose": {
+            "index_01_l": {
+                "rotation": [
+                    21.280000686645508,
+                    -20.555469512939453,
+                    -24.801502227783203
+                ]
+            },
+            "index_02_l": {
+                "rotation": [
+                    1.176426887512207,
+                    -26.610050201416016,
+                    -0.2915949821472168
+                ]
+            },
+            "index_03_l": {
+                "rotation": [
+                    -3.0941710472106934,
+                    -63.20020294189453,
+                    3.6758508682250977
+                ]
+            },
+            "middle_01_l": {
+                "rotation": [
+                    15.215500831604004,
+                    -39.80741882324219,
+                    -25.530466079711914
+                ]
+            },
+            "middle_02_l": {
+                "rotation": [
+                    0.3065662086009979,
+                    -80.12178802490234,
+                    -0.33215537667274475
+                ]
+            },
+            "middle_03_l": {
+                "rotation": [
+                    -4.182944297790527,
+                    14.021468162536621,
+                    -2.037231206893921
+                ]
+            },
+            "pinky_01_l": {
+                "rotation": [
+                    -20.155824661254883,
+                    -72.89994049072266,
+                    -31.408353805541992
+                ]
+            },
+            "pinky_02_l": {
+                "rotation": [
+                    0.7999720573425293,
+                    -61.03692626953125,
+                    -0.3819408118724823
+                ]
+            },
+            "pinky_03_l": {
+                "rotation": [
+                    -1.7487785816192627,
+                    6.518449306488037,
+                    -0.24477750062942505
+                ]
+            },
+            "ring_01_l": {
+                "rotation": [
+                    -11.17821216583252,
+                    -65.42268371582031,
+                    -27.671384811401367
+                ]
+            },
+            "ring_02_l": {
+                "rotation": [
+                    5.2676920890808105,
+                    -62.167724609375,
+                    -1.2028985023498535
+                ]
+            },
+            "ring_03_l": {
+                "rotation": [
+                    -3.033780336380005,
+                    14.00405216217041,
+                    -0.5366456508636475
+                ]
+            },
+            "thumb_01_l": {
+                "rotation": [
+                    -34.24779510498047,
+                    -11.247980117797852,
+                    78.40359497070313
+                ]
+            },
+            "thumb_02_l": {
+                "rotation": [
+                    15.277575492858887,
+                    -16.99112892150879,
+                    19.429195404052734
+                ]
+            },
+            "thumb_03_l": {
+                "rotation": [
+                    -4.370016098022461,
+                    6.31351375579834,
+                    5.035942554473877
+                ]
+            },
+            "weapon_jnt_l": {
+                "rotation": [
+                    22.91409683227539,
+                    79.40060424804688,
+                    -85.07442474365234
+                ]
+            }
+        },
+        "lhOffX": -0.18799999356269836,
+        "lhOffY": -8.437000274658203,
+        "lhOffZ": -0.5619999766349792,
+        "lhRotPitch": -56.25,
+        "lhRotRoll": -41.625,
+        "lhRotYaw": 77.625,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Bandage_C_SK_Bandage": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_BearTrap_C_SK_Trap": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Cleaver_C_SM_Cleaver": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Colt_1911_C_SK_Colt_1911": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisBaseballBat_C_SM_Baseball_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisColt_C_SK_Colt_1911": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisCricketBat_C_SM_CricketBat_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisJaggedMesser_C_SM_JaggedMasser": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisMachete_C_SM_Machete_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisNailBat_C_SM_NailBat": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_GenesisPlank_C_SM_Plank_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_JaggedMesser_C_SM_JaggedMasser": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Knife_C_SM_Knife": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Machete_C_SM_Machete_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_MedKit_C_SK_MedipackLarge": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Revolver_C_SK_Revolver_Magnum": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_SMG_C_SK_SMG": {
+        "fraction": 0.55,
+        "leftPose": {
+            "index_01_l": {
+                "rotation": [
+                    -15.812030792236328,
+                    -55.53610610961914,
+                    -7.338547229766846
+                ]
+            },
+            "index_02_l": {
+                "rotation": [
+                    -0.06922277063131332,
+                    -105.92985534667969,
+                    -1.2107833623886108
+                ]
+            },
+            "index_03_l": {
+                "rotation": [
+                    -4.803444862365723,
+                    -13.413060188293457,
+                    0.0134724210947752
+                ]
+            },
+            "middle_01_l": {
+                "rotation": [
+                    -21.283456802368164,
+                    -95.25480651855469,
+                    4.280285358428955
+                ]
+            },
+            "middle_02_l": {
+                "rotation": [
+                    0.3282436430454254,
+                    -59.56480026245117,
+                    -0.18730765581130981
+                ]
+            },
+            "middle_03_l": {
+                "rotation": [
+                    -3.434264898300171,
+                    -37.36655044555664,
+                    2.259338855743408
+                ]
+            },
+            "pinky_01_l": {
+                "rotation": [
+                    -28.854223251342773,
+                    -112.73394012451172,
+                    4.206174373626709
+                ]
+            },
+            "pinky_02_l": {
+                "rotation": [
+                    0.850807785987854,
+                    -51.778350830078125,
+                    -0.24956326186656952
+                ]
+            },
+            "pinky_03_l": {
+                "rotation": [
+                    -1.4668291807174683,
+                    -35.2275390625,
+                    0.9822933077812195
+                ]
+            },
+            "ring_01_l": {
+                "rotation": [
+                    -27.76850700378418,
+                    -109.50475311279297,
+                    2.585925579071045
+                ]
+            },
+            "ring_02_l": {
+                "rotation": [
+                    5.2867207527160645,
+                    -56.66206359863281,
+                    -0.6763316988945007
+                ]
+            },
+            "ring_03_l": {
+                "rotation": [
+                    -2.7813212871551514,
+                    -19.045623779296875,
+                    1.1395931243896484
+                ]
+            },
+            "thumb_01_l": {
+                "rotation": [
+                    -71.95345306396484,
+                    -7.869229793548584,
+                    35.84831237792969
+                ]
+            },
+            "thumb_02_l": {
+                "rotation": [
+                    27.883243560791016,
+                    -61.502010345458984,
+                    5.0013747215271
+                ]
+            },
+            "thumb_03_l": {
+                "rotation": [
+                    3.264566659927368,
+                    -63.75886154174805,
+                    5.812783718109131
+                ]
+            },
+            "weapon_jnt_l": {
+                "rotation": [
+                    22.91409683227539,
+                    79.40060424804688,
+                    -85.07442474365234
+                ]
+            }
+        },
+        "lhOffX": 4.311999797821045,
+        "lhOffY": -1.125,
+        "lhOffZ": -1.5,
+        "lhRotPitch": -6.75,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 7.75,
+        "offY": 0,
+        "offZ": -4.75
+    },
+    "BP_Sawblade_C_SM_Saw": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_Shotgun_C_SK_shotgun_winchester": {
+        "fraction": 0.4699999988079071,
+        "leftPose": {
+            "index_01_l": {
+                "rotation": [
+                    19.33725357055664,
+                    -23.365650177001953,
+                    -46.60502624511719
+                ]
+            },
+            "index_02_l": {
+                "rotation": [
+                    1.7783838510513306,
+                    -54.194332122802734,
+                    -13.77619457244873
+                ]
+            },
+            "index_03_l": {
+                "rotation": [
+                    -4.72256326675415,
+                    -23.787174224853516,
+                    0.8784950375556946
+                ]
+            },
+            "middle_01_l": {
+                "rotation": [
+                    4.642467021942139,
+                    -38.62118148803711,
+                    -56.788970947265625
+                ]
+            },
+            "middle_02_l": {
+                "rotation": [
+                    4.648146152496338,
+                    -52.27196502685547,
+                    -2.8931021690368652
+                ]
+            },
+            "middle_03_l": {
+                "rotation": [
+                    -10.1456298828125,
+                    -24.124189376831055,
+                    -7.5448126792907715
+                ]
+            },
+            "pinky_01_l": {
+                "rotation": [
+                    -30.00362205505371,
+                    -90.74597930908203,
+                    -72.59351348876953
+                ]
+            },
+            "pinky_02_l": {
+                "rotation": [
+                    0.8301608562469482,
+                    -14.808422088623047,
+                    0.30759379267692566
+                ]
+            },
+            "pinky_03_l": {
+                "rotation": [
+                    -1.7477974891662598,
+                    -9.512648582458496,
+                    0.24991074204444885
+                ]
+            },
+            "ring_01_l": {
+                "rotation": [
+                    -11.625240325927734,
+                    -62.445194244384766,
+                    -65.30729675292969
+                ]
+            },
+            "ring_02_l": {
+                "rotation": [
+                    5.33755350112915,
+                    -40.09812545776367,
+                    0.8507200479507446
+                ]
+            },
+            "ring_03_l": {
+                "rotation": [
+                    -2.685117721557617,
+                    -19.359952926635742,
+                    1.070664644241333
+                ]
+            },
+            "thumb_01_l": {
+                "rotation": [
+                    -31.159025192260742,
+                    -12.25012493133545,
+                    58.42988967895508
+                ]
+            },
+            "thumb_02_l": {
+                "rotation": [
+                    14.99146842956543,
+                    -9.935698509216309,
+                    23.427602767944336
+                ]
+            },
+            "thumb_03_l": {
+                "rotation": [
+                    -2.048407793045044,
+                    -16.710161209106445,
+                    6.3426971435546875
+                ]
+            },
+            "weapon_jnt_l": {
+                "rotation": [
+                    22.908348083496094,
+                    79.40899658203125,
+                    -85.07476043701172
+                ]
+            }
+        },
+        "lhOffX": 4.874000072479248,
+        "lhOffY": -5.061999797821045,
+        "lhOffZ": -3.187999963760376,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 11.25,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_SkullcrusherBat_C_SM_Baseball_02": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableBottle_C_SM_BeerBottle": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableBottle_C_SM_absintheBottle_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableBottle_C_SM_beerBottle_02": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableBottle_C_SM_vodkaBottle_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableBottle_C_SM_whiskyBottle_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableBottle_C_SM_whiskyBottle_02": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_ThrowableStone_C_SM_ThrowableRock": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    },
+    "BP_TireIron_C_SK_TireIron_01": {
+        "fraction": 0.55,
+        "lhOffX": 0,
+        "lhOffY": 0,
+        "lhOffZ": 0,
+        "lhRotPitch": 0,
+        "lhRotRoll": 0,
+        "lhRotYaw": 0,
+        "offX": 0,
+        "offY": 0,
+        "offZ": 0
+    }
+}

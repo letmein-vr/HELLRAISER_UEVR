@@ -1,0 +1,33 @@
+{
+    "scopes": {
+        "BP_Revolver_C_SK_Revolver_Magnum": {
+            "brightness": 0.6870889488051035,
+            "deactivate_distance": 20.85300064086914,
+            "hide_ocular_lens_on_disable": true,
+            "max_fov": 20.115999221801758,
+            "min_fov": 5.0,
+            "objective_lens_location": [
+                0.0,
+                0.0,
+                20.049999237060547
+            ],
+            "objective_lens_rotation": [
+                90.0,
+                90.0,
+                0.0
+            ],
+            "ocular_lens_location": [
+                0.05000000074505806,
+                -1.5,
+                13.350000381469727
+            ],
+            "ocular_lens_rotation": [
+                90.0,
+                0.0,
+                -90.0
+            ],
+            "ocular_lens_scale": 0.47699999809265137,
+            "zoom": 1.0
+        }
+    }
+}

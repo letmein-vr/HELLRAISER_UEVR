@@ -1,0 +1,26 @@
+{
+    "currentReticuleID": "5c1e7a3b-9d2f-4b8e-a6c4-hr0crosshair",
+    "reticuleList": [
+        {
+            "class": "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Crosshair/W_WeaponCrosshairs.W_WeaponCrosshairs_C",
+            "id": "5c1e7a3b-9d2f-4b8e-a6c4-hr0crosshair",
+            "label": "Weapon Crosshair",
+            "options": {
+                "collisionChannel": 0,
+                "ignorePawn": true,
+                "position_2d": [
+                    0.0,
+                    0.0
+                ],
+                "removeFromViewport": true,
+                "scale_2d": [
+                    1.0,
+                    1.0
+                ],
+                "twoSided": true
+            },
+            "type": "Widget"
+        }
+    ],
+    "reticuleTargetMethod": 6
+}

@@ -1,0 +1,879 @@
+{
+    "attachmentOffsets": [
+        {
+            "animation": "pistol",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SK_Colt_1911",
+            "id": "BP_Colt_1911_C_SK_Colt_1911",
+            "location": [
+                -1.2999999523162842,
+                -0.30000001192092896,
+                0.4000000059604645
+            ],
+            "melee": false,
+            "parent": "BP_Colt_1911_C",
+            "rotation": [
+                7.699999809265137,
+                0.0,
+                -5.300000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "sawblade",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_Saw",
+            "id": "BP_Sawblade_C_SM_Saw",
+            "location": [
+                -0.20000000298023224,
+                -1.7000000476837158,
+                0.4000000059604645
+            ],
+            "melee": true,
+            "parent": "BP_Sawblade_C",
+            "rotation": [
+                3.700000047683716,
+                0.4000000059604645,
+                -9.600000381469727
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "knife",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_Knife",
+            "id": "BP_Knife_C_SM_Knife",
+            "location": [
+                1.0,
+                -4.699999809265137,
+                0.6000000238418579
+            ],
+            "melee": true,
+            "parent": "BP_Knife_C",
+            "rotation": [
+                9.300000190734863,
+                0.4000000059604645,
+                -8.699999809265137
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "machete",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_Cleaver",
+            "id": "BP_Cleaver_C_SM_Cleaver",
+            "location": [
+                0.0,
+                -1.7000000476837158,
+                0.30000001192092896
+            ],
+            "melee": true,
+            "parent": "BP_Cleaver_C",
+            "rotation": [
+                0.0,
+                0.0,
+                -7.800000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "knife",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_Baseball_02",
+            "id": "BP_SkullcrusherBat_C_SM_Baseball_02",
+            "location": [
+                0.0,
+                -10.899999618530273,
+                0.800000011920929
+            ],
+            "melee": true,
+            "parent": "BP_SkullcrusherBat_C",
+            "rotation": [
+                0.0,
+                -0.20000000298023224,
+                -6.800000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "sawblade",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_Machete_01",
+            "id": "BP_Machete_C_SM_Machete_01",
+            "location": [
+                0.0,
+                -2.4000000953674316,
+                0.30000001192092896
+            ],
+            "melee": true,
+            "parent": "BP_Machete_C",
+            "rotation": [
+                0.0,
+                0.6000000238418579,
+                -9.800000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "any_child": false,
+            "any_parent": false,
+            "child": "SK_Bandage",
+            "id": "BP_Bandage_C_SK_Bandage",
+            "location": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "melee": false,
+            "parent": "BP_Bandage_C",
+            "rotation": [
+                0.0,
+                0.20000000298023224,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "genesis_cube",
+            "any_child": false,
+            "any_parent": false,
+            "child": "DefaultSceneRoot",
+            "id": "BP_GenesisConfigurationBox_C_DefaultSceneRoot",
+            "location": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "melee": false,
+            "parent": "BP_GenesisConfigurationBox_C",
+            "rotation": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "smg",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SK_SMG",
+            "id": "BP_SMG_C_SK_SMG",
+            "location": [
+                -1.2999999523162842,
+                0.800000011920929,
+                0.0
+            ],
+            "melee": false,
+            "parent": "BP_SMG_C",
+            "rotation": [
+                0.0,
+                0.20000000298023224,
+                -4.900000095367432
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": true,
+            "use_laser": false
+        },
+        {
+            "animation": "revolver",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SK_Revolver_Magnum",
+            "id": "BP_Revolver_C_SK_Revolver_Magnum",
+            "location": [
+                -2.700000047683716,
+                -0.8999999761581421,
+                0.6000000238418579
+            ],
+            "melee": false,
+            "parent": "BP_Revolver_C",
+            "rotation": [
+                0.0,
+                0.20000000298023224,
+                -6.199999809265137
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": true,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "shotgun",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SK_shotgun_winchester",
+            "id": "BP_Shotgun_C_SK_shotgun_winchester",
+            "location": [
+                0.0,
+                6.300000190734863,
+                0.699999988079071
+            ],
+            "melee": false,
+            "parent": "BP_Shotgun_C",
+            "rotation": [
+                -20.799999237060547,
+                0.0,
+                -4.5
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": true,
+            "use_laser": false
+        },
+        {
+            "animation": "ak47",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SK_AK-47",
+            "id": "BP_AK-47_C_SK_AK-47",
+            "location": [
+                -0.30000001192092896,
+                1.5,
+                0.699999988079071
+            ],
+            "melee": false,
+            "parent": "BP_AK-47_C",
+            "rotation": [
+                0.0,
+                -0.10000000149011612,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": true,
+            "use_laser": false
+        },
+        {
+            "any_child": false,
+            "any_parent": false,
+            "child": "SK_MedipackLarge",
+            "id": "BP_MedKit_C_SK_MedipackLarge",
+            "location": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "melee": false,
+            "parent": "BP_MedKit_C",
+            "rotation": [
+                0.0,
+                -90.0,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "machete",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SM_Machete_01",
+            "id": "BP_GenesisMachete_C_SM_Machete_01",
+            "location": [
+                0.0,
+                -1.2999999523162842,
+                0.0
+            ],
+            "melee": false,
+            "parent": "BP_GenesisMachete_C",
+            "rotation": [
+                0.0,
+                0.699999988079071,
+                0.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "pistol",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SK_Colt_1911",
+            "id": "BP_GenesisColt_C_SK_Colt_1911",
+            "location": [
+                -1.2999999523162842,
+                -0.30000001192092896,
+                0.4000000059604645
+            ],
+            "melee": false,
+            "parent": "BP_GenesisColt_C",
+            "rotation": [
+                7.699999809265137,
+                0.0,
+                -5.300000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "machete",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_Baseball_01",
+            "id": "BP_GenesisBaseballBat_C_SM_Baseball_01",
+            "location": [
+                0.0,
+                -8.399999618530273,
+                0.0
+            ],
+            "melee": true,
+            "parent": "BP_GenesisBaseballBat_C",
+            "rotation": [
+                0.0,
+                0.5,
+                -13.399999618530273
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "machete",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_NailBat",
+            "id": "BP_GenesisNailBat_C_SM_NailBat",
+            "location": [
+                0.0,
+                -10.399999618530273,
+                0.0
+            ],
+            "melee": true,
+            "parent": "BP_GenesisNailBat_C",
+            "rotation": [
+                0.0,
+                -0.20000000298023224,
+                -9.399999618530273
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_vodkaBottle_01",
+            "id": "BP_ThrowableBottle_C_SM_vodkaBottle_01",
+            "location": [
+                -2.299999952316284,
+                -1.399999976158142,
+                0.6000000238418579
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableBottle_C",
+            "rotation": [
+                9.100000381469727,
+                0.20000000298023224,
+                -4.800000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_whiskyBottle_01",
+            "id": "BP_ThrowableBottle_C_SM_whiskyBottle_01",
+            "location": [
+                -2.200000047683716,
+                -1.5,
+                0.5
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableBottle_C",
+            "rotation": [
+                9.100000381469727,
+                0.5,
+                -4.900000095367432
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_beerBottle_02",
+            "id": "BP_ThrowableBottle_C_SM_beerBottle_02",
+            "location": [
+                -1.5,
+                -1.600000023841858,
+                1.5
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableBottle_C",
+            "rotation": [
+                9.0,
+                0.6000000238418579,
+                -10.600000381469727
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_BeerBottle",
+            "id": "BP_ThrowableBottle_C_SM_BeerBottle",
+            "location": [
+                0.800000011920929,
+                -0.20000000298023224,
+                2.0999999046325684
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableBottle_C",
+            "rotation": [
+                7.199999809265137,
+                -90.0,
+                0.5
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_whiskyBottle_02",
+            "id": "BP_ThrowableBottle_C_SM_whiskyBottle_02",
+            "location": [
+                1.2999999523162842,
+                -1.5,
+                2.5
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableBottle_C",
+            "rotation": [
+                0.0,
+                -90.0,
+                -6.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SM_absintheBottle_01",
+            "id": "BP_ThrowableBottle_C_SM_absintheBottle_01",
+            "location": [
+                -2.3,
+                -1.4,
+                0.6
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableBottle_C",
+            "rotation": [
+                9.100000381469727,
+                0.20000000298023224,
+                -4.800000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "bottle",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SM_ThrowableRock",
+            "id": "BP_ThrowableStone_C_SM_ThrowableRock",
+            "location": [
+                -0.800000011920929,
+                0.20000000298023224,
+                1.7000000476837158
+            ],
+            "melee": false,
+            "parent": "BP_ThrowableStone_C",
+            "rotation": [
+                12.600000381469727,
+                0.10000000149011612,
+                1.7000000476837158
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "sawblade",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_CricketBat_01",
+            "id": "BP_GenesisCricketBat_C_SM_CricketBat_01",
+            "location": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "melee": true,
+            "parent": "BP_GenesisCricketBat_C",
+            "rotation": [
+                0.0,
+                46.29999923706055,
+                -9.0
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "plank",
+            "any_child": true,
+            "any_parent": true,
+            "child": "SM_Plank_01",
+            "id": "BP_GenesisPlank_C_SM_Plank_01",
+            "location": [
+                -0.800000011920929,
+                -7.199999809265137,
+                0.8999999761581421
+            ],
+            "melee": true,
+            "parent": "BP_GenesisPlank_C",
+            "rotation": [
+                0.0,
+                0.4000000059604645,
+                -10.300000190734863
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "machete",
+            "any_child": false,
+            "any_parent": false,
+            "child": "SM_JaggedMasser",
+            "id": "BP_GenesisJaggedMesser_C_SM_JaggedMasser",
+            "location": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "melee": true,
+            "parent": "BP_GenesisJaggedMesser_C",
+            "rotation": [
+                0.0,
+                -0.10000000149011612,
+                -9.699999809265137
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "knife",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SK_TireIron_01",
+            "id": "BP_TireIron_C_SK_TireIron_01",
+            "location": [
+                0.800000011920929,
+                -4.599999904632568,
+                -0.699999988079071
+            ],
+            "melee": true,
+            "parent": "BP_TireIron_C",
+            "rotation": [
+                0.0,
+                91.0999984741211,
+                -9.899999618530273
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "sawblade",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SM_JaggedMasser",
+            "id": "BP_JaggedMesser_C_SM_JaggedMasser",
+            "location": [
+                0.0,
+                0.0,
+                0.0
+            ],
+            "melee": true,
+            "parent": "BP_JaggedMesser_C",
+            "rotation": [
+                0.0,
+                -0.10000000149011612,
+                -10.199999809265137
+            ],
+            "scale": [
+                1.0,
+                1.0,
+                1.0
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        },
+        {
+            "animation": "beartrap",
+            "any_child": false,
+            "any_parent": true,
+            "child": "SK_Trap",
+            "id": "BP_BearTrap_C_SK_Trap",
+            "location": [
+                12.100000381469727,
+                1.7000000476837158,
+                7.800000190734863
+            ],
+            "melee": false,
+            "parent": "BP_BearTrap_C",
+            "rotation": [
+                -47.599998474121094,
+                -97.5,
+                63.599998474121094
+            ],
+            "scale": [
+                0.7999998927116394,
+                0.7999998927116394,
+                0.7999998927116394
+            ],
+            "scoped": false,
+            "strip_child_suffix_length": false,
+            "two_handed": false,
+            "use_laser": false
+        }
+    ],
+    "baseOffsets": {
+        "location": [
+            0,
+            0,
+            0
+        ],
+        "rotation": [
+            0,
+            0,
+            0
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ]
+    },
+    "leftHandOffsets": {
+        "flip_x": false,
+        "flip_y": false,
+        "flip_z": false,
+        "location": [
+            0,
+            0,
+            0
+        ],
+        "rotation": [
+            0,
+            0,
+            0
+        ],
+        "scale": [
+            1,
+            1,
+            1
+        ]
+    }
+}

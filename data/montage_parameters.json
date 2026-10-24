@@ -1,0 +1,877 @@
+{
+    "montagelist": {
+        "AM_FP_ATT_1HandedBlade_Machete_Left_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/1HandedSharp/AM_FP_ATT_1HandedBlade_Machete_Left_01.AM_FP_ATT_1HandedBlade_Machete_Left_01",
+            "label": "Pawn AM_FP_ATT_1HandedBlade_Machete_Left_01"
+        },
+        "AM_FP_ATT_1HandedBlade_Right_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/1HandedSharp/AM_FP_ATT_1HandedBlade_Right_01.AM_FP_ATT_1HandedBlade_Right_01",
+            "label": "Pawn AM_FP_ATT_1HandedBlade_Right_01"
+        },
+        "AM_FP_ATT_1HandedSharp_Cleaver_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/1HandedSharp/AM_FP_ATT_1HandedSharp_Cleaver_TakeOut.AM_FP_ATT_1HandedSharp_Cleaver_TakeOut",
+            "label": "Pawn AM_FP_ATT_1HandedSharp_Cleaver_TakeOut"
+        },
+        "AM_FP_ATT_1HandedSharp_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/1HandedSharp/AM_FP_ATT_1HandedSharp_TakeOut.AM_FP_ATT_1HandedSharp_TakeOut",
+            "label": "Pawn AM_FP_ATT_1HandedSharp_TakeOut"
+        },
+        "AM_FP_ATT_2HandedBlunt_Cricket_Bat_Left_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/2HandedBlunt/AM_FP_ATT_2HandedBlunt_Cricket_Bat_Left_01.AM_FP_ATT_2HandedBlunt_Cricket_Bat_Left_01",
+            "label": "Pawn AM_FP_ATT_2HandedBlunt_Cricket_Bat_Left_01"
+        },
+        "AM_FP_ATT_2HandedBlunt_Nailbat_Right_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/2HandedBlunt/AM_FP_ATT_2HandedBlunt_Nailbat_Right_01.AM_FP_ATT_2HandedBlunt_Nailbat_Right_01",
+            "label": "Pawn AM_FP_ATT_2HandedBlunt_Nailbat_Right_01"
+        },
+        "AM_FP_ATT_2HandedBlunt_Right_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/2HandedBlunt/AM_FP_ATT_2HandedBlunt_Right_01.AM_FP_ATT_2HandedBlunt_Right_01",
+            "label": "Pawn AM_FP_ATT_2HandedBlunt_Right_01"
+        },
+        "AM_FP_ATT_2HandedBlunt_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/2HandedBlunt/AM_FP_ATT_2HandedBlunt_TakeOut.AM_FP_ATT_2HandedBlunt_TakeOut",
+            "label": "Pawn AM_FP_ATT_2HandedBlunt_TakeOut"
+        },
+        "AM_FP_ATT_AK-47_Reload_empty": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/AK-47/AM_FP_ATT_AK-47_Reload_empty.AM_FP_ATT_AK-47_Reload_empty",
+            "label": "Pawn AM_FP_ATT_AK-47_Reload_empty"
+        },
+        "AM_FP_ATT_AK-47_Shoot": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/AK-47/AM_FP_ATT_AK-47_Shoot.AM_FP_ATT_AK-47_Shoot",
+            "label": "Pawn AM_FP_ATT_AK-47_Shoot"
+        },
+        "AM_FP_ATT_AK-47_Shoot_2": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/AK-47/AM_FP_ATT_AK-47_Shoot_2.AM_FP_ATT_AK-47_Shoot_2",
+            "label": "Pawn AM_FP_ATT_AK-47_Shoot_2"
+        },
+        "AM_FP_ATT_AK-47_Shoot_3": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/AK-47/AM_FP_ATT_AK-47_Shoot_3.AM_FP_ATT_AK-47_Shoot_3",
+            "label": "Pawn AM_FP_ATT_AK-47_Shoot_3"
+        },
+        "AM_FP_ATT_AK-47_Takeout": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/AK-47/AM_FP_ATT_AK-47_Takeout.AM_FP_ATT_AK-47_Takeout",
+            "label": "Pawn AM_FP_ATT_AK-47_Takeout"
+        },
+        "AM_FP_ATT_Colt1911_Shoot_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Colt_1911/AM_FP_ATT_Colt1911_Shoot_01.AM_FP_ATT_Colt1911_Shoot_01",
+            "label": "Pawn AM_FP_ATT_Colt1911_Shoot_01"
+        },
+        "AM_FP_ATT_Colt1911_Shoot_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Colt_1911/AM_FP_ATT_Colt1911_Shoot_02.AM_FP_ATT_Colt1911_Shoot_02",
+            "label": "Pawn AM_FP_ATT_Colt1911_Shoot_02"
+        },
+        "AM_FP_ATT_Colt1911_Shoot_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Colt_1911/AM_FP_ATT_Colt1911_Shoot_03.AM_FP_ATT_Colt1911_Shoot_03",
+            "label": "Pawn AM_FP_ATT_Colt1911_Shoot_03"
+        },
+        "AM_FP_ATT_Genesis1HandedSharp_Right_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/Genesis1HandedSharp/AM_FP_ATT_Genesis1HandedSharp_Right_01.AM_FP_ATT_Genesis1HandedSharp_Right_01",
+            "label": "Pawn AM_FP_ATT_Genesis1HandedSharp_Right_01"
+        },
+        "AM_FP_ATT_Genesis1HandedSharp_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/Genesis1HandedSharp/AM_FP_ATT_Genesis1HandedSharp_TakeOut.AM_FP_ATT_Genesis1HandedSharp_TakeOut",
+            "label": "Pawn AM_FP_ATT_Genesis1HandedSharp_TakeOut"
+        },
+        "AM_FP_ATT_GenesisColt_Shoot_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/GenesisColt/AM_FP_ATT_GenesisColt_Shoot_01.AM_FP_ATT_GenesisColt_Shoot_01",
+            "label": "Pawn AM_FP_ATT_GenesisColt_Shoot_01"
+        },
+        "AM_FP_ATT_GenesisColt_Shoot_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/GenesisColt/AM_FP_ATT_GenesisColt_Shoot_02.AM_FP_ATT_GenesisColt_Shoot_02",
+            "label": "Pawn AM_FP_ATT_GenesisColt_Shoot_02"
+        },
+        "AM_FP_ATT_GenesisColt_Shoot_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/GenesisColt/AM_FP_ATT_GenesisColt_Shoot_03.AM_FP_ATT_GenesisColt_Shoot_03",
+            "label": "Pawn AM_FP_ATT_GenesisColt_Shoot_03"
+        },
+        "AM_FP_ATT_GenesisColt_Shot_Empty_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/GenesisColt/AM_FP_ATT_GenesisColt_Shot_Empty_01.AM_FP_ATT_GenesisColt_Shot_Empty_01",
+            "label": "Pawn AM_FP_ATT_GenesisColt_Shot_Empty_01"
+        },
+        "AM_FP_ATT_GenesisColt_Telekinesis_Release": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/GenesisColt/AM_FP_ATT_GenesisColt_Telekinesis_Release.AM_FP_ATT_GenesisColt_Telekinesis_Release",
+            "label": "Pawn AM_FP_ATT_GenesisColt_Telekinesis_Release"
+        },
+        "AM_FP_ATT_GenesisKnife_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/GenesisKnife/AM_FP_ATT_GenesisKnife_01.AM_FP_ATT_GenesisKnife_01",
+            "label": "Pawn AM_FP_ATT_GenesisKnife_01"
+        },
+        "AM_FP_ATT_GenesisKnife_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/GenesisKnife/AM_FP_ATT_GenesisKnife_02.AM_FP_ATT_GenesisKnife_02",
+            "label": "Pawn AM_FP_ATT_GenesisKnife_02"
+        },
+        "AM_FP_ATT_GenesisKnife_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/GenesisKnife/AM_FP_ATT_GenesisKnife_TakeOut.AM_FP_ATT_GenesisKnife_TakeOut",
+            "label": "Pawn AM_FP_ATT_GenesisKnife_TakeOut"
+        },
+        "AM_FP_ATT_GenesisRevolver_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/GenesisRevolver/AM_FP_ATT_GenesisRevolver_TakeOut.AM_FP_ATT_GenesisRevolver_TakeOut",
+            "label": "Pawn AM_FP_ATT_GenesisRevolver_TakeOut"
+        },
+        "AM_FP_ATT_Hellghoul_Grapple_v03_2": {
+            "class_name": "AnimMontage /Game/Characters/NPC/Enemy/HellGhoul/Animations/Grapple_v03/AM_FP_ATT_Hellghoul_Grapple_v03_2.AM_FP_ATT_Hellghoul_Grapple_v03_2",
+            "label": "Pawn AM_FP_ATT_Hellghoul_Grapple_v03_2"
+        },
+        "AM_FP_ATT_Hellghoul_Grapple_v04": {
+            "class_name": "AnimMontage /Game/Characters/NPC/Enemy/HellGhoul/Animations/Grapple04/AM_FP_ATT_Hellghoul_Grapple_v04.AM_FP_ATT_Hellghoul_Grapple_v04",
+            "label": "Pawn AM_FP_ATT_Hellghoul_Grapple_v04"
+        },
+        "AM_FP_ATT_Hellghoul_Grapple_v17": {
+            "class_name": "AnimMontage /Game/Characters/NPC/Enemy/HellGhoul/Animations/Grapple17/AM_FP_ATT_Hellghoul_Grapple_v17.AM_FP_ATT_Hellghoul_Grapple_v17",
+            "label": "Pawn AM_FP_ATT_Hellghoul_Grapple_v17"
+        },
+        "AM_FP_ATT_MeleeAbility_Knife_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/Ability/2_2_2014_anims/AM_FP_ATT_MeleeAbility_Knife_01.AM_FP_ATT_MeleeAbility_Knife_01",
+            "label": "Pawn AM_FP_ATT_MeleeAbility_Knife_01"
+        },
+        "AM_FP_ATT_MeleeAbility_Knife_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/Ability/2_2_2014_anims/AM_FP_ATT_MeleeAbility_Knife_02.AM_FP_ATT_MeleeAbility_Knife_02",
+            "label": "Pawn AM_FP_ATT_MeleeAbility_Knife_02"
+        },
+        "AM_FP_ATT_Revolver_Shoot": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Revolver/AM_FP_ATT_Revolver_Shoot.AM_FP_ATT_Revolver_Shoot",
+            "label": "Pawn AM_FP_ATT_Revolver_Shoot"
+        },
+        "AM_FP_ATT_Revolver_Shoot_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Revolver/AM_FP_ATT_Revolver_Shoot_02.AM_FP_ATT_Revolver_Shoot_02",
+            "label": "Pawn AM_FP_ATT_Revolver_Shoot_02"
+        },
+        "AM_FP_ATT_Revolver_Shoot_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Revolver/AM_FP_ATT_Revolver_Shoot_03.AM_FP_ATT_Revolver_Shoot_03",
+            "label": "Pawn AM_FP_ATT_Revolver_Shoot_03"
+        },
+        "AM_FP_ATT_Revolver_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Revolver/AM_FP_ATT_Revolver_TakeOut.AM_FP_ATT_Revolver_TakeOut",
+            "label": "Pawn AM_FP_ATT_Revolver_TakeOut"
+        },
+        "AM_FP_ATT_SMG_Reload": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/SMG/AM_FP_ATT_SMG_Reload.AM_FP_ATT_SMG_Reload",
+            "label": "Pawn AM_FP_ATT_SMG_Reload"
+        },
+        "AM_FP_ATT_SMG_Shoot": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/SMG/AM_FP_ATT_SMG_Shoot.AM_FP_ATT_SMG_Shoot",
+            "label": "Pawn AM_FP_ATT_SMG_Shoot"
+        },
+        "AM_FP_ATT_SMG_Shoot_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/SMG/AM_FP_ATT_SMG_Shoot_02.AM_FP_ATT_SMG_Shoot_02",
+            "label": "Pawn AM_FP_ATT_SMG_Shoot_02"
+        },
+        "AM_FP_ATT_SMG_Shoot_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/SMG/AM_FP_ATT_SMG_Shoot_03.AM_FP_ATT_SMG_Shoot_03",
+            "label": "Pawn AM_FP_ATT_SMG_Shoot_03"
+        },
+        "AM_FP_ATT_SMG_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/SMG/AM_FP_ATT_SMG_TakeOut.AM_FP_ATT_SMG_TakeOut",
+            "label": "Pawn AM_FP_ATT_SMG_TakeOut"
+        },
+        "AM_FP_ATT_Takedown_Cultist_Melee_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/defaultSharp/AM_FP_ATT_Takedown_Cultist_Melee_02.AM_FP_ATT_Takedown_Cultist_Melee_02",
+            "label": "Pawn AM_FP_ATT_Takedown_Cultist_Melee_02"
+        },
+        "AM_FP_ATT_defaultSharp_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Melee/defaultSharp/AM_FP_ATT_defaultSharp_TakeOut.AM_FP_ATT_defaultSharp_TakeOut",
+            "label": "Pawn AM_FP_ATT_defaultSharp_TakeOut"
+        },
+        "AM_FP_Bandage_Use": {
+            "aimMethodWhenActive": 1,
+            "aimMethodWhenActivePriority": "0",
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/Bandage/AM_FP_Bandage_Use.AM_FP_Bandage_Use",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 1,
+            "inputWhenActivePriority": "0",
+            "label": "Pawn AM_FP_Bandage_Use",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "0"
+        },
+        "AM_FP_CS_Disguise_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Cutscene/AM_FP_CS_Disguise_01.AM_FP_CS_Disguise_01",
+            "label": "Pawn AM_FP_CS_Disguise_01"
+        },
+        "AM_FP_CS_InventoryBag_Equip_Short": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Cutscene/AM_FP_CS_InventoryBag_Equip_Short.AM_FP_CS_InventoryBag_Equip_Short",
+            "label": "Pawn AM_FP_CS_InventoryBag_Equip_Short"
+        },
+        "AM_FP_Chair_Free_PH_UnStitches": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/PrisonCell/AM_FP_Chair_Free_PH_UnStitches.AM_FP_Chair_Free_PH_UnStitches",
+            "label": "Pawn AM_FP_Chair_Free_PH_UnStitches"
+        },
+        "AM_FP_Chiar_Free_PH_Pull_Hook": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/PrisonCell/AM_FP_Chiar_Free_PH_Pull_Hook.AM_FP_Chiar_Free_PH_Pull_Hook",
+            "label": "Pawn AM_FP_Chiar_Free_PH_Pull_Hook"
+        },
+        "AM_FP_Chiar_Free_PH_Pull_Spike": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/PrisonCell/AM_FP_Chiar_Free_PH_Pull_Spike.AM_FP_Chiar_Free_PH_Pull_Spike",
+            "label": "Pawn AM_FP_Chiar_Free_PH_Pull_Spike"
+        },
+        "AM_FP_Colt1911_Evade": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/Colt1911/AM_FP_Colt1911_Evade.AM_FP_Colt1911_Evade",
+            "label": "Pawn AM_FP_Colt1911_Evade"
+        },
+        "AM_FP_CultistMelee_Female_ChoppingCorpse_Takedown_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_CultistMelee_Female_ChoppingCorpse_Takedown_01.AM_FP_CultistMelee_Female_ChoppingCorpse_Takedown_01",
+            "label": "Pawn AM_FP_CultistMelee_Female_ChoppingCorpse_Takedown_01"
+        },
+        "AM_FP_CultistMelee_Female_Finisher_1HandedSharp_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Finishers/AM_FP_CultistMelee_Female_Finisher_1HandedSharp_01.AM_FP_CultistMelee_Female_Finisher_1HandedSharp_01",
+            "label": "Pawn AM_FP_CultistMelee_Female_Finisher_1HandedSharp_01"
+        },
+        "AM_FP_CultistMelee_Female_Finisher_Knife_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Finishers/AM_FP_CultistMelee_Female_Finisher_Knife_02.AM_FP_CultistMelee_Female_Finisher_Knife_02",
+            "label": "Pawn AM_FP_CultistMelee_Female_Finisher_Knife_02"
+        },
+        "AM_FP_CultistMelee_Female_Sitter_Takedown_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_CultistMelee_Female_Sitter_Takedown_01.AM_FP_CultistMelee_Female_Sitter_Takedown_01",
+            "label": "Pawn AM_FP_CultistMelee_Female_Sitter_Takedown_01"
+        },
+        "AM_FP_CultistMelee_Finisher_1HandedSharp_02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Finishers/AM_FP_CultistMelee_Finisher_1HandedSharp_02.AM_FP_CultistMelee_Finisher_1HandedSharp_02",
+            "label": "Pawn AM_FP_CultistMelee_Finisher_1HandedSharp_02"
+        },
+        "AM_FP_CultistMelee_Finisher_2HandedBlunt_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Finishers/AM_FP_CultistMelee_Finisher_2HandedBlunt_01.AM_FP_CultistMelee_Finisher_2HandedBlunt_01",
+            "label": "Pawn AM_FP_CultistMelee_Finisher_2HandedBlunt_01"
+        },
+        "AM_FP_CultistMelee_M_Grapple_v03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Grapple/AM_FP_CultistMelee_M_Grapple_v03.AM_FP_CultistMelee_M_Grapple_v03",
+            "label": "Pawn AM_FP_CultistMelee_M_Grapple_v03"
+        },
+        "AM_FP_CultistMelee_M_Grapple_v04": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Grapple/AM_FP_CultistMelee_M_Grapple_v04.AM_FP_CultistMelee_M_Grapple_v04",
+            "label": "Pawn AM_FP_CultistMelee_M_Grapple_v04"
+        },
+        "AM_FP_CultistMelee_M_Grapple_v04_Female": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Grapple/AM_FP_CultistMelee_M_Grapple_v04_Female.AM_FP_CultistMelee_M_Grapple_v04_Female",
+            "label": "Pawn AM_FP_CultistMelee_M_Grapple_v04_Female"
+        },
+        "AM_FP_GRP_Cambion": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Grapple/Cambion/AM_FP_GRP_Cambion.AM_FP_GRP_Cambion",
+            "label": "Pawn AM_FP_GRP_Cambion"
+        },
+        "AM_FP_GenesisColt_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_CrouchToStand.AM_FP_GenesisColt_CrouchToStand",
+            "label": "Pawn AM_FP_GenesisColt_CrouchToStand"
+        },
+        "AM_FP_GenesisColt_IdleToSprint": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_IdleToSprint.AM_FP_GenesisColt_IdleToSprint",
+            "label": "Pawn AM_FP_GenesisColt_IdleToSprint"
+        },
+        "AM_FP_GenesisColt_LowReady_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_LowReady_CrouchToStand.AM_FP_GenesisColt_LowReady_CrouchToStand",
+            "label": "Pawn AM_FP_GenesisColt_LowReady_CrouchToStand"
+        },
+        "AM_FP_GenesisColt_LowReady_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_LowReady_StandToCrouch.AM_FP_GenesisColt_LowReady_StandToCrouch",
+            "label": "Pawn AM_FP_GenesisColt_LowReady_StandToCrouch"
+        },
+        "AM_FP_GenesisColt_SprintToIdle": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_SprintToIdle.AM_FP_GenesisColt_SprintToIdle",
+            "label": "Pawn AM_FP_GenesisColt_SprintToIdle"
+        },
+        "AM_FP_GenesisColt_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_StandToCrouch.AM_FP_GenesisColt_StandToCrouch",
+            "label": "Pawn AM_FP_GenesisColt_StandToCrouch"
+        },
+        "AM_FP_GenesisColt_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_GenesisColt_TakeOut.AM_FP_GenesisColt_TakeOut",
+            "label": "Pawn AM_FP_GenesisColt_TakeOut"
+        },
+        "AM_FP_GenesisConfiguration_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisConfiguration/AM_FP_GenesisConfiguration_TakeOut.AM_FP_GenesisConfiguration_TakeOut",
+            "label": "Pawn AM_FP_GenesisConfiguration_TakeOut"
+        },
+        "AM_FP_HeavyLand": {
+            "aimMethodWhenActive": 1,
+            "aimMethodWhenActivePriority": "0",
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/Locomotion/ALS/AM_FP_HeavyLand.AM_FP_HeavyLand",
+            "handsWhenActive": 1,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 1,
+            "inputWhenActivePriority": "0",
+            "label": "Pawn AM_FP_HeavyLand",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 1,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 1,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 1,
+            "weaponWhenActivePriority": "0"
+        },
+        "AM_FP_Hellghoul_Intro_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Cutscene/HG_Intro/AM_FP_Hellghoul_Intro_01.AM_FP_Hellghoul_Intro_01",
+            "label": "Pawn AM_FP_Hellghoul_Intro_01"
+        },
+        "AM_FP_Ladder_ClimbDown": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_ClimbDown.AM_FP_Ladder_ClimbDown",
+            "label": "Pawn AM_FP_Ladder_ClimbDown"
+        },
+        "AM_FP_Ladder_ClimbUp": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_ClimbUp.AM_FP_Ladder_ClimbUp",
+            "label": "Pawn AM_FP_Ladder_ClimbUp"
+        },
+        "AM_FP_Ladder_FinishClimbBottom": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_FinishClimbBottom.AM_FP_Ladder_FinishClimbBottom",
+            "label": "Pawn AM_FP_Ladder_FinishClimbBottom"
+        },
+        "AM_FP_Ladder_FinishClimbTop": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_FinishClimbTop.AM_FP_Ladder_FinishClimbTop",
+            "label": "Pawn AM_FP_Ladder_FinishClimbTop"
+        },
+        "AM_FP_Ladder_FinishSlideDown": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_FinishSlideDown.AM_FP_Ladder_FinishSlideDown",
+            "label": "Pawn AM_FP_Ladder_FinishSlideDown"
+        },
+        "AM_FP_Ladder_SlideDown": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_SlideDown.AM_FP_Ladder_SlideDown",
+            "label": "Pawn AM_FP_Ladder_SlideDown"
+        },
+        "AM_FP_Ladder_StartClimbBottom": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_StartClimbBottom.AM_FP_Ladder_StartClimbBottom",
+            "label": "Pawn AM_FP_Ladder_StartClimbBottom"
+        },
+        "AM_FP_Ladder_StartClimbTop": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Ladder/AM_FP_Ladder_StartClimbTop.AM_FP_Ladder_StartClimbTop",
+            "label": "Pawn AM_FP_Ladder_StartClimbTop"
+        },
+        "AM_FP_MedipackLarge_HealSelf": {
+            "aimMethodWhenActive": 1,
+            "aimMethodWhenActivePriority": "0",
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/Medipack/AM_FP_MedipackLarge_HealSelf.AM_FP_MedipackLarge_HealSelf",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 1,
+            "inputWhenActivePriority": "0",
+            "label": "Pawn AM_FP_MedipackLarge_HealSelf",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "0"
+        },
+        "AM_FP_NAV_1HandedSharp_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_CrouchToStand.AM_FP_NAV_1HandedSharp_CrouchToStand",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_CrouchToStand"
+        },
+        "AM_FP_NAV_1HandedSharp_Evade": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_Evade.AM_FP_NAV_1HandedSharp_Evade",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Evade"
+        },
+        "AM_FP_NAV_1HandedSharp_Genesis_Knife_CrouchToStand_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_1HandedSharp_Genesis_Knife_CrouchToStand_LowReady.AM_FP_NAV_1HandedSharp_Genesis_Knife_CrouchToStand_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Genesis_Knife_CrouchToStand_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_Genesis_Knife_StandToCrouch_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_1HandedSharp_Genesis_Knife_StandToCrouch_LowReady.AM_FP_NAV_1HandedSharp_Genesis_Knife_StandToCrouch_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Genesis_Knife_StandToCrouch_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_IdleToSprint": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_IdleToSprint.AM_FP_NAV_1HandedSharp_IdleToSprint",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_IdleToSprint"
+        },
+        "AM_FP_NAV_1HandedSharp_Knife_CrouchToStand_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_Knife_CrouchToStand_LowReady.AM_FP_NAV_1HandedSharp_Knife_CrouchToStand_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Knife_CrouchToStand_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_Knife_StandToCrouch_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_Knife_StandToCrouch_LowReady.AM_FP_NAV_1HandedSharp_Knife_StandToCrouch_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Knife_StandToCrouch_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_Messer_CrouchToStand_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_Messer_CrouchToStand_LowReady.AM_FP_NAV_1HandedSharp_Messer_CrouchToStand_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Messer_CrouchToStand_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_Messer_StandToCrouch_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_Messer_StandToCrouch_LowReady.AM_FP_NAV_1HandedSharp_Messer_StandToCrouch_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_Messer_StandToCrouch_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_SprintToIdle": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_SprintToIdle.AM_FP_NAV_1HandedSharp_SprintToIdle",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_SprintToIdle"
+        },
+        "AM_FP_NAV_1HandedSharp_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_StandToCrouch.AM_FP_NAV_1HandedSharp_StandToCrouch",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_StandToCrouch"
+        },
+        "AM_FP_NAV_1HandedSharp_cleaver_CrouchToStand_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_cleaver_CrouchToStand_LowReady.AM_FP_NAV_1HandedSharp_cleaver_CrouchToStand_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_cleaver_CrouchToStand_LowReady"
+        },
+        "AM_FP_NAV_1HandedSharp_cleaver_StandToCrouch_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/1HandedSharp/AM_FP_NAV_1HandedSharp_cleaver_StandToCrouch_LowReady.AM_FP_NAV_1HandedSharp_cleaver_StandToCrouch_LowReady",
+            "label": "Pawn AM_FP_NAV_1HandedSharp_cleaver_StandToCrouch_LowReady"
+        },
+        "AM_FP_NAV_Genesis1HandedSharp_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_Genesis1HandedSharp_CrouchToStand.AM_FP_NAV_Genesis1HandedSharp_CrouchToStand",
+            "label": "Pawn AM_FP_NAV_Genesis1HandedSharp_CrouchToStand"
+        },
+        "AM_FP_NAV_Genesis1HandedSharp_IdleToSprint": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_Genesis1HandedSharp_IdleToSprint.AM_FP_NAV_Genesis1HandedSharp_IdleToSprint",
+            "label": "Pawn AM_FP_NAV_Genesis1HandedSharp_IdleToSprint"
+        },
+        "AM_FP_NAV_Genesis1HandedSharp_Knife_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_Genesis1HandedSharp_Knife_CrouchToStand.AM_FP_NAV_Genesis1HandedSharp_Knife_CrouchToStand",
+            "label": "Pawn AM_FP_NAV_Genesis1HandedSharp_Knife_CrouchToStand"
+        },
+        "AM_FP_NAV_Genesis1HandedSharp_Knife_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_Genesis1HandedSharp_Knife_StandToCrouch.AM_FP_NAV_Genesis1HandedSharp_Knife_StandToCrouch",
+            "label": "Pawn AM_FP_NAV_Genesis1HandedSharp_Knife_StandToCrouch"
+        },
+        "AM_FP_NAV_Genesis1HandedSharp_SprintToIdle": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_Genesis1HandedSharp_SprintToIdle.AM_FP_NAV_Genesis1HandedSharp_SprintToIdle",
+            "label": "Pawn AM_FP_NAV_Genesis1HandedSharp_SprintToIdle"
+        },
+        "AM_FP_NAV_Genesis1HandedSharp_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis1HandedSharp/AM_FP_NAV_Genesis1HandedSharp_StandToCrouch.AM_FP_NAV_Genesis1HandedSharp_StandToCrouch",
+            "label": "Pawn AM_FP_NAV_Genesis1HandedSharp_StandToCrouch"
+        },
+        "AM_FP_NAV_Genesis2HandedBlunt_SprintToIdle": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis2HandedBlunt/AM_FP_NAV_Genesis2HandedBlunt_SprintToIdle.AM_FP_NAV_Genesis2HandedBlunt_SprintToIdle",
+            "label": "Pawn AM_FP_NAV_Genesis2HandedBlunt_SprintToIdle"
+        },
+        "AM_FP_NAV_GenesisColt_Evade": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisColt/AM_FP_NAV_GenesisColt_Evade.AM_FP_NAV_GenesisColt_Evade",
+            "label": "Pawn AM_FP_NAV_GenesisColt_Evade"
+        },
+        "AM_FP_NAV_GenesisRevolver_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisRevolver/AM_FP_NAV_GenesisRevolver_CrouchToStand.AM_FP_NAV_GenesisRevolver_CrouchToStand",
+            "label": "Pawn AM_FP_NAV_GenesisRevolver_CrouchToStand"
+        },
+        "AM_FP_NAV_GenesisRevolver_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/GenesisRevolver/AM_FP_NAV_GenesisRevolver_StandToCrouch.AM_FP_NAV_GenesisRevolver_StandToCrouch",
+            "label": "Pawn AM_FP_NAV_GenesisRevolver_StandToCrouch"
+        },
+        "AM_FP_NAV_Shotgun_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/Shotgun/AM_FP_NAV_Shotgun_CrouchToStand.AM_FP_NAV_Shotgun_CrouchToStand",
+            "label": "Pawn AM_FP_NAV_Shotgun_CrouchToStand"
+        },
+        "AM_FP_NAV_Shotgun_CrouchToStand_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/Shotgun/AM_FP_NAV_Shotgun_CrouchToStand_LowReady.AM_FP_NAV_Shotgun_CrouchToStand_LowReady",
+            "label": "Pawn AM_FP_NAV_Shotgun_CrouchToStand_LowReady"
+        },
+        "AM_FP_NAV_Shotgun_StandToCrouch_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/Shotgun/AM_FP_NAV_Shotgun_StandToCrouch_LowReady.AM_FP_NAV_Shotgun_StandToCrouch_LowReady",
+            "label": "Pawn AM_FP_NAV_Shotgun_StandToCrouch_LowReady"
+        },
+        "AM_FP_NAV__Genesis2HandedBlunt_IdleToSprint": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/Genesis2HandedBlunt/AM_FP_NAV__Genesis2HandedBlunt_IdleToSprint.AM_FP_NAV__Genesis2HandedBlunt_IdleToSprint",
+            "label": "Pawn AM_FP_NAV__Genesis2HandedBlunt_IdleToSprint"
+        },
+        "AM_FP_NAV_defaultSharp_Evade": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Melee/defaultSharp/AM_FP_NAV_defaultSharp_Evade.AM_FP_NAV_defaultSharp_Evade",
+            "label": "Pawn AM_FP_NAV_defaultSharp_Evade"
+        },
+        "AM_FP_REC_Chatterer_Chain_Stuck": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Chatterer_Chain_Stuck.AM_FP_REC_Chatterer_Chain_Stuck",
+            "label": "Pawn AM_FP_REC_Chatterer_Chain_Stuck"
+        },
+        "AM_FP_REC_Chatterer_Chain_Stuck_End": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Chatterer_Chain_Stuck_End.AM_FP_REC_Chatterer_Chain_Stuck_End",
+            "label": "Pawn AM_FP_REC_Chatterer_Chain_Stuck_End"
+        },
+        "AM_FP_REC_Chatterer_Chain_Stuck_Loop": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Chatterer_Chain_Stuck_Loop.AM_FP_REC_Chatterer_Chain_Stuck_Loop",
+            "label": "Pawn AM_FP_REC_Chatterer_Chain_Stuck_Loop"
+        },
+        "AM_FP_REC_Death_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Death_01.AM_FP_REC_Death_01",
+            "label": "Pawn AM_FP_REC_Death_01"
+        },
+        "AM_FP_REC_Death_Forward": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Death_Forward.AM_FP_REC_Death_Forward",
+            "label": "Pawn AM_FP_REC_Death_Forward"
+        },
+        "AM_FP_REC_Death_InPlace_Flinch_Right": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Death_InPlace_Flinch_Right.AM_FP_REC_Death_InPlace_Flinch_Right",
+            "label": "Pawn AM_FP_REC_Death_InPlace_Flinch_Right"
+        },
+        "AM_FP_REC_Death_Short_Left": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Death_Short_Left.AM_FP_REC_Death_Short_Left",
+            "label": "Pawn AM_FP_REC_Death_Short_Left"
+        },
+        "AM_FP_REC_Death_Short_Right": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Death_Short_Right.AM_FP_REC_Death_Short_Right",
+            "label": "Pawn AM_FP_REC_Death_Short_Right"
+        },
+        "AM_FP_REC_Unarmed_KnockBack_Left": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Unarmed_KnockBack_Left.AM_FP_REC_Unarmed_KnockBack_Left",
+            "label": "Pawn AM_FP_REC_Unarmed_KnockBack_Left"
+        },
+        "AM_FP_REC_Unarmed_KnockBack_Right": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Unarmed/AM_FP_REC_Unarmed_KnockBack_Right.AM_FP_REC_Unarmed_KnockBack_Right",
+            "label": "Pawn AM_FP_REC_Unarmed_KnockBack_Right"
+        },
+        "AM_FP_REC_Universal_HardFlinch_NoRoot_F_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Universal/AM_FP_REC_Universal_HardFlinch_NoRoot_F_01.AM_FP_REC_Universal_HardFlinch_NoRoot_F_01",
+            "label": "Pawn AM_FP_REC_Universal_HardFlinch_NoRoot_F_01"
+        },
+        "AM_FP_REC_Universal_HardFlinch_NoRoot_L_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Universal/AM_FP_REC_Universal_HardFlinch_NoRoot_L_01.AM_FP_REC_Universal_HardFlinch_NoRoot_L_01",
+            "label": "Pawn AM_FP_REC_Universal_HardFlinch_NoRoot_L_01"
+        },
+        "AM_FP_REC_Universal_HardFlinch_NoRoot_L_Light_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Universal/AM_FP_REC_Universal_HardFlinch_NoRoot_L_Light_01.AM_FP_REC_Universal_HardFlinch_NoRoot_L_Light_01",
+            "label": "Pawn AM_FP_REC_Universal_HardFlinch_NoRoot_L_Light_01"
+        },
+        "AM_FP_REC_Universal_HardFlinch_NoRoot_R_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Universal/AM_FP_REC_Universal_HardFlinch_NoRoot_R_01.AM_FP_REC_Universal_HardFlinch_NoRoot_R_01",
+            "label": "Pawn AM_FP_REC_Universal_HardFlinch_NoRoot_R_01"
+        },
+        "AM_FP_REC_Universal_HardFlinch_NoRoot_R_Heavy_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Universal/AM_FP_REC_Universal_HardFlinch_NoRoot_R_Heavy_01.AM_FP_REC_Universal_HardFlinch_NoRoot_R_Heavy_01",
+            "label": "Pawn AM_FP_REC_Universal_HardFlinch_NoRoot_R_Heavy_01"
+        },
+        "AM_FP_REC_Universal_HardFlinch_NoRoot_R_Light_01": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Reactions/Universal/AM_FP_REC_Universal_HardFlinch_NoRoot_R_Light_01.AM_FP_REC_Universal_HardFlinch_NoRoot_R_Light_01",
+            "label": "Pawn AM_FP_REC_Universal_HardFlinch_NoRoot_R_Light_01"
+        },
+        "AM_FP_SaveGame_Player_IN": {
+            "aimMethodWhenActive": 2,
+            "aimMethodWhenActivePriority": "0",
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/SaveGame/AM_FP_SaveGame_Player_IN.AM_FP_SaveGame_Player_IN",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 3,
+            "inputWhenActivePriority": "0",
+            "label": "Pawn AM_FP_SaveGame_Player_IN",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "0"
+        },
+        "AM_FP_SaveGame_Player_OUT": {
+            "aimMethodWhenActive": 2,
+            "aimMethodWhenActivePriority": "0",
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/SaveGame/AM_FP_SaveGame_Player_OUT.AM_FP_SaveGame_Player_OUT",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 3,
+            "inputWhenActivePriority": "0",
+            "label": "Pawn AM_FP_SaveGame_Player_OUT",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "0"
+        },
+        "AM_FP_Shotgun_Shoot_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Shotgun/AM_FP_Shotgun_Shoot_03.AM_FP_Shotgun_Shoot_03",
+            "label": "Pawn AM_FP_Shotgun_Shoot_03"
+        },
+        "AM_FP_SlowDoorOpen_v2": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/World/Door/AM_FP_SlowDoorOpen_v2.AM_FP_SlowDoorOpen_v2",
+            "label": "Pawn AM_FP_SlowDoorOpen_v2"
+        },
+        "AM_FP_TKD_Banish_Hellghoul_v02": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_TKD_Banish_Hellghoul_v02.AM_FP_TKD_Banish_Hellghoul_v02",
+            "label": "Pawn AM_FP_TKD_Banish_Hellghoul_v02"
+        },
+        "AM_FP_TKD_Cultist_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_TKD_Cultist_03.AM_FP_TKD_Cultist_03",
+            "label": "Pawn AM_FP_TKD_Cultist_03"
+        },
+        "AM_FP_TKD_HellGhoul_03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_TKD_HellGhoul_03.AM_FP_TKD_HellGhoul_03",
+            "label": "Pawn AM_FP_TKD_HellGhoul_03"
+        },
+        "AM_FP_TKD_HellGhoul_Banish": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_TKD_HellGhoul_Banish.AM_FP_TKD_HellGhoul_Banish",
+            "label": "Pawn AM_FP_TKD_HellGhoul_Banish"
+        },
+        "AM_FP_TKD_HellGhoul_Banish_v03": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Takedown/AM_FP_TKD_HellGhoul_Banish_v03.AM_FP_TKD_HellGhoul_Banish_v03",
+            "label": "Pawn AM_FP_TKD_HellGhoul_Banish_v03"
+        },
+        "AM_FP_Unarmed_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Unarmed/AM_FP_Unarmed_CrouchToStand.AM_FP_Unarmed_CrouchToStand",
+            "label": "Pawn AM_FP_Unarmed_CrouchToStand"
+        },
+        "AM_FP_Unarmed_Evade": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Unarmed/AM_FP_Unarmed_Evade.AM_FP_Unarmed_Evade",
+            "label": "Pawn AM_FP_Unarmed_Evade"
+        },
+        "AM_FP_Unarmed_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Unarmed/AM_FP_Unarmed_StandToCrouch.AM_FP_Unarmed_StandToCrouch",
+            "label": "Pawn AM_FP_Unarmed_StandToCrouch"
+        },
+        "AM_FP_Unarmed_Takeout": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Unarmed/AM_FP_Unarmed_Takeout.AM_FP_Unarmed_Takeout",
+            "label": "Pawn AM_FP_Unarmed_Takeout"
+        },
+        "AM_FP_bearTrap_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/bearTrap/AM_FP_bearTrap_CrouchToStand.AM_FP_bearTrap_CrouchToStand",
+            "label": "Pawn AM_FP_bearTrap_CrouchToStand"
+        },
+        "AM_FP_bearTrap_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/bearTrap/AM_FP_bearTrap_StandToCrouch.AM_FP_bearTrap_StandToCrouch",
+            "label": "Pawn AM_FP_bearTrap_StandToCrouch"
+        },
+        "AM_FP_bearTrap_Takeout": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/bearTrap/AM_FP_bearTrap_Takeout.AM_FP_bearTrap_Takeout",
+            "label": "Pawn AM_FP_bearTrap_Takeout"
+        },
+        "AM_FP_bearTrap_setUp_Standing": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Tools/bearTrap/AM_FP_bearTrap_setUp_Standing.AM_FP_bearTrap_setUp_Standing",
+            "label": "Pawn AM_FP_bearTrap_setUp_Standing"
+        },
+        "AM_Revenant_FirstPerson_Pistol_CrouchToStand": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_CrouchToStand.AM_Revenant_FirstPerson_Pistol_CrouchToStand",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_CrouchToStand"
+        },
+        "AM_Revenant_FirstPerson_Pistol_CrouchToStand_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_CrouchToStand_LowReady.AM_Revenant_FirstPerson_Pistol_CrouchToStand_LowReady",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_CrouchToStand_LowReady"
+        },
+        "AM_Revenant_FirstPerson_Pistol_IdleToSprint": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_IdleToSprint.AM_Revenant_FirstPerson_Pistol_IdleToSprint",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_IdleToSprint"
+        },
+        "AM_Revenant_FirstPerson_Pistol_Reload": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_Reload.AM_Revenant_FirstPerson_Pistol_Reload",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_Reload"
+        },
+        "AM_Revenant_FirstPerson_Pistol_Reload_HalfClip": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_Reload_HalfClip.AM_Revenant_FirstPerson_Pistol_Reload_HalfClip",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_Reload_HalfClip"
+        },
+        "AM_Revenant_FirstPerson_Pistol_Shoot_Empty": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_Shoot_Empty.AM_Revenant_FirstPerson_Pistol_Shoot_Empty",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_Shoot_Empty"
+        },
+        "AM_Revenant_FirstPerson_Pistol_SprintToIdle": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_SprintToIdle.AM_Revenant_FirstPerson_Pistol_SprintToIdle",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_SprintToIdle"
+        },
+        "AM_Revenant_FirstPerson_Pistol_StandToCrouch": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_StandToCrouch.AM_Revenant_FirstPerson_Pistol_StandToCrouch",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_StandToCrouch"
+        },
+        "AM_Revenant_FirstPerson_Pistol_StandToCrouch_LowReady": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_StandToCrouch_LowReady.AM_Revenant_FirstPerson_Pistol_StandToCrouch_LowReady",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_StandToCrouch_LowReady"
+        },
+        "AM_Revenant_FirstPerson_Pistol_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Pistol/AM_Revenant_FirstPerson_Pistol_TakeOut.AM_Revenant_FirstPerson_Pistol_TakeOut",
+            "label": "Pawn AM_Revenant_FirstPerson_Pistol_TakeOut"
+        },
+        "AM_Revenant_FirstPerson_Shotgun_TakeOut": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Combat/Ranged/Shotgun/AM_Revenant_FirstPerson_Shotgun_TakeOut.AM_Revenant_FirstPerson_Shotgun_TakeOut",
+            "label": "Pawn AM_Revenant_FirstPerson_Shotgun_TakeOut"
+        },
+        "Any": {
+            "aimMethodWhenActive": 1,
+            "aimMethodWhenActivePriority": "0",
+            "handsWhenActive": 1,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 1,
+            "inputWhenActivePriority": "0",
+            "label": "Any",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 1,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 1,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 1,
+            "weaponWhenActivePriority": "0"
+        },
+        "FP_NAV_Unarmed_Walk_Stop_Reposition_Montage": {
+            "class_name": "AnimMontage /Game/Characters/Player/Revenant/Animations/FirstPerson/Navigation/Unarmed/FP_NAV_Unarmed_Walk_Stop_Reposition_Montage.FP_NAV_Unarmed_Walk_Stop_Reposition_Montage",
+            "label": "Pawn FP_NAV_Unarmed_Walk_Stop_Reposition_Montage"
+        },
+        "rule_chair_tied": {
+            "aimMethodWhenActive": 1,
+            "aimMethodWhenActivePriority": "0",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 1,
+            "inputWhenActivePriority": "0",
+            "label": "* Rule: Tied to Chair / Flying",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 3,
+            "pawnBodyWhenActivePriority": "0"
+        },
+        "rule_cutscene_animmontage": {
+            "aimMethodWhenActive": 2,
+            "aimMethodWhenActivePriority": "0",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 3,
+            "inputWhenActivePriority": "0",
+            "label": "* Rule: Cutscene (AnimMontage_*)",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "0"
+        },
+        "rule_cutscene_state": {
+            "aimMethodWhenActive": 2,
+            "aimMethodWhenActivePriority": "0",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 3,
+            "inputWhenActivePriority": "0",
+            "label": "* Rule: Cutscene (death / scripted)",
+            "leftAccessoryWhenActive": "",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 3,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActive": "",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "0"
+        },
+        "rule_focus_puzzle": {
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "100",
+            "label": "* Rule: Puzzle / Inspection",
+            "pawnArmsWhenActive": 2,
+            "pawnArmsWhenActivePriority": "100",
+            "pawnBodyWhenActive": 2,
+            "pawnBodyWhenActivePriority": "100",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "100"
+        },
+        "rule_ladder": {
+            "aimMethodWhenActive": 1,
+            "aimMethodWhenActivePriority": "0",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "0",
+            "inputWhenActive": 1,
+            "inputWhenActivePriority": "0",
+            "label": "* Rule: Ladder",
+            "leftAccessoryWhenActivePriority": "0",
+            "leftArmWhenActive": 1,
+            "leftArmWhenActivePriority": "0",
+            "motionSicknessCompensationWhenActive": 1,
+            "motionSicknessCompensationWhenActivePriority": "0",
+            "pawnArmBonesWhenActive": 1,
+            "pawnArmBonesWhenActivePriority": "0",
+            "pawnArmsWhenActive": 3,
+            "pawnArmsWhenActivePriority": "0",
+            "pawnBodyWhenActive": 1,
+            "pawnBodyWhenActivePriority": "0",
+            "rightAccessoryWhenActivePriority": "0",
+            "rightArmWhenActive": 1,
+            "rightArmWhenActivePriority": "0",
+            "weaponWhenActive": 1,
+            "weaponWhenActivePriority": "0"
+        },
+        "rule_video": {
+            "aimMethodWhenActive": 2,
+            "aimMethodWhenActivePriority": "100",
+            "handsWhenActive": 2,
+            "handsWhenActivePriority": "100",
+            "inputWhenActive": 3,
+            "inputWhenActivePriority": "100",
+            "label": "* Rule: Video playing",
+            "pawnArmsWhenActive": 2,
+            "pawnArmsWhenActivePriority": "100",
+            "pawnBodyWhenActive": 2,
+            "pawnBodyWhenActivePriority": "100",
+            "weaponWhenActive": 2,
+            "weaponWhenActivePriority": "100"
+        }
+    }
+}

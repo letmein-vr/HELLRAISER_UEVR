@@ -1,0 +1,58 @@
+{
+    "accessories": {
+        "BP_GenesisColt_C_SK_Colt_1911": {
+            "73ac5445-93fd-44e4-9ba5-0c291c291894": {
+                "label": "Left Hand",
+                "markers": [
+                    {
+                        "activation_distance": 7.300000190734863,
+                        "activation_hand": 2,
+                        "attach_type": 2,
+                        "end_time": 0.0,
+                        "grip_animation": "pistol",
+                        "grip_priority": 1,
+                        "location": [
+                            5.099999904632568,
+                            7.199999809265137,
+                            -1.899999976158142
+                        ],
+                        "rotation": [
+                            119.30000305175781,
+                            71.0999984741211,
+                            -7.900000095367432
+                        ],
+                        "socket_name": "Magazine_jnt",
+                        "start_time": 0.0
+                    }
+                ]
+            }
+        },
+        "BP_Revolver_C_SK_Revolver_Magnum": {
+            "917668c2-72f7-403e-84bc-73583f1924be": {
+                "label": "Left Hand",
+                "markers": [
+                    {
+                        "activation_distance": 7.699999809265137,
+                        "activation_hand": 2,
+                        "attach_type": 2,
+                        "end_time": 0.0,
+                        "grip_animation": "revolver",
+                        "grip_priority": 1,
+                        "location": [
+                            3.9000000953674316,
+                            6.099999904632568,
+                            -4.0
+                        ],
+                        "rotation": [
+                            88.5,
+                            90.19999694824219,
+                            4.699999809265137
+                        ],
+                        "socket_name": "Root",
+                        "start_time": 0.0
+                    }
+                ]
+            }
+        }
+    }
+}

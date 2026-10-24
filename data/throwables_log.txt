@@ -1,0 +1,9 @@
+593.746 hooked ReceiveBeginPlay of BlueprintGeneratedClass /Game/Blueprints/Actors/Interactables/Throwable/BP_Throwable_Base.BP_Throwable_Base_C
+593.748 hooked ReceiveBeginPlay of BlueprintGeneratedClass /Game/Blueprints/Actors/Interactables/Throwable/BP_Throwable_Bottle.BP_Throwable_Bottle_C
+593.753 hooked ReceiveBeginPlay of BlueprintGeneratedClass /Game/Blueprints/Actors/Interactables/Throwable/BP_Throwable_Stone.BP_Throwable_Stone_C
+595.769 release: hand 448 cm/s -> throw 1569 cm/s, RT tapped
+595.801 BP_Throwable_Bottle_C: swing 448 -> 1569 cm/s; RT->spawn 31 ms; game dir (-0.43 -0.85 0.31) speed 1700 at (-23366 -22567 1478) -> vel (-849 -1313 105) at (-23368 -22601 1478)
+729.624 release: hand 701 cm/s -> throw 2453 cm/s, RT tapped
+729.649 BP_Throwable_Stone_C: swing 701 -> 2453 cm/s; RT->spawn 24 ms; game dir (0.86 -0.32 0.39) speed 1700 at (-22468 -26500 959) -> vel (2102 -1110 584) at (-22422 -26504 971)
+803.060 release: hand 577 cm/s -> throw 2021 cm/s, RT tapped
+803.084 BP_Throwable_Stone_C: swing 577 -> 2021 cm/s; RT->spawn 24 ms; game dir (-0.40 -0.81 0.43) speed 1700 at (-19861 -25152 1422) -> vel (-963 -1547 850) at (-19858 -25174 1445)

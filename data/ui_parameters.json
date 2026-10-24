@@ -1,0 +1,163 @@
+{
+    "widgetlist": {
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/CinematicScreen/W_CinematicScreen.W_CinematicScreen_C": {
+            "label": "W_CinematicScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/DeathScreen/W_DeathScreen.W_DeathScreen_C": {
+            "label": "W_DeathScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/Extras/ArtBookScreen/W_ArtBookScreen.W_ArtBookScreen_C": {
+            "label": "W_ArtBookScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/Extras/NovelScreen/W_NovelScreen.W_NovelScreen_C": {
+            "label": "W_NovelScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/Extras/SoundtrackScreen/W_SoundtrackScreen.W_SoundtrackScreen_C": {
+            "label": "W_SoundtrackScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/KeyItemsUse/W_KeyItemsPuzzleList.W_KeyItemsPuzzleList_C": {
+            "label": "W_KeyItemsPuzzleList_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/MainMenu/W_MainMenu.W_MainMenu_C": {
+            "label": "W_MainMenu_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/OptionsMenuScreen/W_OptionsMenuScreen.W_OptionsMenuScreen_C": {
+            "label": "W_OptionsMenuScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/PauseMenu/W_PauseMenu.W_PauseMenu_C": {
+            "label": "W_PauseMenu_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/PopupScreen/W_PopupScreenYesNo.W_PopupScreenYesNo_C": {
+            "label": "W_PopupScreenYesNo_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/SaveLoadScreen/W_LoadScreen.W_LoadScreen_C": {
+            "label": "W_LoadScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/SaveLoadScreen/W_SaveScreen.W_SaveScreen_C": {
+            "label": "W_SaveScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/Shop/W_Shop.W_Shop_C": {
+            "label": "W_Shop_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/Storage/W_Storage.W_Storage_C": {
+            "label": "W_Storage_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/GUI/TabMenuScreen/W_TabMenu.W_TabMenu_C": {
+            "label": "W_TabMenu_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/BloodSplash/W_BloodSplash.W_BloodSplash_C": {
+            "label": "W_BloodSplash_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/BossInfo/W_BossInfo.W_BossInfo_C": {
+            "label": "W_BossInfo_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Crosshair/W_WeaponCrosshairs.W_WeaponCrosshairs_C": {
+            "label": "W_WeaponCrosshairs_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/DamageVignette/W_DamageDirectionIndicator.W_DamageDirectionIndicator_C": {
+            "label": "W_DamageDirectionIndicator_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/DamageVignette/W_Vignette_EnergyPool.W_Vignette_EnergyPool_C": {
+            "label": "W_Vignette_EnergyPool_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Debug/BuildVersion/W_BuildVersion.W_BuildVersion_C": {
+            "label": "W_BuildVersion_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Dialogue/W_DialogueBox.W_DialogueBox_C": {
+            "label": "W_DialogueBox_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/EquipmentLoadout/W_EquipmentLoadout.W_EquipmentLoadout_C": {
+            "label": "W_EquipmentLoadout_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/FullscreenFade/W_FullscreenFade.W_FullscreenFade_C": {
+            "label": "W_FullscreenFade_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/GrappledInfo/W_GrappledInfo.W_GrappledInfo_C": {
+            "label": "W_GrappledInfo_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/InteractMarkers/AbilityMarker/W_TelekinesisHoldingTemp.W_TelekinesisHoldingTemp_C": {
+            "label": "W_TelekinesisHoldingTemp_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/InteractMarkers/BanishMarker/W_BanishMarker.W_BanishMarker_C": {
+            "label": "W_BanishMarker_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/InteractMarkers/HellchainMarker/W_ChainSpawnerActivateText.W_ChainSpawnerActivateText_C": {
+            "label": "W_ChainSpawnerActivateText_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/InteractMarkers/HellchainMarker/W_HellchainTimer.W_HellchainTimer_C": {
+            "label": "W_HellchainTimer_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/InteractMarkers/TakedownMarker/W_TakedownMarker.W_TakedownMarker_C": {
+            "label": "W_TakedownMarker_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/PickUp/W_PickUp.W_PickUp_C": {
+            "label": "W_PickUp_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Interact/W_InteractWidgetController.W_InteractWidgetController_C": {
+            "label": "W_InteractWidgetController_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Lockpick/W_Lockpick_Durability.W_Lockpick_Durability_C": {
+            "label": "W_Lockpick_Durability_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Notifications/CollectableNotification/W_CollectableNotification.W_CollectableNotification_C": {
+            "label": "W_CollectableNotification_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Notifications/ObjectiveNotification/W_ObjectiveNotification.W_ObjectiveNotification_C": {
+            "label": "W_ObjectiveNotification_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Notifications/OverlayNotification/W_OverlayNotification.W_OverlayNotification_C": {
+            "label": "W_OverlayNotification_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Notifications/RegularNotifications/W_RegularNotificationQueuer.W_RegularNotificationQueuer_C": {
+            "label": "W_RegularNotificationQueuer_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/OverlayPopups/ArtTextSubtitle/W_ArtTextLocalization.W_ArtTextLocalization_C": {
+            "label": "W_ArtTextLocalization_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/OverlayPopups/BossDefeatedOverlay/W_BossDefeatedOverlay.W_BossDefeatedOverlay_C": {
+            "label": "W_BossDefeatedOverlay_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/OverlayPopups/HeadlineScreen/W_HeadlineScreen.W_HeadlineScreen_C": {
+            "label": "W_HeadlineScreen_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/OverlayPopups/TaskInfoOverlay/W_TaskInfoOverlay.W_TaskInfoOverlay_C": {
+            "label": "W_TaskInfoOverlay_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/PlayerInfo/W_PlayerInfo.W_PlayerInfo_C": {
+            "label": "W_PlayerInfo_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/SaveGameThrobber/W_SaveGameThrobber.W_SaveGameThrobber_C": {
+            "label": "W_SaveGameThrobber_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/ScopeVignette/W_ScopeVignette.W_ScopeVignette_C": {
+            "label": "W_ScopeVignette_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/StatusEffect/W_StatusEffect_V2.W_StatusEffect_V2_C": {
+            "label": "W_StatusEffect_V2_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/StealthIndicator/W_StealthIndicator.W_StealthIndicator_C": {
+            "label": "W_StealthIndicator_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/ToolUse/W_ToolUseParent.W_ToolUseParent_C": {
+            "label": "W_ToolUseParent_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/Tutorials/W_TooltipTutorial.W_TooltipTutorial_C": {
+            "label": "W_TooltipTutorial_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/Puzzles/ConfigurationPuzzle/W_ConfigurationEnvPuzzle.W_ConfigurationEnvPuzzle_C": {
+            "label": "W_ConfigurationEnvPuzzle_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/Puzzles/ConfigurationPuzzle/W_ConfigurationPuzzle.W_ConfigurationPuzzle_C": {
+            "label": "W_ConfigurationPuzzle_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/Puzzles/PuzzleInputInfo/W_PuzzleInputInfo.W_PuzzleInputInfo_C": {
+            "label": "W_PuzzleInputInfo_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Maps/Testing/ZlatanSalkanovic/TestsAndWIP/WBP_LoreObjectUI.WBP_LoreObjectUI_C": {
+            "label": "WBP_LoreObjectUI_C"
+        },
+        "WidgetBlueprintGeneratedClass /Game/Maps/Testing/ZlatanSalkanovic/TestsAndWIP/WBP_ZoomObjectUI.WBP_ZoomObjectUI_C": {
+            "label": "WBP_ZoomObjectUI_C"
+        }
+    }
+}

@@ -1,0 +1,4329 @@
+{
+    "animations": {
+        "Shared": {
+            "poses": {
+                "grip_left_weapon": [
+                    [
+                        "left_grip_weapon",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_ak47": [
+                    [
+                        "left_grip_weapon_ak47",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_ak47",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_ak_mag": [
+                    [
+                        "left_grip_weapon_ak_mag",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_ak_mag",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_beartrap": [
+                    [
+                        "left_grip_weapon_beartrap",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_beartrap",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_bottle": [
+                    [
+                        "left_grip_weapon_bottle",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_bottle",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_genesis_cube": [
+                    [
+                        "left_grip_weapon_genesis_cube",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_genesis_cube",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_grab_items": [
+                    [
+                        "left_grip_weapon_grab_items",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_grab_items",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_knife": [
+                    [
+                        "left_grip_weapon_knife",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_knife",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_machete": [
+                    [
+                        "left_grip_weapon_machete",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_machete",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_mag_grab": [
+                    [
+                        "left_grip_weapon_mag_grab",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_mag_grab",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_pistol": [
+                    [
+                        "left_grip_weapon_pistol",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_pistol",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_plank": [
+                    [
+                        "left_grip_weapon_plank",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_plank",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_revolver": [
+                    [
+                        "left_grip_weapon_revolver",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_revolver",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_sawblade": [
+                    [
+                        "left_grip_weapon_sawblade",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_sawblade",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_shotgun": [
+                    [
+                        "left_grip_weapon_shotgun",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_shotgun",
+                        "off"
+                    ]
+                ],
+                "grip_left_weapon_smg": [
+                    [
+                        "left_grip_weapon_smg",
+                        "on"
+                    ],
+                    [
+                        "left_trigger_weapon_smg",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon": [
+                    [
+                        "right_grip_weapon",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_ak47": [
+                    [
+                        "right_grip_weapon_ak47",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_ak47",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_ak_mag": [
+                    [
+                        "right_grip_weapon_ak_mag",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_ak_mag",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_beartrap": [
+                    [
+                        "right_grip_weapon_beartrap",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_beartrap",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_bottle": [
+                    [
+                        "right_grip_weapon_bottle",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_bottle",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_genesis_cube": [
+                    [
+                        "right_grip_weapon_genesis_cube",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_genesis_cube",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_grab_items": [
+                    [
+                        "right_grip_weapon_grab_items",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_grab_items",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_knife": [
+                    [
+                        "right_grip_weapon_knife",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_knife",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_machete": [
+                    [
+                        "right_grip_weapon_machete",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_machete",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_mag_grab": [
+                    [
+                        "right_grip_weapon_mag_grab",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_mag_grab",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_pistol": [
+                    [
+                        "right_grip_weapon_pistol",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_pistol",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_plank": [
+                    [
+                        "right_grip_weapon_plank",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_plank",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_revolver": [
+                    [
+                        "right_grip_weapon_revolver",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_revolver",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_sawblade": [
+                    [
+                        "right_grip_weapon_sawblade",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_sawblade",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_shotgun": [
+                    [
+                        "right_grip_weapon_shotgun",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_shotgun",
+                        "off"
+                    ]
+                ],
+                "grip_right_weapon_smg": [
+                    [
+                        "right_grip_weapon_smg",
+                        "on"
+                    ],
+                    [
+                        "right_trigger_weapon_smg",
+                        "off"
+                    ]
+                ],
+                "open_left": [
+                    [
+                        "left_grip",
+                        "off"
+                    ],
+                    [
+                        "left_trigger",
+                        "off"
+                    ],
+                    [
+                        "left_thumb",
+                        "off"
+                    ]
+                ],
+                "open_right": [
+                    [
+                        "right_grip",
+                        "off"
+                    ],
+                    [
+                        "right_trigger",
+                        "off"
+                    ],
+                    [
+                        "right_thumb",
+                        "off"
+                    ]
+                ]
+            },
+            "positions": {
+                "left_grip": {
+                    "off": {
+                        "middle_01_l": [
+                            -5.7015,
+                            -23.9718,
+                            -7.1753
+                        ],
+                        "middle_02_l": [
+                            0.4448,
+                            -22.5862,
+                            0.0803
+                        ],
+                        "middle_03_l": [
+                            -4.1962,
+                            -3.8238,
+                            0.0151
+                        ],
+                        "pinky_01_l": [
+                            8.8457,
+                            -25.1682,
+                            -30.7815
+                        ],
+                        "pinky_02_l": [
+                            0.8695,
+                            -23.8869,
+                            0.1766
+                        ],
+                        "pinky_03_l": [
+                            -1.7639,
+                            -3.8952,
+                            0.0776
+                        ],
+                        "ring_01_l": [
+                            -1.7174,
+                            -19.4301,
+                            -17.1369
+                        ],
+                        "ring_02_l": [
+                            5.1182,
+                            -30.3768,
+                            1.7386
+                        ],
+                        "ring_03_l": [
+                            -2.9924,
+                            -2.1302,
+                            0.2814
+                        ],
+                        "thumb_01_l": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_l": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_l": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -8.985,
+                            -54.7621,
+                            -4.7072
+                        ],
+                        "middle_02_l": [
+                            0.4419,
+                            -78.75,
+                            -0.0804
+                        ],
+                        "middle_03_l": [
+                            -3.9242,
+                            -24.3512,
+                            1.4841
+                        ],
+                        "pinky_01_l": [
+                            -19.1101,
+                            -54.7621,
+                            -4.7072
+                        ],
+                        "pinky_02_l": [
+                            -4.0581,
+                            -78.75,
+                            -0.0804
+                        ],
+                        "pinky_03_l": [
+                            -11.799,
+                            -22.101,
+                            -13.141
+                        ],
+                        "ring_01_l": [
+                            -19.1101,
+                            -54.7621,
+                            -4.7072
+                        ],
+                        "ring_02_l": [
+                            0.4419,
+                            -78.75,
+                            -0.0804
+                        ],
+                        "ring_03_l": [
+                            -3.9242,
+                            -24.3512,
+                            1.4841
+                        ],
+                        "thumb_01_l": [
+                            -37.3671,
+                            3.8039,
+                            45.3374
+                        ],
+                        "thumb_02_l": [
+                            8.3509,
+                            -16.8549,
+                            20.9712
+                        ],
+                        "thumb_03_l": [
+                            1.9512,
+                            -51.4832,
+                            6.3716
+                        ]
+                    }
+                },
+                "left_grip_weapon": {
+                    "off": {
+                        "middle_01_l": [
+                            -5.7015,
+                            -23.9718,
+                            -7.1753
+                        ],
+                        "middle_02_l": [
+                            0.4448,
+                            -22.5862,
+                            0.0803
+                        ],
+                        "middle_03_l": [
+                            -4.1962,
+                            -3.8238,
+                            0.0151
+                        ],
+                        "pinky_01_l": [
+                            8.8457,
+                            -25.1682,
+                            -30.7815
+                        ],
+                        "pinky_02_l": [
+                            0.8695,
+                            -23.8869,
+                            0.1766
+                        ],
+                        "pinky_03_l": [
+                            -1.7639,
+                            -3.8952,
+                            0.0776
+                        ],
+                        "ring_01_l": [
+                            -1.7174,
+                            -19.4301,
+                            -17.1369
+                        ],
+                        "ring_02_l": [
+                            5.1182,
+                            -30.3768,
+                            1.7386
+                        ],
+                        "ring_03_l": [
+                            -2.9924,
+                            -2.1302,
+                            0.2814
+                        ],
+                        "thumb_01_l": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_l": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_l": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -5.7015,
+                            -23.9718,
+                            -7.1753
+                        ],
+                        "middle_02_l": [
+                            0.4448,
+                            -22.5862,
+                            0.0803
+                        ],
+                        "middle_03_l": [
+                            -4.1962,
+                            -3.8238,
+                            0.0151
+                        ],
+                        "pinky_01_l": [
+                            8.8457,
+                            -25.1682,
+                            -30.7815
+                        ],
+                        "pinky_02_l": [
+                            0.8695,
+                            -23.8869,
+                            0.1766
+                        ],
+                        "pinky_03_l": [
+                            -1.7639,
+                            -3.8952,
+                            0.0776
+                        ],
+                        "ring_01_l": [
+                            -1.7174,
+                            -19.4301,
+                            -17.1369
+                        ],
+                        "ring_02_l": [
+                            5.1182,
+                            -30.3768,
+                            1.7386
+                        ],
+                        "ring_03_l": [
+                            -2.9924,
+                            -2.1302,
+                            0.2814
+                        ],
+                        "thumb_01_l": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_l": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_l": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    }
+                },
+                "left_grip_weapon_ak_mag": {
+                    "off": {
+                        "middle_01_l": [
+                            29.25,
+                            -27.4341,
+                            -25.5314
+                        ],
+                        "middle_02_l": [
+                            0.3065,
+                            -80.1218,
+                            -0.3322
+                        ],
+                        "middle_03_l": [
+                            -4.183,
+                            14.0214,
+                            -2.0373
+                        ],
+                        "pinky_01_l": [
+                            15.843,
+                            -49.2751,
+                            -31.4081
+                        ],
+                        "pinky_02_l": [
+                            0.7999,
+                            -61.0367,
+                            -0.3828
+                        ],
+                        "pinky_03_l": [
+                            -1.7489,
+                            6.5181,
+                            -0.244
+                        ],
+                        "ring_01_l": [
+                            6.8169,
+                            -42.9221,
+                            -27.6726
+                        ],
+                        "ring_02_l": [
+                            5.2698,
+                            -62.1683,
+                            -1.2079
+                        ],
+                        "ring_03_l": [
+                            -3.0159,
+                            13.9954,
+                            -0.5437
+                        ],
+                        "thumb_01_l": [
+                            -16.875,
+                            -34.8731,
+                            97.5289
+                        ],
+                        "thumb_02_l": [
+                            15.2775,
+                            -16.9912,
+                            19.4291
+                        ],
+                        "thumb_03_l": [
+                            -4.3701,
+                            6.3135,
+                            5.0359
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            29.25,
+                            -27.4341,
+                            -25.5314
+                        ],
+                        "middle_02_l": [
+                            0.3065,
+                            -80.1218,
+                            -0.3322
+                        ],
+                        "middle_03_l": [
+                            -4.183,
+                            14.0214,
+                            -2.0373
+                        ],
+                        "pinky_01_l": [
+                            15.843,
+                            -49.2751,
+                            -31.4081
+                        ],
+                        "pinky_02_l": [
+                            0.7999,
+                            -61.0367,
+                            -0.3828
+                        ],
+                        "pinky_03_l": [
+                            -1.7489,
+                            6.5181,
+                            -0.244
+                        ],
+                        "ring_01_l": [
+                            6.8169,
+                            -42.9221,
+                            -27.6726
+                        ],
+                        "ring_02_l": [
+                            5.2698,
+                            -62.1683,
+                            -1.2079
+                        ],
+                        "ring_03_l": [
+                            -3.0159,
+                            13.9954,
+                            -0.5437
+                        ],
+                        "thumb_01_l": [
+                            -16.875,
+                            -34.8731,
+                            97.5289
+                        ],
+                        "thumb_02_l": [
+                            15.2775,
+                            -16.9912,
+                            19.4291
+                        ],
+                        "thumb_03_l": [
+                            -4.3701,
+                            6.3135,
+                            5.0359
+                        ]
+                    }
+                },
+                "left_grip_weapon_genesis_cube": {
+                    "off": {
+                        "middle_01_l": [
+                            -5.5374,
+                            -22.6756,
+                            -7.3021
+                        ],
+                        "middle_02_l": [
+                            0.4141,
+                            -55.4546,
+                            -0.1743
+                        ],
+                        "middle_03_l": [
+                            -3.946,
+                            16.2107,
+                            -1.4211
+                        ],
+                        "pinky_01_l": [
+                            -1.9812,
+                            -40.12,
+                            -61.0578
+                        ],
+                        "pinky_02_l": [
+                            0.8661,
+                            -23.8863,
+                            0.1742
+                        ],
+                        "pinky_03_l": [
+                            -1.6282,
+                            -24.1605,
+                            0.6811
+                        ],
+                        "ring_01_l": [
+                            -1.7175,
+                            -19.4295,
+                            -17.1356
+                        ],
+                        "ring_02_l": [
+                            5.355,
+                            -56.684,
+                            -0.7067
+                        ],
+                        "ring_03_l": [
+                            -2.9026,
+                            18.0933,
+                            -0.7669
+                        ],
+                        "thumb_01_l": [
+                            -76.2345,
+                            -82.8536,
+                            131.8174
+                        ],
+                        "thumb_02_l": [
+                            5.7226,
+                            -52.8293,
+                            -20.4906
+                        ],
+                        "thumb_03_l": [
+                            -0.9973,
+                            -25.9513,
+                            6.5854
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -5.5374,
+                            -22.6756,
+                            -7.3021
+                        ],
+                        "middle_02_l": [
+                            0.4141,
+                            -55.4546,
+                            -0.1743
+                        ],
+                        "middle_03_l": [
+                            -3.946,
+                            16.2107,
+                            -1.4211
+                        ],
+                        "pinky_01_l": [
+                            -1.9812,
+                            -40.12,
+                            -61.0578
+                        ],
+                        "pinky_02_l": [
+                            0.8661,
+                            -23.8863,
+                            0.1742
+                        ],
+                        "pinky_03_l": [
+                            -1.6282,
+                            -24.1605,
+                            0.6811
+                        ],
+                        "ring_01_l": [
+                            -1.7175,
+                            -19.4295,
+                            -17.1356
+                        ],
+                        "ring_02_l": [
+                            5.355,
+                            -56.684,
+                            -0.7067
+                        ],
+                        "ring_03_l": [
+                            -2.9026,
+                            18.0933,
+                            -0.7669
+                        ],
+                        "thumb_01_l": [
+                            -76.2345,
+                            -82.8536,
+                            131.8174
+                        ],
+                        "thumb_02_l": [
+                            5.7226,
+                            -52.8293,
+                            -20.4906
+                        ],
+                        "thumb_03_l": [
+                            -0.9973,
+                            -25.9513,
+                            6.5854
+                        ]
+                    }
+                },
+                "left_grip_weapon_grab_items": {
+                    "off": {
+                        "middle_01_l": [
+                            -7.8601,
+                            -44.637,
+                            -4.7072
+                        ],
+                        "middle_02_l": [
+                            0.4419,
+                            -43.0641,
+                            -0.0804
+                        ],
+                        "middle_03_l": [
+                            -3.9242,
+                            -24.3512,
+                            1.4841
+                        ],
+                        "pinky_01_l": [
+                            7.7423,
+                            -27.027,
+                            -31.0462
+                        ],
+                        "pinky_02_l": [
+                            0.8734,
+                            -44.1468,
+                            -0.1354
+                        ],
+                        "pinky_03_l": [
+                            -1.6282,
+                            -24.1605,
+                            0.6811
+                        ],
+                        "ring_01_l": [
+                            -6.5784,
+                            -35.731,
+                            -15.9465
+                        ],
+                        "ring_02_l": [
+                            5.3988,
+                            -50.779,
+                            -0.1538
+                        ],
+                        "ring_03_l": [
+                            -2.7086,
+                            -22.469,
+                            1.3013
+                        ],
+                        "thumb_01_l": [
+                            -58.7417,
+                            15.054,
+                            45.3374
+                        ],
+                        "thumb_02_l": [
+                            8.3509,
+                            -16.8549,
+                            20.9712
+                        ],
+                        "thumb_03_l": [
+                            1.9512,
+                            -51.4832,
+                            6.3716
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -7.8601,
+                            -44.637,
+                            -4.7072
+                        ],
+                        "middle_02_l": [
+                            0.4419,
+                            -43.0641,
+                            -0.0804
+                        ],
+                        "middle_03_l": [
+                            -3.9242,
+                            -24.3512,
+                            1.4841
+                        ],
+                        "pinky_01_l": [
+                            7.7423,
+                            -27.027,
+                            -31.0462
+                        ],
+                        "pinky_02_l": [
+                            0.8734,
+                            -44.1468,
+                            -0.1354
+                        ],
+                        "pinky_03_l": [
+                            -1.6282,
+                            -24.1605,
+                            0.6811
+                        ],
+                        "ring_01_l": [
+                            -6.5784,
+                            -35.731,
+                            -15.9465
+                        ],
+                        "ring_02_l": [
+                            5.3988,
+                            -50.779,
+                            -0.1538
+                        ],
+                        "ring_03_l": [
+                            -2.7086,
+                            -22.469,
+                            1.3013
+                        ],
+                        "thumb_01_l": [
+                            -58.7417,
+                            15.054,
+                            45.3374
+                        ],
+                        "thumb_02_l": [
+                            8.3509,
+                            -16.8549,
+                            20.9712
+                        ],
+                        "thumb_03_l": [
+                            1.9512,
+                            -51.4832,
+                            6.3716
+                        ]
+                    }
+                },
+                "left_grip_weapon_mag_grab": {
+                    "off": {
+                        "middle_01_l": [
+                            -21.2902,
+                            -95.2495,
+                            4.2797
+                        ],
+                        "middle_02_l": [
+                            0.4019,
+                            -59.5556,
+                            -0.2059
+                        ],
+                        "middle_03_l": [
+                            -3.4887,
+                            -37.3916,
+                            2.3295
+                        ],
+                        "pinky_01_l": [
+                            -28.852,
+                            -112.7274,
+                            4.2049
+                        ],
+                        "pinky_02_l": [
+                            0.8491,
+                            -51.7776,
+                            -0.2528
+                        ],
+                        "pinky_03_l": [
+                            -1.4642,
+                            -35.2251,
+                            0.9822
+                        ],
+                        "ring_01_l": [
+                            -27.7779,
+                            -109.5041,
+                            2.5891
+                        ],
+                        "ring_02_l": [
+                            5.3568,
+                            -56.652,
+                            -0.7021
+                        ],
+                        "ring_03_l": [
+                            -2.7814,
+                            -19.0445,
+                            1.137
+                        ],
+                        "thumb_01_l": [
+                            -71.9493,
+                            -7.8741,
+                            35.8514
+                        ],
+                        "thumb_02_l": [
+                            27.8785,
+                            -61.4975,
+                            4.9999
+                        ],
+                        "thumb_03_l": [
+                            3.265,
+                            -63.7578,
+                            5.8101
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -21.2902,
+                            -95.2495,
+                            4.2797
+                        ],
+                        "middle_02_l": [
+                            0.4019,
+                            -59.5556,
+                            -0.2059
+                        ],
+                        "middle_03_l": [
+                            -3.4887,
+                            -37.3916,
+                            2.3295
+                        ],
+                        "pinky_01_l": [
+                            -28.852,
+                            -112.7274,
+                            4.2049
+                        ],
+                        "pinky_02_l": [
+                            0.8491,
+                            -51.7776,
+                            -0.2528
+                        ],
+                        "pinky_03_l": [
+                            -1.4642,
+                            -35.2251,
+                            0.9822
+                        ],
+                        "ring_01_l": [
+                            -27.7779,
+                            -109.5041,
+                            2.5891
+                        ],
+                        "ring_02_l": [
+                            5.3568,
+                            -56.652,
+                            -0.7021
+                        ],
+                        "ring_03_l": [
+                            -2.7814,
+                            -19.0445,
+                            1.137
+                        ],
+                        "thumb_01_l": [
+                            -71.9493,
+                            -7.8741,
+                            35.8514
+                        ],
+                        "thumb_02_l": [
+                            27.8785,
+                            -61.4975,
+                            4.9999
+                        ],
+                        "thumb_03_l": [
+                            3.265,
+                            -63.7578,
+                            5.8101
+                        ]
+                    }
+                },
+                "left_grip_weapon_pistol": {
+                    "off": {
+                        "middle_01_l": [
+                            -7.8601,
+                            -44.6371,
+                            -4.7073
+                        ],
+                        "middle_02_l": [
+                            0.4419,
+                            -43.0641,
+                            -0.0804
+                        ],
+                        "middle_03_l": [
+                            -3.9243,
+                            -24.3513,
+                            1.484
+                        ],
+                        "pinky_01_l": [
+                            7.7423,
+                            -27.0271,
+                            -31.0462
+                        ],
+                        "pinky_02_l": [
+                            0.8733,
+                            -44.1469,
+                            -0.1354
+                        ],
+                        "pinky_03_l": [
+                            -1.6283,
+                            -24.1605,
+                            0.6811
+                        ],
+                        "ring_01_l": [
+                            -6.5785,
+                            -35.731,
+                            -15.9465
+                        ],
+                        "ring_02_l": [
+                            5.3987,
+                            -50.779,
+                            -0.1538
+                        ],
+                        "ring_03_l": [
+                            -2.7087,
+                            -22.469,
+                            1.3013
+                        ],
+                        "thumb_01_l": [
+                            -33.9921,
+                            7.875,
+                            45.3373
+                        ],
+                        "thumb_02_l": [
+                            12.8509,
+                            6.7699,
+                            18.721
+                        ],
+                        "thumb_03_l": [
+                            1.9512,
+                            -51.4833,
+                            6.3716
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -7.8601,
+                            -44.6371,
+                            -4.7073
+                        ],
+                        "middle_02_l": [
+                            0.4419,
+                            -43.0641,
+                            -0.0804
+                        ],
+                        "middle_03_l": [
+                            -3.9243,
+                            -24.3513,
+                            1.484
+                        ],
+                        "pinky_01_l": [
+                            7.7423,
+                            -27.0271,
+                            -31.0462
+                        ],
+                        "pinky_02_l": [
+                            0.8733,
+                            -44.1469,
+                            -0.1354
+                        ],
+                        "pinky_03_l": [
+                            -1.6283,
+                            -24.1605,
+                            0.6811
+                        ],
+                        "ring_01_l": [
+                            -6.5785,
+                            -35.731,
+                            -15.9465
+                        ],
+                        "ring_02_l": [
+                            5.3987,
+                            -50.779,
+                            -0.1538
+                        ],
+                        "ring_03_l": [
+                            -2.7087,
+                            -22.469,
+                            1.3013
+                        ],
+                        "thumb_01_l": [
+                            -33.9921,
+                            7.875,
+                            45.3373
+                        ],
+                        "thumb_02_l": [
+                            12.8509,
+                            6.7699,
+                            18.721
+                        ],
+                        "thumb_03_l": [
+                            1.9512,
+                            -51.4833,
+                            6.3716
+                        ]
+                    }
+                },
+                "left_grip_weapon_revolver": {
+                    "off": {
+                        "middle_01_l": [
+                            -1.4069,
+                            -37.8073,
+                            -18.4619
+                        ],
+                        "middle_02_l": [
+                            0.4447,
+                            -49.1412,
+                            -0.113
+                        ],
+                        "middle_03_l": [
+                            -3.7789,
+                            -30.4066,
+                            1.8789
+                        ],
+                        "pinky_01_l": [
+                            -11.5027,
+                            -25.935,
+                            -28.5602
+                        ],
+                        "pinky_02_l": [
+                            0.8635,
+                            -48.6714,
+                            -0.2035
+                        ],
+                        "pinky_03_l": [
+                            -1.6273,
+                            -24.1625,
+                            0.6836
+                        ],
+                        "ring_01_l": [
+                            -14.3859,
+                            -33.4204,
+                            -16.3854
+                        ],
+                        "ring_02_l": [
+                            -0.616,
+                            -62.8658,
+                            -1.0138
+                        ],
+                        "ring_03_l": [
+                            -2.6044,
+                            -27.3221,
+                            1.5255
+                        ],
+                        "thumb_01_l": [
+                            -51.4417,
+                            39.4504,
+                            19.0352
+                        ],
+                        "thumb_02_l": [
+                            24.3286,
+                            -40.8588,
+                            -20.3269
+                        ],
+                        "thumb_03_l": [
+                            -2.6449,
+                            -11.2494,
+                            6.1182
+                        ]
+                    },
+                    "on": {
+                        "middle_01_l": [
+                            -1.4069,
+                            -37.8073,
+                            -18.4619
+                        ],
+                        "middle_02_l": [
+                            0.4447,
+                            -49.1412,
+                            -0.113
+                        ],
+                        "middle_03_l": [
+                            -3.7789,
+                            -30.4066,
+                            1.8789
+                        ],
+                        "pinky_01_l": [
+                            -11.5027,
+                            -25.935,
+                            -28.5602
+                        ],
+                        "pinky_02_l": [
+                            0.8635,
+                            -48.6714,
+                            -0.2035
+                        ],
+                        "pinky_03_l": [
+                            -1.6273,
+                            -24.1625,
+                            0.6836
+                        ],
+                        "ring_01_l": [
+                            -14.3859,
+                            -33.4204,
+                            -16.3854
+                        ],
+                        "ring_02_l": [
+                            -0.616,
+                            -62.8658,
+                            -1.0138
+                        ],
+                        "ring_03_l": [
+                            -2.6044,
+                            -27.3221,
+                            1.5255
+                        ],
+                        "thumb_01_l": [
+                            -51.4417,
+                            39.4504,
+                            19.0352
+                        ],
+                        "thumb_02_l": [
+                            24.3286,
+                            -40.8588,
+                            -20.3269
+                        ],
+                        "thumb_03_l": [
+                            -2.6449,
+                            -11.2494,
+                            6.1182
+                        ]
+                    }
+                },
+                "left_thumb": {
+                    "off": {
+                        "thumb_01_l": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_l": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_l": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    },
+                    "on": {
+                        "thumb_01_l": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_l": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_l": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    }
+                },
+                "left_trigger": {
+                    "off": {
+                        "index_01_l": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_l": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_l": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            -2.195,
+                            -52.6,
+                            -4.8584
+                        ],
+                        "index_02_l": [
+                            1.213,
+                            -88.1741,
+                            0.045
+                        ],
+                        "index_03_l": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    }
+                },
+                "left_trigger_weapon": {
+                    "off": {
+                        "index_01_l": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_l": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_l": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_l": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_l": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    }
+                },
+                "left_trigger_weapon_ak_mag": {
+                    "off": {
+                        "index_01_l": [
+                            21.2792,
+                            -20.5554,
+                            -24.802
+                        ],
+                        "index_02_l": [
+                            1.1769,
+                            -26.6102,
+                            -0.2918
+                        ],
+                        "index_03_l": [
+                            -3.0942,
+                            -63.2003,
+                            3.6758
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            21.2792,
+                            -20.5554,
+                            -24.802
+                        ],
+                        "index_02_l": [
+                            1.1769,
+                            -26.6102,
+                            -0.2918
+                        ],
+                        "index_03_l": [
+                            -3.0942,
+                            -63.2003,
+                            3.6758
+                        ]
+                    }
+                },
+                "left_trigger_weapon_genesis_cube": {
+                    "off": {
+                        "index_01_l": [
+                            -10.634,
+                            -27.8926,
+                            -3.4332
+                        ],
+                        "index_02_l": [
+                            1.2062,
+                            -18.3498,
+                            -0.1205
+                        ],
+                        "index_03_l": [
+                            -4.4005,
+                            -36.9005,
+                            1.9225
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            -10.634,
+                            -27.8926,
+                            -3.4332
+                        ],
+                        "index_02_l": [
+                            1.2062,
+                            -18.3498,
+                            -0.1205
+                        ],
+                        "index_03_l": [
+                            -4.4005,
+                            -36.9005,
+                            1.9225
+                        ]
+                    }
+                },
+                "left_trigger_weapon_grab_items": {
+                    "off": {
+                        "index_01_l": [
+                            -10.067,
+                            -19.972,
+                            -4.8563
+                        ],
+                        "index_02_l": [
+                            0.8899,
+                            -55.5462,
+                            -0.8245
+                        ],
+                        "index_03_l": [
+                            -4.4544,
+                            -35.2551,
+                            1.7978
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            -10.067,
+                            -19.972,
+                            -4.8563
+                        ],
+                        "index_02_l": [
+                            0.8899,
+                            -55.5462,
+                            -0.8245
+                        ],
+                        "index_03_l": [
+                            -4.4544,
+                            -35.2551,
+                            1.7978
+                        ]
+                    }
+                },
+                "left_trigger_weapon_mag_grab": {
+                    "off": {
+                        "index_01_l": [
+                            -15.811,
+                            -55.536,
+                            -7.3377
+                        ],
+                        "index_02_l": [
+                            -0.0693,
+                            -105.9271,
+                            -1.2089
+                        ],
+                        "index_03_l": [
+                            -4.8027,
+                            -13.4127,
+                            0.0152
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            -15.811,
+                            -55.536,
+                            -7.3377
+                        ],
+                        "index_02_l": [
+                            -0.0693,
+                            -105.9271,
+                            -1.2089
+                        ],
+                        "index_03_l": [
+                            -4.8027,
+                            -13.4127,
+                            0.0152
+                        ]
+                    }
+                },
+                "left_trigger_weapon_pistol": {
+                    "off": {
+                        "index_01_l": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_l": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_l": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_l": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_l": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    }
+                },
+                "left_trigger_weapon_revolver": {
+                    "off": {
+                        "index_01_l": [
+                            1.3854,
+                            -28.8573,
+                            -14.4864
+                        ],
+                        "index_02_l": [
+                            1.6136,
+                            -54.4431,
+                            -0.3701
+                        ],
+                        "index_03_l": [
+                            -4.4551,
+                            -35.2554,
+                            1.7983
+                        ]
+                    },
+                    "on": {
+                        "index_01_l": [
+                            1.3854,
+                            -28.8573,
+                            -14.4864
+                        ],
+                        "index_02_l": [
+                            1.6136,
+                            -54.4431,
+                            -0.3701
+                        ],
+                        "index_03_l": [
+                            -4.4551,
+                            -35.2554,
+                            1.7983
+                        ]
+                    }
+                },
+                "right_grip": {
+                    "off": {
+                        "middle_01_r": [
+                            -5.7015,
+                            -23.9718,
+                            -7.1753
+                        ],
+                        "middle_02_r": [
+                            0.4448,
+                            -22.5862,
+                            0.0803
+                        ],
+                        "middle_03_r": [
+                            -4.1962,
+                            -3.8238,
+                            0.0151
+                        ],
+                        "pinky_01_r": [
+                            8.8457,
+                            -25.1682,
+                            -30.7815
+                        ],
+                        "pinky_02_r": [
+                            0.8695,
+                            -23.8869,
+                            0.1766
+                        ],
+                        "pinky_03_r": [
+                            -1.7639,
+                            -3.8952,
+                            0.0776
+                        ],
+                        "ring_01_r": [
+                            -1.7174,
+                            -19.4301,
+                            -17.1369
+                        ],
+                        "ring_02_r": [
+                            5.1182,
+                            -30.3768,
+                            1.7386
+                        ],
+                        "ring_03_r": [
+                            -2.9924,
+                            -2.1302,
+                            0.2814
+                        ],
+                        "thumb_01_r": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_r": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_r": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -7.2235,
+                            -63.1141,
+                            -10.1706
+                        ],
+                        "middle_02_r": [
+                            -0.8097,
+                            -80.2761,
+                            0.0651
+                        ],
+                        "middle_03_r": [
+                            -3.8736,
+                            -26.2628,
+                            1.6117
+                        ],
+                        "pinky_01_r": [
+                            -22.6983,
+                            -78.9014,
+                            -17.2303
+                        ],
+                        "pinky_02_r": [
+                            0.7652,
+                            -65.4299,
+                            -0.4459
+                        ],
+                        "pinky_03_r": [
+                            -1.5716,
+                            -28.4759,
+                            0.8029
+                        ],
+                        "ring_01_r": [
+                            -19.5351,
+                            -76.2253,
+                            -17.4714
+                        ],
+                        "ring_02_r": [
+                            4.3458,
+                            -85.6719,
+                            -3.2141
+                        ],
+                        "ring_03_r": [
+                            -2.9562,
+                            -7.0255,
+                            0.5355
+                        ],
+                        "thumb_01_r": [
+                            -60.3148,
+                            -14.501,
+                            88.1895
+                        ],
+                        "thumb_02_r": [
+                            11.0304,
+                            -24.5655,
+                            0.4316
+                        ],
+                        "thumb_03_r": [
+                            -4.717,
+                            -29.372,
+                            1.2802
+                        ]
+                    }
+                },
+                "right_grip_weapon": {
+                    "off": {
+                        "middle_01_r": [
+                            -5.7015,
+                            -23.9718,
+                            -7.1753
+                        ],
+                        "middle_02_r": [
+                            0.4448,
+                            -22.5862,
+                            0.0803
+                        ],
+                        "middle_03_r": [
+                            -4.1962,
+                            -3.8238,
+                            0.0151
+                        ],
+                        "pinky_01_r": [
+                            8.8457,
+                            -25.1682,
+                            -30.7815
+                        ],
+                        "pinky_02_r": [
+                            0.8695,
+                            -23.8869,
+                            0.1766
+                        ],
+                        "pinky_03_r": [
+                            -1.7639,
+                            -3.8952,
+                            0.0776
+                        ],
+                        "ring_01_r": [
+                            -1.7174,
+                            -19.4301,
+                            -17.1369
+                        ],
+                        "ring_02_r": [
+                            5.1182,
+                            -30.3768,
+                            1.7386
+                        ],
+                        "ring_03_r": [
+                            -2.9924,
+                            -2.1302,
+                            0.2814
+                        ],
+                        "thumb_01_r": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_r": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_r": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -5.7015,
+                            -23.9718,
+                            -7.1753
+                        ],
+                        "middle_02_r": [
+                            0.4448,
+                            -22.5862,
+                            0.0803
+                        ],
+                        "middle_03_r": [
+                            -4.1962,
+                            -3.8238,
+                            0.0151
+                        ],
+                        "pinky_01_r": [
+                            8.8457,
+                            -25.1682,
+                            -30.7815
+                        ],
+                        "pinky_02_r": [
+                            0.8695,
+                            -23.8869,
+                            0.1766
+                        ],
+                        "pinky_03_r": [
+                            -1.7639,
+                            -3.8952,
+                            0.0776
+                        ],
+                        "ring_01_r": [
+                            -1.7174,
+                            -19.4301,
+                            -17.1369
+                        ],
+                        "ring_02_r": [
+                            5.1182,
+                            -30.3768,
+                            1.7386
+                        ],
+                        "ring_03_r": [
+                            -2.9924,
+                            -2.1302,
+                            0.2814
+                        ],
+                        "thumb_01_r": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_r": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_r": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    }
+                },
+                "right_grip_weapon_ak47": {
+                    "off": {
+                        "middle_01_r": [
+                            -8.0382,
+                            -65.9898,
+                            -24.9175
+                        ],
+                        "middle_02_r": [
+                            0.3746,
+                            -65.516,
+                            -0.2097
+                        ],
+                        "middle_03_r": [
+                            -3.1307,
+                            -45.4152,
+                            2.7953
+                        ],
+                        "pinky_01_r": [
+                            -21.9643,
+                            -83.5589,
+                            -34.0783
+                        ],
+                        "pinky_02_r": [
+                            0.7804,
+                            -63.7792,
+                            -0.4222
+                        ],
+                        "pinky_03_r": [
+                            -1.4973,
+                            -33.3825,
+                            0.9357
+                        ],
+                        "ring_01_r": [
+                            -25.432,
+                            -82.664,
+                            -30.4849
+                        ],
+                        "ring_02_r": [
+                            5.2387,
+                            -63.645,
+                            -1.3185
+                        ],
+                        "ring_03_r": [
+                            -2.5239,
+                            -29.6688,
+                            1.6326
+                        ],
+                        "thumb_01_r": [
+                            -56.0347,
+                            -35.8898,
+                            85.1515
+                        ],
+                        "thumb_02_r": [
+                            23.206,
+                            -46.5738,
+                            11.2448
+                        ],
+                        "thumb_03_r": [
+                            0.1706,
+                            -36.1101,
+                            6.6413
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -8.0382,
+                            -65.9898,
+                            -24.9175
+                        ],
+                        "middle_02_r": [
+                            0.3746,
+                            -65.516,
+                            -0.2097
+                        ],
+                        "middle_03_r": [
+                            -3.1307,
+                            -45.4152,
+                            2.7953
+                        ],
+                        "pinky_01_r": [
+                            -21.9643,
+                            -83.5589,
+                            -34.0783
+                        ],
+                        "pinky_02_r": [
+                            0.7804,
+                            -63.7792,
+                            -0.4222
+                        ],
+                        "pinky_03_r": [
+                            -1.4973,
+                            -33.3825,
+                            0.9357
+                        ],
+                        "ring_01_r": [
+                            -25.432,
+                            -82.664,
+                            -30.4849
+                        ],
+                        "ring_02_r": [
+                            5.2387,
+                            -63.645,
+                            -1.3185
+                        ],
+                        "ring_03_r": [
+                            -2.5239,
+                            -29.6688,
+                            1.6326
+                        ],
+                        "thumb_01_r": [
+                            -56.0347,
+                            -35.8898,
+                            85.1515
+                        ],
+                        "thumb_02_r": [
+                            23.206,
+                            -46.5738,
+                            11.2448
+                        ],
+                        "thumb_03_r": [
+                            0.1706,
+                            -36.1101,
+                            6.6413
+                        ]
+                    }
+                },
+                "right_grip_weapon_beartrap": {
+                    "off": {
+                        "middle_01_r": [
+                            -27.3396,
+                            -65.6075,
+                            -6.0101
+                        ],
+                        "middle_02_r": [
+                            0.4272,
+                            -15.3174,
+                            0.133
+                        ],
+                        "middle_03_r": [
+                            -4.0162,
+                            13.1449,
+                            -1.2062
+                        ],
+                        "pinky_01_r": [
+                            -23.2424,
+                            -49.192,
+                            -30.6111
+                        ],
+                        "pinky_02_r": [
+                            0.8661,
+                            -23.8863,
+                            0.1742
+                        ],
+                        "pinky_03_r": [
+                            -1.737,
+                            8.8413,
+                            -0.3097
+                        ],
+                        "ring_01_r": [
+                            -26.3127,
+                            -57.8306,
+                            -18.6546
+                        ],
+                        "ring_02_r": [
+                            5.1915,
+                            -33.0381,
+                            1.4974
+                        ],
+                        "ring_03_r": [
+                            -2.93,
+                            16.0533,
+                            -0.6641
+                        ],
+                        "thumb_01_r": [
+                            -37.9237,
+                            -2.4334,
+                            53.0834
+                        ],
+                        "thumb_02_r": [
+                            -11.0964,
+                            -32.3124,
+                            39.4778
+                        ],
+                        "thumb_03_r": [
+                            -4.19,
+                            4.3163,
+                            5.1844
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -27.3396,
+                            -65.6075,
+                            -6.0101
+                        ],
+                        "middle_02_r": [
+                            0.4272,
+                            -15.3174,
+                            0.133
+                        ],
+                        "middle_03_r": [
+                            -4.0162,
+                            13.1449,
+                            -1.2062
+                        ],
+                        "pinky_01_r": [
+                            -23.2424,
+                            -49.192,
+                            -30.6111
+                        ],
+                        "pinky_02_r": [
+                            0.8661,
+                            -23.8863,
+                            0.1742
+                        ],
+                        "pinky_03_r": [
+                            -1.737,
+                            8.8413,
+                            -0.3097
+                        ],
+                        "ring_01_r": [
+                            -26.3127,
+                            -57.8306,
+                            -18.6546
+                        ],
+                        "ring_02_r": [
+                            5.1915,
+                            -33.0381,
+                            1.4974
+                        ],
+                        "ring_03_r": [
+                            -2.93,
+                            16.0533,
+                            -0.6641
+                        ],
+                        "thumb_01_r": [
+                            -37.9237,
+                            -2.4334,
+                            53.0834
+                        ],
+                        "thumb_02_r": [
+                            -11.0964,
+                            -32.3124,
+                            39.4778
+                        ],
+                        "thumb_03_r": [
+                            -4.19,
+                            4.3163,
+                            5.1844
+                        ]
+                    }
+                },
+                "right_grip_weapon_bottle": {
+                    "off": {
+                        "middle_01_r": [
+                            -7.7368,
+                            -43.1554,
+                            -4.9083
+                        ],
+                        "middle_02_r": [
+                            0.4306,
+                            -50.1865,
+                            -0.136
+                        ],
+                        "middle_03_r": [
+                            -3.708,
+                            -31.4859,
+                            1.958
+                        ],
+                        "pinky_01_r": [
+                            -1.1858,
+                            -41.5465,
+                            -31.884
+                        ],
+                        "pinky_02_r": [
+                            0.8816,
+                            -38.8947,
+                            -0.0555
+                        ],
+                        "pinky_03_r": [
+                            -1.1741,
+                            -49.6885,
+                            1.3182
+                        ],
+                        "ring_01_r": [
+                            -7.1783,
+                            -37.8573,
+                            -15.6919
+                        ],
+                        "ring_02_r": [
+                            5.3367,
+                            -58.0908,
+                            -0.8394
+                        ],
+                        "ring_03_r": [
+                            -2.4187,
+                            -33.1357,
+                            1.7816
+                        ],
+                        "thumb_01_r": [
+                            -60.9925,
+                            -57.6147,
+                            102.7218
+                        ],
+                        "thumb_02_r": [
+                            13.8386,
+                            -31.4033,
+                            31.2228
+                        ],
+                        "thumb_03_r": [
+                            -0.9391,
+                            -26.4479,
+                            6.5935
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -7.7368,
+                            -43.1554,
+                            -4.9083
+                        ],
+                        "middle_02_r": [
+                            0.4306,
+                            -50.1865,
+                            -0.136
+                        ],
+                        "middle_03_r": [
+                            -3.708,
+                            -31.4859,
+                            1.958
+                        ],
+                        "pinky_01_r": [
+                            -1.1858,
+                            -41.5465,
+                            -31.884
+                        ],
+                        "pinky_02_r": [
+                            0.8816,
+                            -38.8947,
+                            -0.0555
+                        ],
+                        "pinky_03_r": [
+                            -1.1741,
+                            -49.6885,
+                            1.3182
+                        ],
+                        "ring_01_r": [
+                            -7.1783,
+                            -37.8573,
+                            -15.6919
+                        ],
+                        "ring_02_r": [
+                            5.3367,
+                            -58.0908,
+                            -0.8394
+                        ],
+                        "ring_03_r": [
+                            -2.4187,
+                            -33.1357,
+                            1.7816
+                        ],
+                        "thumb_01_r": [
+                            -60.9925,
+                            -57.6147,
+                            102.7218
+                        ],
+                        "thumb_02_r": [
+                            13.8386,
+                            -31.4033,
+                            31.2228
+                        ],
+                        "thumb_03_r": [
+                            -0.9391,
+                            -26.4479,
+                            6.5935
+                        ]
+                    }
+                },
+                "right_grip_weapon_knife": {
+                    "off": {
+                        "middle_01_r": [
+                            -20.941,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "middle_02_r": [
+                            15.3128,
+                            -61.875,
+                            30.375
+                        ],
+                        "middle_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "pinky_01_r": [
+                            -28.816,
+                            -72.0,
+                            -14.9892
+                        ],
+                        "pinky_02_r": [
+                            2.9379,
+                            -87.267,
+                            14.625
+                        ],
+                        "pinky_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "ring_01_r": [
+                            -28.816,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "ring_02_r": [
+                            14.1878,
+                            -69.267,
+                            30.3659
+                        ],
+                        "ring_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "thumb_01_r": [
+                            -60.4501,
+                            -29.25,
+                            74.25
+                        ],
+                        "thumb_02_r": [
+                            24.0062,
+                            -30.459,
+                            48.789
+                        ],
+                        "thumb_03_r": [
+                            -1.6203,
+                            -43.9903,
+                            23.8955
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -20.941,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "middle_02_r": [
+                            15.3128,
+                            -61.875,
+                            30.375
+                        ],
+                        "middle_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "pinky_01_r": [
+                            -28.816,
+                            -72.0,
+                            -14.9892
+                        ],
+                        "pinky_02_r": [
+                            2.9379,
+                            -87.267,
+                            14.625
+                        ],
+                        "pinky_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "ring_01_r": [
+                            -28.816,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "ring_02_r": [
+                            14.1878,
+                            -69.267,
+                            30.3659
+                        ],
+                        "ring_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "thumb_01_r": [
+                            -60.4501,
+                            -29.25,
+                            74.25
+                        ],
+                        "thumb_02_r": [
+                            24.0062,
+                            -30.459,
+                            48.789
+                        ],
+                        "thumb_03_r": [
+                            -1.6203,
+                            -43.9903,
+                            23.8955
+                        ]
+                    }
+                },
+                "right_grip_weapon_machete": {
+                    "off": {
+                        "middle_01_r": [
+                            -20.941,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "middle_02_r": [
+                            15.3128,
+                            -61.875,
+                            30.375
+                        ],
+                        "middle_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "pinky_01_r": [
+                            -28.816,
+                            -72.0,
+                            -14.9892
+                        ],
+                        "pinky_02_r": [
+                            2.9379,
+                            -87.267,
+                            14.625
+                        ],
+                        "pinky_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "ring_01_r": [
+                            -28.816,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "ring_02_r": [
+                            14.1878,
+                            -69.267,
+                            30.3659
+                        ],
+                        "ring_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "thumb_01_r": [
+                            -60.4501,
+                            -29.25,
+                            74.25
+                        ],
+                        "thumb_02_r": [
+                            24.0062,
+                            -30.459,
+                            48.789
+                        ],
+                        "thumb_03_r": [
+                            -1.6203,
+                            -43.9903,
+                            23.8955
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -20.941,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "middle_02_r": [
+                            15.3128,
+                            -61.875,
+                            30.375
+                        ],
+                        "middle_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "pinky_01_r": [
+                            -28.816,
+                            -72.0,
+                            -14.9892
+                        ],
+                        "pinky_02_r": [
+                            2.9379,
+                            -87.267,
+                            14.625
+                        ],
+                        "pinky_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "ring_01_r": [
+                            -28.816,
+                            -90.6801,
+                            -14.9892
+                        ],
+                        "ring_02_r": [
+                            14.1878,
+                            -69.267,
+                            30.3659
+                        ],
+                        "ring_03_r": [
+                            -15.2412,
+                            -26.1106,
+                            8.0607
+                        ],
+                        "thumb_01_r": [
+                            -60.4501,
+                            -29.25,
+                            74.25
+                        ],
+                        "thumb_02_r": [
+                            24.0062,
+                            -30.459,
+                            48.789
+                        ],
+                        "thumb_03_r": [
+                            -1.6203,
+                            -43.9903,
+                            23.8955
+                        ]
+                    }
+                },
+                "right_grip_weapon_pistol": {
+                    "off": {
+                        "middle_01_r": [
+                            -7.2235,
+                            -63.1141,
+                            -10.1706
+                        ],
+                        "middle_02_r": [
+                            -0.8097,
+                            -80.2761,
+                            0.0651
+                        ],
+                        "middle_03_r": [
+                            -3.8736,
+                            -26.2628,
+                            1.6117
+                        ],
+                        "pinky_01_r": [
+                            -22.6983,
+                            -78.9014,
+                            -17.2303
+                        ],
+                        "pinky_02_r": [
+                            0.7652,
+                            -65.4299,
+                            -0.4459
+                        ],
+                        "pinky_03_r": [
+                            -1.5716,
+                            -28.4759,
+                            0.8029
+                        ],
+                        "ring_01_r": [
+                            -19.5351,
+                            -76.2253,
+                            -17.4714
+                        ],
+                        "ring_02_r": [
+                            4.3458,
+                            -85.6719,
+                            -3.2141
+                        ],
+                        "ring_03_r": [
+                            -2.9562,
+                            -7.0255,
+                            0.5355
+                        ],
+                        "thumb_01_r": [
+                            -46.815,
+                            -47.126,
+                            134.315
+                        ],
+                        "thumb_02_r": [
+                            11.0304,
+                            -24.5655,
+                            0.4316
+                        ],
+                        "thumb_03_r": [
+                            -4.717,
+                            -29.372,
+                            1.2802
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -7.2235,
+                            -63.1141,
+                            -10.1706
+                        ],
+                        "middle_02_r": [
+                            -0.8097,
+                            -80.2761,
+                            0.0651
+                        ],
+                        "middle_03_r": [
+                            -3.8736,
+                            -26.2628,
+                            1.6117
+                        ],
+                        "pinky_01_r": [
+                            -22.6983,
+                            -78.9014,
+                            -17.2303
+                        ],
+                        "pinky_02_r": [
+                            0.7652,
+                            -65.4299,
+                            -0.4459
+                        ],
+                        "pinky_03_r": [
+                            -1.5716,
+                            -28.4759,
+                            0.8029
+                        ],
+                        "ring_01_r": [
+                            -19.5351,
+                            -76.2253,
+                            -17.4714
+                        ],
+                        "ring_02_r": [
+                            4.3458,
+                            -85.6719,
+                            -3.2141
+                        ],
+                        "ring_03_r": [
+                            -2.9562,
+                            -7.0255,
+                            0.5355
+                        ],
+                        "thumb_01_r": [
+                            -46.815,
+                            -47.126,
+                            134.315
+                        ],
+                        "thumb_02_r": [
+                            11.0304,
+                            -24.5655,
+                            0.4316
+                        ],
+                        "thumb_03_r": [
+                            -4.717,
+                            -29.372,
+                            1.2802
+                        ]
+                    }
+                },
+                "right_grip_weapon_plank": {
+                    "off": {
+                        "middle_01_r": [
+                            -9.1702,
+                            -75.6395,
+                            -0.0034
+                        ],
+                        "middle_02_r": [
+                            0.4453,
+                            -42.7042,
+                            -0.0776
+                        ],
+                        "middle_03_r": [
+                            -3.6916,
+                            -31.2167,
+                            1.976
+                        ],
+                        "pinky_01_r": [
+                            -3.7411,
+                            -64.5671,
+                            -22.1255
+                        ],
+                        "pinky_02_r": [
+                            0.8436,
+                            -53.4269,
+                            -0.2751
+                        ],
+                        "pinky_03_r": [
+                            -1.2139,
+                            -46.3258,
+                            1.2713
+                        ],
+                        "ring_01_r": [
+                            -16.0234,
+                            -81.6563,
+                            -6.4218
+                        ],
+                        "ring_02_r": [
+                            5.4105,
+                            -45.9591,
+                            0.3435
+                        ],
+                        "ring_03_r": [
+                            -2.4945,
+                            -31.8247,
+                            1.6988
+                        ],
+                        "thumb_01_r": [
+                            -53.3308,
+                            -0.3411,
+                            39.4795
+                        ],
+                        "thumb_02_r": [
+                            -5.8565,
+                            -40.697,
+                            31.7612
+                        ],
+                        "thumb_03_r": [
+                            3.2259,
+                            -61.923,
+                            13.4478
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -9.1702,
+                            -75.6395,
+                            -0.0034
+                        ],
+                        "middle_02_r": [
+                            0.4453,
+                            -42.7042,
+                            -0.0776
+                        ],
+                        "middle_03_r": [
+                            -3.6916,
+                            -31.2167,
+                            1.976
+                        ],
+                        "pinky_01_r": [
+                            -3.7411,
+                            -64.5671,
+                            -22.1255
+                        ],
+                        "pinky_02_r": [
+                            0.8436,
+                            -53.4269,
+                            -0.2751
+                        ],
+                        "pinky_03_r": [
+                            -1.2139,
+                            -46.3258,
+                            1.2713
+                        ],
+                        "ring_01_r": [
+                            -16.0234,
+                            -81.6563,
+                            -6.4218
+                        ],
+                        "ring_02_r": [
+                            5.4105,
+                            -45.9591,
+                            0.3435
+                        ],
+                        "ring_03_r": [
+                            -2.4945,
+                            -31.8247,
+                            1.6988
+                        ],
+                        "thumb_01_r": [
+                            -53.3308,
+                            -0.3411,
+                            39.4795
+                        ],
+                        "thumb_02_r": [
+                            -5.8565,
+                            -40.697,
+                            31.7612
+                        ],
+                        "thumb_03_r": [
+                            3.2259,
+                            -61.923,
+                            13.4478
+                        ]
+                    }
+                },
+                "right_grip_weapon_revolver": {
+                    "off": {
+                        "middle_01_r": [
+                            -7.2202,
+                            -63.1172,
+                            -10.1718
+                        ],
+                        "middle_02_r": [
+                            -0.8117,
+                            -80.2762,
+                            0.0637
+                        ],
+                        "middle_03_r": [
+                            -3.8737,
+                            -26.2637,
+                            1.6144
+                        ],
+                        "pinky_01_r": [
+                            -5.6036,
+                            -38.2367,
+                            -27.7007
+                        ],
+                        "pinky_02_r": [
+                            0.7679,
+                            -92.432,
+                            -0.4445
+                        ],
+                        "pinky_03_r": [
+                            -1.4806,
+                            -34.3902,
+                            0.9619
+                        ],
+                        "ring_01_r": [
+                            -14.5662,
+                            -61.7383,
+                            -21.7455
+                        ],
+                        "ring_02_r": [
+                            4.3487,
+                            -85.6763,
+                            -3.2125
+                        ],
+                        "ring_03_r": [
+                            -2.8815,
+                            -13.2922,
+                            8.7337
+                        ],
+                        "thumb_01_r": [
+                            -38.7953,
+                            -18.445,
+                            65.2663
+                        ],
+                        "thumb_02_r": [
+                            12.724,
+                            -22.8421,
+                            47.4212
+                        ],
+                        "thumb_03_r": [
+                            -6.2111,
+                            -39.4439,
+                            1.2808
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -7.2202,
+                            -63.1172,
+                            -10.1718
+                        ],
+                        "middle_02_r": [
+                            -0.8117,
+                            -80.2762,
+                            0.0637
+                        ],
+                        "middle_03_r": [
+                            -3.8737,
+                            -26.2637,
+                            1.6144
+                        ],
+                        "pinky_01_r": [
+                            -5.6036,
+                            -38.2367,
+                            -27.7007
+                        ],
+                        "pinky_02_r": [
+                            0.7679,
+                            -92.432,
+                            -0.4445
+                        ],
+                        "pinky_03_r": [
+                            -1.4806,
+                            -34.3902,
+                            0.9619
+                        ],
+                        "ring_01_r": [
+                            -14.5662,
+                            -61.7383,
+                            -21.7455
+                        ],
+                        "ring_02_r": [
+                            4.3487,
+                            -85.6763,
+                            -3.2125
+                        ],
+                        "ring_03_r": [
+                            -2.8815,
+                            -13.2922,
+                            8.7337
+                        ],
+                        "thumb_01_r": [
+                            -38.7953,
+                            -18.445,
+                            65.2663
+                        ],
+                        "thumb_02_r": [
+                            12.724,
+                            -22.8421,
+                            47.4212
+                        ],
+                        "thumb_03_r": [
+                            -6.2111,
+                            -39.4439,
+                            1.2808
+                        ]
+                    }
+                },
+                "right_grip_weapon_sawblade": {
+                    "off": {
+                        "middle_01_r": [
+                            -20.941,
+                            -90.6801,
+                            -14.9891
+                        ],
+                        "middle_02_r": [
+                            15.3128,
+                            -61.875,
+                            30.375
+                        ],
+                        "middle_03_r": [
+                            -15.2411,
+                            -26.1106,
+                            8.0608
+                        ],
+                        "pinky_01_r": [
+                            -28.816,
+                            -72.0,
+                            -14.9891
+                        ],
+                        "pinky_02_r": [
+                            2.9379,
+                            -87.267,
+                            14.625
+                        ],
+                        "pinky_03_r": [
+                            -15.2411,
+                            -26.1106,
+                            8.0608
+                        ],
+                        "ring_01_r": [
+                            -28.816,
+                            -90.6801,
+                            -14.9891
+                        ],
+                        "ring_02_r": [
+                            14.1878,
+                            -69.267,
+                            30.3659
+                        ],
+                        "ring_03_r": [
+                            -15.2411,
+                            -26.1106,
+                            8.0608
+                        ],
+                        "thumb_01_r": [
+                            -60.4501,
+                            -29.25,
+                            74.25
+                        ],
+                        "thumb_02_r": [
+                            24.0062,
+                            -30.459,
+                            48.789
+                        ],
+                        "thumb_03_r": [
+                            -1.6202,
+                            -43.9902,
+                            23.8955
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -20.941,
+                            -90.6801,
+                            -14.9891
+                        ],
+                        "middle_02_r": [
+                            15.3128,
+                            -61.875,
+                            30.375
+                        ],
+                        "middle_03_r": [
+                            -15.2411,
+                            -26.1106,
+                            8.0608
+                        ],
+                        "pinky_01_r": [
+                            -28.816,
+                            -72.0,
+                            -14.9891
+                        ],
+                        "pinky_02_r": [
+                            2.9379,
+                            -87.267,
+                            14.625
+                        ],
+                        "pinky_03_r": [
+                            -15.2411,
+                            -26.1106,
+                            8.0608
+                        ],
+                        "ring_01_r": [
+                            -28.816,
+                            -90.6801,
+                            -14.9891
+                        ],
+                        "ring_02_r": [
+                            14.1878,
+                            -69.267,
+                            30.3659
+                        ],
+                        "ring_03_r": [
+                            -15.2411,
+                            -26.1106,
+                            8.0608
+                        ],
+                        "thumb_01_r": [
+                            -60.4501,
+                            -29.25,
+                            74.25
+                        ],
+                        "thumb_02_r": [
+                            24.0062,
+                            -30.459,
+                            48.789
+                        ],
+                        "thumb_03_r": [
+                            -1.6202,
+                            -43.9902,
+                            23.8955
+                        ]
+                    }
+                },
+                "right_grip_weapon_shotgun": {
+                    "off": {
+                        "middle_01_r": [
+                            -7.2217,
+                            -63.1345,
+                            -10.1621
+                        ],
+                        "middle_02_r": [
+                            -0.8117,
+                            -80.2762,
+                            0.0636
+                        ],
+                        "middle_03_r": [
+                            -4.1136,
+                            -12.7807,
+                            0.6475
+                        ],
+                        "pinky_01_r": [
+                            -22.6938,
+                            -78.9244,
+                            -17.2223
+                        ],
+                        "pinky_02_r": [
+                            0.8805,
+                            -60.447,
+                            -0.1094
+                        ],
+                        "pinky_03_r": [
+                            -1.2901,
+                            -31.56,
+                            0.979
+                        ],
+                        "ring_01_r": [
+                            -19.5299,
+                            -76.2511,
+                            -17.4613
+                        ],
+                        "ring_02_r": [
+                            4.3487,
+                            -85.6764,
+                            -3.2126
+                        ],
+                        "ring_03_r": [
+                            -2.9545,
+                            10.1163,
+                            -0.3787
+                        ],
+                        "thumb_01_r": [
+                            -24.7661,
+                            -22.9317,
+                            83.5943
+                        ],
+                        "thumb_02_r": [
+                            7.0206,
+                            -5.0709,
+                            6.9366
+                        ],
+                        "thumb_03_r": [
+                            5.3296,
+                            -43.3928,
+                            4.1086
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -7.2217,
+                            -63.1345,
+                            -10.1621
+                        ],
+                        "middle_02_r": [
+                            -0.8117,
+                            -80.2762,
+                            0.0636
+                        ],
+                        "middle_03_r": [
+                            -4.1136,
+                            -12.7807,
+                            0.6475
+                        ],
+                        "pinky_01_r": [
+                            -22.6938,
+                            -78.9244,
+                            -17.2223
+                        ],
+                        "pinky_02_r": [
+                            0.8805,
+                            -60.447,
+                            -0.1094
+                        ],
+                        "pinky_03_r": [
+                            -1.2901,
+                            -31.56,
+                            0.979
+                        ],
+                        "ring_01_r": [
+                            -19.5299,
+                            -76.2511,
+                            -17.4613
+                        ],
+                        "ring_02_r": [
+                            4.3487,
+                            -85.6764,
+                            -3.2126
+                        ],
+                        "ring_03_r": [
+                            -2.9545,
+                            10.1163,
+                            -0.3787
+                        ],
+                        "thumb_01_r": [
+                            -24.7661,
+                            -22.9317,
+                            83.5943
+                        ],
+                        "thumb_02_r": [
+                            7.0206,
+                            -5.0709,
+                            6.9366
+                        ],
+                        "thumb_03_r": [
+                            5.3296,
+                            -43.3928,
+                            4.1086
+                        ]
+                    }
+                },
+                "right_grip_weapon_smg": {
+                    "off": {
+                        "middle_01_r": [
+                            -9.4468,
+                            -71.7408,
+                            -8.9438
+                        ],
+                        "middle_02_r": [
+                            0.2489,
+                            -80.2592,
+                            -0.3984
+                        ],
+                        "middle_03_r": [
+                            -3.793,
+                            -26.263,
+                            1.6776
+                        ],
+                        "pinky_01_r": [
+                            -26.4799,
+                            -95.5626,
+                            -10.2376
+                        ],
+                        "pinky_02_r": [
+                            0.7912,
+                            -55.1564,
+                            -0.3907
+                        ],
+                        "pinky_03_r": [
+                            -1.4903,
+                            -28.4999,
+                            0.8628
+                        ],
+                        "ring_01_r": [
+                            -22.9381,
+                            -89.7068,
+                            -12.5583
+                        ],
+                        "ring_02_r": [
+                            4.8168,
+                            -74.5917,
+                            -2.3653
+                        ],
+                        "ring_03_r": [
+                            -2.9575,
+                            -7.0289,
+                            0.5358
+                        ],
+                        "thumb_01_r": [
+                            -24.7836,
+                            -22.9122,
+                            83.5711
+                        ],
+                        "thumb_02_r": [
+                            10.5688,
+                            -9.4296,
+                            3.3289
+                        ],
+                        "thumb_03_r": [
+                            5.3324,
+                            -43.4662,
+                            4.1151
+                        ]
+                    },
+                    "on": {
+                        "middle_01_r": [
+                            -9.4468,
+                            -71.7408,
+                            -8.9438
+                        ],
+                        "middle_02_r": [
+                            0.2489,
+                            -80.2592,
+                            -0.3984
+                        ],
+                        "middle_03_r": [
+                            -3.793,
+                            -26.263,
+                            1.6776
+                        ],
+                        "pinky_01_r": [
+                            -26.4799,
+                            -95.5626,
+                            -10.2376
+                        ],
+                        "pinky_02_r": [
+                            0.7912,
+                            -55.1564,
+                            -0.3907
+                        ],
+                        "pinky_03_r": [
+                            -1.4903,
+                            -28.4999,
+                            0.8628
+                        ],
+                        "ring_01_r": [
+                            -22.9381,
+                            -89.7068,
+                            -12.5583
+                        ],
+                        "ring_02_r": [
+                            4.8168,
+                            -74.5917,
+                            -2.3653
+                        ],
+                        "ring_03_r": [
+                            -2.9575,
+                            -7.0289,
+                            0.5358
+                        ],
+                        "thumb_01_r": [
+                            -24.7836,
+                            -22.9122,
+                            83.5711
+                        ],
+                        "thumb_02_r": [
+                            10.5688,
+                            -9.4296,
+                            3.3289
+                        ],
+                        "thumb_03_r": [
+                            5.3324,
+                            -43.4662,
+                            4.1151
+                        ]
+                    }
+                },
+                "right_thumb": {
+                    "off": {
+                        "thumb_01_r": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_r": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_r": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    },
+                    "on": {
+                        "thumb_01_r": [
+                            -60.8587,
+                            10.3205,
+                            29.8854
+                        ],
+                        "thumb_02_r": [
+                            13.8421,
+                            -31.4054,
+                            5.6791
+                        ],
+                        "thumb_03_r": [
+                            -2.2897,
+                            -14.5239,
+                            6.2599
+                        ]
+                    }
+                },
+                "right_trigger": {
+                    "off": {
+                        "index_01_r": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_r": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_r": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -7.8201,
+                            -64.125,
+                            -4.8583
+                        ],
+                        "index_02_r": [
+                            1.213,
+                            -49.924,
+                            0.045
+                        ],
+                        "index_03_r": [
+                            -4.8026,
+                            -45.821,
+                            0.0907
+                        ]
+                    }
+                },
+                "right_trigger_weapon": {
+                    "off": {
+                        "index_01_r": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_r": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_r": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -10.07,
+                            -19.9749,
+                            -4.8583
+                        ],
+                        "index_02_r": [
+                            1.213,
+                            -10.5495,
+                            0.045
+                        ],
+                        "index_03_r": [
+                            -4.8026,
+                            -14.3209,
+                            0.0907
+                        ]
+                    }
+                },
+                "right_trigger_weapon_ak47": {
+                    "off": {
+                        "index_01_r": [
+                            -9.923,
+                            -18.274,
+                            -5.1635
+                        ],
+                        "index_02_r": [
+                            1.1582,
+                            -2.3714,
+                            0.1936
+                        ],
+                        "index_03_r": [
+                            -4.621,
+                            2.6413,
+                            -1.3128
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -9.923,
+                            -18.274,
+                            -5.1635
+                        ],
+                        "index_02_r": [
+                            1.1582,
+                            -67.6211,
+                            0.1936
+                        ],
+                        "index_03_r": [
+                            -4.621,
+                            -42.75,
+                            -1.3128
+                        ]
+                    }
+                },
+                "right_trigger_weapon_beartrap": {
+                    "off": {
+                        "index_01_r": [
+                            -27.1943,
+                            -54.2895,
+                            -9.648
+                        ],
+                        "index_02_r": [
+                            1.1897,
+                            -2.0648,
+                            0.2234
+                        ],
+                        "index_03_r": [
+                            -4.5893,
+                            3.9532,
+                            -1.4158
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -27.1943,
+                            -54.2895,
+                            -9.648
+                        ],
+                        "index_02_r": [
+                            1.1897,
+                            -2.0648,
+                            0.2234
+                        ],
+                        "index_03_r": [
+                            -4.5893,
+                            3.9532,
+                            -1.4158
+                        ]
+                    }
+                },
+                "right_trigger_weapon_bottle": {
+                    "off": {
+                        "index_01_r": [
+                            -11.0988,
+                            -39.4388,
+                            -1.2464
+                        ],
+                        "index_02_r": [
+                            1.0935,
+                            -38.1519,
+                            -0.5188
+                        ],
+                        "index_03_r": [
+                            -3.8221,
+                            -50.6045,
+                            2.9103
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -11.0988,
+                            -39.4388,
+                            -1.2464
+                        ],
+                        "index_02_r": [
+                            1.0935,
+                            -38.1519,
+                            -0.5188
+                        ],
+                        "index_03_r": [
+                            -3.8221,
+                            -50.6045,
+                            2.9103
+                        ]
+                    }
+                },
+                "right_trigger_weapon_knife": {
+                    "off": {
+                        "index_01_r": [
+                            -20.25,
+                            -88.945,
+                            10.5881
+                        ],
+                        "index_02_r": [
+                            -1.7922,
+                            -70.505,
+                            11.1969
+                        ],
+                        "index_03_r": [
+                            -3.8128,
+                            -50.7654,
+                            2.9237
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -20.25,
+                            -88.945,
+                            10.5881
+                        ],
+                        "index_02_r": [
+                            -1.7922,
+                            -70.505,
+                            11.1969
+                        ],
+                        "index_03_r": [
+                            -3.8128,
+                            -50.7654,
+                            2.9237
+                        ]
+                    }
+                },
+                "right_trigger_weapon_machete": {
+                    "off": {
+                        "index_01_r": [
+                            -20.25,
+                            -88.945,
+                            10.5881
+                        ],
+                        "index_02_r": [
+                            -1.7922,
+                            -70.505,
+                            11.1969
+                        ],
+                        "index_03_r": [
+                            -3.8128,
+                            -50.7654,
+                            2.9237
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -20.25,
+                            -88.945,
+                            10.5881
+                        ],
+                        "index_02_r": [
+                            -1.7922,
+                            -70.505,
+                            11.1969
+                        ],
+                        "index_03_r": [
+                            -3.8128,
+                            -50.7654,
+                            2.9237
+                        ]
+                    }
+                },
+                "right_trigger_weapon_pistol": {
+                    "off": {
+                        "index_01_r": [
+                            -5.3117,
+                            -23.6591,
+                            -9.3705
+                        ],
+                        "index_02_r": [
+                            1.1999,
+                            -4.3045,
+                            0.1753
+                        ],
+                        "index_03_r": [
+                            -4.4749,
+                            -34.5378,
+                            1.7398
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -5.3117,
+                            -37.125,
+                            -9.3705
+                        ],
+                        "index_02_r": [
+                            1.1999,
+                            -52.6791,
+                            0.1753
+                        ],
+                        "index_03_r": [
+                            -4.4749,
+                            -34.5378,
+                            1.7398
+                        ]
+                    }
+                },
+                "right_trigger_weapon_plank": {
+                    "off": {
+                        "index_01_r": [
+                            -8.6325,
+                            -60.0562,
+                            2.7412
+                        ],
+                        "index_02_r": [
+                            0.7801,
+                            -63.3722,
+                            -0.8969
+                        ],
+                        "index_03_r": [
+                            -4.816,
+                            -17.0422,
+                            0.2809
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -8.6325,
+                            -60.0562,
+                            2.7412
+                        ],
+                        "index_02_r": [
+                            0.7801,
+                            -63.3722,
+                            -0.8969
+                        ],
+                        "index_03_r": [
+                            -4.816,
+                            -17.0422,
+                            0.2809
+                        ]
+                    }
+                },
+                "right_trigger_weapon_revolver": {
+                    "off": {
+                        "index_01_r": [
+                            -4.4017,
+                            -16.6384,
+                            -6.0038
+                        ],
+                        "index_02_r": [
+                            9.7931,
+                            -0.2739,
+                            -0.3592
+                        ],
+                        "index_03_r": [
+                            -4.4767,
+                            -34.5381,
+                            1.7431
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -4.4017,
+                            -16.6384,
+                            -6.0038
+                        ],
+                        "index_02_r": [
+                            9.7931,
+                            -41.899,
+                            -0.3592
+                        ],
+                        "index_03_r": [
+                            -4.4767,
+                            -57.038,
+                            1.7431
+                        ]
+                    }
+                },
+                "right_trigger_weapon_sawblade": {
+                    "off": {
+                        "index_01_r": [
+                            -20.25,
+                            -88.945,
+                            10.5882
+                        ],
+                        "index_02_r": [
+                            -1.7922,
+                            -70.505,
+                            11.1969
+                        ],
+                        "index_03_r": [
+                            -3.8128,
+                            -50.7653,
+                            2.9237
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -20.25,
+                            -88.945,
+                            10.5882
+                        ],
+                        "index_02_r": [
+                            -1.7922,
+                            -70.505,
+                            11.1969
+                        ],
+                        "index_03_r": [
+                            -3.8128,
+                            -50.7653,
+                            2.9237
+                        ]
+                    }
+                },
+                "right_trigger_weapon_shotgun": {
+                    "off": {
+                        "index_01_r": [
+                            19.0167,
+                            -3.5219,
+                            -7.0919
+                        ],
+                        "index_02_r": [
+                            1.2008,
+                            -23.446,
+                            0.1835
+                        ],
+                        "index_03_r": [
+                            -6.9995,
+                            -48.9399,
+                            2.3189
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            19.0167,
+                            -3.5219,
+                            -7.0919
+                        ],
+                        "index_02_r": [
+                            1.2008,
+                            -49.321,
+                            0.1835
+                        ],
+                        "index_03_r": [
+                            -6.9995,
+                            -48.9399,
+                            2.3189
+                        ]
+                    }
+                },
+                "right_trigger_weapon_smg": {
+                    "off": {
+                        "index_01_r": [
+                            2.1532,
+                            -5.9374,
+                            -9.8052
+                        ],
+                        "index_02_r": [
+                            1.1818,
+                            -15.2824,
+                            -0.0766
+                        ],
+                        "index_03_r": [
+                            -4.4767,
+                            -34.5381,
+                            1.7431
+                        ]
+                    },
+                    "on": {
+                        "index_01_r": [
+                            -2.347,
+                            -36.0,
+                            -16.5551
+                        ],
+                        "index_02_r": [
+                            1.1818,
+                            -53.5321,
+                            -0.0766
+                        ],
+                        "index_03_r": [
+                            -4.4767,
+                            -34.5381,
+                            1.7431
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "attachments": {
+        "ak47": {
+            "label": "AK47"
+        },
+        "ak_mag": {
+            "label": "AK Mag"
+        },
+        "beartrap": {
+            "label": "Beartrap"
+        },
+        "bottle": {
+            "label": "Bottle"
+        },
+        "genesis_cube": {
+            "label": "Genesis Cube"
+        },
+        "grab_items": {
+            "label": "Grab Items"
+        },
+        "knife": {
+            "label": "Knife"
+        },
+        "machete": {
+            "label": "Machete"
+        },
+        "mag_grab": {
+            "label": "Mag Grab"
+        },
+        "pistol": {
+            "label": "Pistol"
+        },
+        "plank": {
+            "label": "Plank"
+        },
+        "revolver": {
+            "label": "Revolver"
+        },
+        "sawblade": {
+            "label": "Sawblade"
+        },
+        "shotgun": {
+            "label": "Shotgun"
+        },
+        "smg": {
+            "label": "SMG"
+        }
+    },
+    "profiles": {
+        "Main": {
+            "Arms": {
+                "FOV": "",
+                "IgnoreRelativeOffset": false,
+                "InitialTransform": {
+                    "left_hand": {
+                        "index_01_l": {
+                            "location": [
+                                10.176656723021551,
+                                0.5778058171272278,
+                                -3.457792282104492
+                            ],
+                            "rotation": [
+                                -10.069948196411133,
+                                -19.974863052368164,
+                                -4.858227252960205
+                            ]
+                        },
+                        "index_02_l": {
+                            "location": [
+                                4.521144390106656,
+                                -1.0268649930367246e-08,
+                                2.181104719056748e-08
+                            ],
+                            "rotation": [
+                                1.2130675315856934,
+                                -10.5494966506958,
+                                0.04504506289958954
+                            ]
+                        },
+                        "index_03_l": {
+                            "location": [
+                                2.2649760246276855,
+                                -5.307811079546809e-09,
+                                9.72022462519817e-09
+                            ],
+                            "rotation": [
+                                -4.802544593811035,
+                                -14.320819854736328,
+                                0.09075377136468887
+                            ]
+                        },
+                        "middle_01_l": {
+                            "location": [
+                                11.447588920592352,
+                                0.19698810577392578,
+                                -0.9947976469993591
+                            ],
+                            "rotation": [
+                                -5.701492786407471,
+                                -23.97172737121582,
+                                -7.175215721130371
+                            ]
+                        },
+                        "middle_02_l": {
+                            "location": [
+                                4.0115356445303405,
+                                -8.983079169411212e-09,
+                                1.9194430933566764e-08
+                            ],
+                            "rotation": [
+                                0.4448031783103943,
+                                -22.586149215698242,
+                                0.08035808056592941
+                            ]
+                        },
+                        "middle_03_l": {
+                            "location": [
+                                2.480154514312744,
+                                -5.6461431086063385e-09,
+                                8.509232429787517e-09
+                            ],
+                            "rotation": [
+                                -4.196108341217041,
+                                -3.82375168800354,
+                                0.015113499015569687
+                            ]
+                        },
+                        "pinky_01_l": {
+                            "location": [
+                                9.931171417235419,
+                                -1.9566513299942017,
+                                2.9682915210723877
+                            ],
+                            "rotation": [
+                                8.845795631408691,
+                                -25.168109893798828,
+                                -30.78144645690918
+                            ]
+                        },
+                        "pinky_02_l": {
+                            "location": [
+                                3.1372027397151214,
+                                -2.0318111637607217e-09,
+                                1.734815668896772e-08
+                            ],
+                            "rotation": [
+                                0.8695695400238037,
+                                -23.88682746887207,
+                                0.17663487792015076
+                            ]
+                        },
+                        "pinky_03_l": {
+                            "location": [
+                                2.1827440261836273,
+                                -1.572516339365393e-09,
+                                9.38598532229662e-09
+                            ],
+                            "rotation": [
+                                -1.7638604640960693,
+                                -3.8951737880706787,
+                                0.07765267789363861
+                            ]
+                        },
+                        "ring_01_l": {
+                            "location": [
+                                10.933780670165106,
+                                -0.9330205917358398,
+                                1.4426201581954956
+                            ],
+                            "rotation": [
+                                -1.7173751592636108,
+                                -19.430089950561523,
+                                -17.136890411376953
+                            ]
+                        },
+                        "ring_02_l": {
+                            "location": [
+                                4.126486301422119,
+                                -6.200934876687825e-09,
+                                2.1919731807429343e-08
+                            ],
+                            "rotation": [
+                                5.118240833282471,
+                                -30.376773834228516,
+                                1.7386215925216675
+                            ]
+                        },
+                        "ring_03_l": {
+                            "location": [
+                                2.0434858798980713,
+                                -4.081812221556902e-09,
+                                7.1795511757954955e-09
+                            ],
+                            "rotation": [
+                                -2.992368221282959,
+                                -2.1301469802856445,
+                                0.2814406454563141
+                            ]
+                        },
+                        "thumb_01_l": {
+                            "location": [
+                                4.076119899748846,
+                                -2.1767067909240723,
+                                -3.2544724941249115
+                            ],
+                            "rotation": [
+                                -60.85867691040039,
+                                10.320528984069824,
+                                29.885469436645508
+                            ]
+                        },
+                        "thumb_02_l": {
+                            "location": [
+                                2.4779355525961364,
+                                -1.0543772077653557e-08,
+                                8.14088707556948e-09
+                            ],
+                            "rotation": [
+                                13.842135429382324,
+                                -31.40530014038086,
+                                5.679150104522705
+                            ]
+                        },
+                        "thumb_03_l": {
+                            "location": [
+                                4.062170982361749,
+                                -2.093611328746192e-08,
+                                4.347384674474597e-09
+                            ],
+                            "rotation": [
+                                -2.289679765701294,
+                                -14.523892402648926,
+                                6.259936809539795
+                            ]
+                        },
+                        "weapon_jnt_l": {
+                            "location": [
+                                9.04994010925202,
+                                -2.506108045578003,
+                                -2.422064065934137
+                            ],
+                            "rotation": [
+                                22.914098739624023,
+                                79.40060424804688,
+                                -85.07443237304688
+                            ]
+                        }
+                    },
+                    "right_hand": {
+                        "index_01_r": {
+                            "location": [
+                                -10.176656723022234,
+                                -0.577805638312384,
+                                3.4577908515930176
+                            ],
+                            "rotation": [
+                                -10.069947242736816,
+                                -19.974863052368164,
+                                -4.858229160308838
+                            ]
+                        },
+                        "index_02_r": {
+                            "location": [
+                                -4.521144390105974,
+                                1.0267285688314587e-08,
+                                -2.1812411432620138e-08
+                            ],
+                            "rotation": [
+                                1.2130675315856934,
+                                -10.5494966506958,
+                                0.04504506289958954
+                            ]
+                        },
+                        "index_03_r": {
+                            "location": [
+                                -2.2649760246276855,
+                                5.308265826897696e-09,
+                                -9.719769877847284e-09
+                            ],
+                            "rotation": [
+                                -4.802544593811035,
+                                -14.320819854736328,
+                                0.09075377136468887
+                            ]
+                        },
+                        "middle_01_r": {
+                            "location": [
+                                -11.44758892059258,
+                                -0.19698789715766907,
+                                0.994796156882785
+                            ],
+                            "rotation": [
+                                -5.701491832733154,
+                                -23.97172737121582,
+                                -7.175217628479004
+                            ]
+                        },
+                        "middle_02_r": {
+                            "location": [
+                                -4.0115356445303405,
+                                8.98216967470944e-09,
+                                -1.9193976186215878e-08
+                            ],
+                            "rotation": [
+                                0.4448031783103943,
+                                -22.586149215698242,
+                                0.08035808056592941
+                            ]
+                        },
+                        "middle_03_r": {
+                            "location": [
+                                -2.480154514312744,
+                                5.646370482281782e-09,
+                                -8.51014192448929e-09
+                            ],
+                            "rotation": [
+                                -4.196108341217041,
+                                -3.82375168800354,
+                                0.015113499015569687
+                            ]
+                        },
+                        "pinky_01_r": {
+                            "location": [
+                                -9.9311714172361,
+                                1.9566516876220703,
+                                -2.9682929515838623
+                            ],
+                            "rotation": [
+                                8.845797538757324,
+                                -25.168107986450195,
+                                -30.781448364257813
+                            ]
+                        },
+                        "pinky_02_r": {
+                            "location": [
+                                -3.137202739716031,
+                                2.0315837900852785e-09,
+                                -1.7347701941616833e-08
+                            ],
+                            "rotation": [
+                                0.8695695400238037,
+                                -23.88682746887207,
+                                0.17663487792015076
+                            ]
+                        },
+                        "pinky_03_r": {
+                            "location": [
+                                -2.182744026184082,
+                                1.5726300262031145e-09,
+                                -9.38598532229662e-09
+                            ],
+                            "rotation": [
+                                -1.7638604640960693,
+                                -3.8951737880706787,
+                                0.07765267789363861
+                            ]
+                        },
+                        "ring_01_r": {
+                            "location": [
+                                -10.933780670165106,
+                                0.9330208301548737,
+                                -1.4426217079162598
+                            ],
+                            "rotation": [
+                                -1.7173742055892944,
+                                -19.430089950561523,
+                                -17.136892318725586
+                            ]
+                        },
+                        "ring_02_r": {
+                            "location": [
+                                -4.126486301421664,
+                                6.201162250363268e-09,
+                                -2.1919731807429343e-08
+                            ],
+                            "rotation": [
+                                5.118240833282471,
+                                -30.376773834228516,
+                                1.7386215925216675
+                            ]
+                        },
+                        "ring_03_r": {
+                            "location": [
+                                -2.0434858798976165,
+                                4.082039595232345e-09,
+                                -7.1795511757954955e-09
+                            ],
+                            "rotation": [
+                                -2.992368221282959,
+                                -2.1301469802856445,
+                                0.2814406454563141
+                            ]
+                        },
+                        "thumb_01_r": {
+                            "location": [
+                                -4.076119899749301,
+                                2.176707029343106,
+                                3.2544713020324707
+                            ],
+                            "rotation": [
+                                -60.85867691040039,
+                                10.320528984069824,
+                                29.885469436645508
+                            ]
+                        },
+                        "thumb_02_r": {
+                            "location": [
+                                -2.4779355525975006,
+                                1.054468157235533e-08,
+                                -8.14088707556948e-09
+                            ],
+                            "rotation": [
+                                13.842135429382324,
+                                -31.40530014038086,
+                                5.679150104522705
+                            ]
+                        },
+                        "thumb_03_r": {
+                            "location": [
+                                -4.062170982360385,
+                                2.0934749045409262e-08,
+                                -4.3478394218254834e-09
+                            ],
+                            "rotation": [
+                                -2.289679765701294,
+                                -14.523892402648926,
+                                6.259936809539795
+                            ]
+                        },
+                        "weapon_jnt_r": {
+                            "location": [
+                                -9.05000305175713,
+                                2.5062448978424072,
+                                2.4220347404475433
+                            ],
+                            "rotation": [
+                                22.91410255432129,
+                                79.4006118774414,
+                                94.92557525634766
+                            ]
+                        }
+                    }
+                },
+                "Left": {
+                    "AnimationID": "left_arms",
+                    "Location": [
+                        0.0,
+                        -7.5,
+                        0.0
+                    ],
+                    "Name": "hand_l",
+                    "OptimizeAnimationsRootBone": "Root",
+                    "Rotation": [
+                        0.0,
+                        90.0,
+                        180.0
+                    ],
+                    "Scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "UseDefaultPose": true
+                },
+                "Mesh": "Pawn.Mesh",
+                "Offset": {
+                    "Pitch": 0.0,
+                    "Roll": 0.0,
+                    "X": 0,
+                    "Y": 0,
+                    "Yaw": 0.0,
+                    "Z": 0
+                },
+                "OptimizeAnimations": true,
+                "Right": {
+                    "AnimationID": "right_arms",
+                    "Location": [
+                        -2.299999952316284,
+                        -8.199999809265137,
+                        -2.200000047683716
+                    ],
+                    "Name": "hand_r",
+                    "OptimizeAnimationsRootBone": "Root",
+                    "Rotation": [
+                        0.0,
+                        -90.0,
+                        0.0
+                    ],
+                    "Scale": [
+                        1.0,
+                        1.0,
+                        1.0
+                    ],
+                    "UseDefaultPose": true
+                }
+            }
+        }
+    }
+}

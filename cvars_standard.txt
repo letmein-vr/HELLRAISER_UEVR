@@ -1,0 +1,5 @@
+Renderer_r.DefaultFeature.AmbientOcclusion=1
+Renderer_r.LightCulling.Quality=1
+Renderer_r.PostProcessing.PropagateAlpha=1
+Renderer_r.SubsurfaceScattering=1
+Renderer_r.Upscale.Softness=0.000000

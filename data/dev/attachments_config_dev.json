@@ -1,0 +1,2847 @@
+{
+    "uevr_attachment_base_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_end_time": 0.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_existing_guid": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_id": "",
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_label": "",
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_socket_name": "",
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_marker_picker": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_picker": 1,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_accessory_start_time": 0.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_any_child": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_any_parent": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_delete_accessory_override": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_grip_animation": 7,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_is_melee": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_is_scoped": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_is_two_handed": true,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_position": [
+        -0.30000001192092896,
+        1.5,
+        0.699999988079071
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_rotation": [
+        0.0,
+        -0.10000000149011612,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_brightness": 2.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_max_fov": 20.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_min_fov": 2.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_show_debug": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_strip_child_suffix_length": false,
+    "uevr_attachments_BP_AK-47_C_SK_AK-47_use_laser": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_id": "",
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_label": "",
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_picker": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_any_child": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_any_parent": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_delete_accessory_override": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_grip_animation": 1,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_is_melee": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_is_scoped": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_is_two_handed": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_rotation": [
+        0.0,
+        0.20000000298023224,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_brightness": 2.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_show_debug": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Bandage_C_SK_Bandage_use_laser": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_end_time": 0.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_existing_guid": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_id": "",
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_label": "",
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_socket_name": "",
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_marker_picker": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_picker": 1,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_accessory_start_time": 0.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_any_child": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_any_parent": true,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_delete_accessory_override": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_grip_animation": 10,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_is_melee": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_is_scoped": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_is_two_handed": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_position": [
+        12.100000381469727,
+        1.7000000476837158,
+        7.800000190734863
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_rotation": [
+        -47.599998474121094,
+        -97.5,
+        63.599998474121094
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scale": [
+        0.7999998927116394,
+        0.7999998927116394,
+        0.7999998927116394
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_brightness": 2.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_max_fov": 20.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_min_fov": 2.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_show_debug": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_strip_child_suffix_length": false,
+    "uevr_attachments_BP_BearTrap_C_SK_Trap_use_laser": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_id": "",
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_label": "",
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_picker": 1,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_any_child": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_any_parent": true,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_delete_accessory_override": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_grip_animation": 6,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_is_melee": true,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_is_scoped": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_is_two_handed": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_position": [
+        0.0,
+        -1.7000000476837158,
+        0.30000001192092896
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_rotation": [
+        0.0,
+        0.0,
+        -7.800000190734863
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_brightness": 2.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_show_debug": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Cleaver_C_SM_Cleaver_use_laser": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_id": "",
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_label": "",
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_picker": 1,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_any_child": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_any_parent": true,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_delete_accessory_override": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_grip_animation": 13,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_is_melee": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_is_scoped": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_is_two_handed": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_position": [
+        -1.2999999523162842,
+        -0.30000001192092896,
+        0.4000000059604645
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_rotation": [
+        7.699999809265137,
+        0.0,
+        -5.300000190734863
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_brightness": 2.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_show_debug": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Colt_1911_C_SK_Colt_1911_use_laser": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_any_child": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_any_parent": true,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_grip_animation": 6,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_is_melee": true,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_is_scoped": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_is_two_handed": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_position": [
+        0.0,
+        -8.399999618530273,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_rotation": [
+        0.0,
+        0.5,
+        -13.399999618530273
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisBaseballBat_C_SM_Baseball_01_use_laser": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_activation_distance": 7.300000190734863,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_activation_hand": 2,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_attach_type": 3,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_grip_animation": 12,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_id": "73ac5445-93fd-44e4-9ba5-0c291c291894",
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_label": "Left Hand",
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_location": [
+        5.099999904632568,
+        7.199999809265137,
+        -1.899999976158142
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_rotation": [
+        119.30000305175781,
+        71.0999984741211,
+        -7.900000095367432
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_socket_list": 12,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_socket_name": "Magazine_jnt",
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_any_child": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_any_parent": true,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_grip_animation": 13,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_is_melee": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_is_scoped": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_is_two_handed": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_position": [
+        -1.2999999523162842,
+        -0.30000001192092896,
+        0.4000000059604645
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_rotation": [
+        7.699999809265137,
+        0.0,
+        -5.300000190734863
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisColt_C_SK_Colt_1911_use_laser": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_any_child": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_any_parent": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_grip_animation": 9,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_is_melee": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_is_scoped": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_is_two_handed": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_rotation": [
+        0.0,
+        -90.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisConfigurationBox_C_DefaultSceneRoot_use_laser": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_any_child": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_any_parent": true,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_grip_animation": 4,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_is_melee": true,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_is_scoped": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_is_two_handed": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_rotation": [
+        0.0,
+        46.29999923706055,
+        -9.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisCricketBat_C_SM_CricketBat_01_use_laser": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_any_child": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_any_parent": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_grip_animation": 6,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_is_melee": true,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_is_scoped": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_is_two_handed": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_rotation": [
+        0.0,
+        -0.10000000149011612,
+        -9.699999809265137
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisJaggedMesser_C_SM_JaggedMasser_use_laser": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_any_child": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_any_parent": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_grip_animation": 6,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_is_melee": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_is_scoped": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_is_two_handed": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_position": [
+        0.0,
+        -1.2999999523162842,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_rotation": [
+        0.0,
+        0.699999988079071,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisMachete_C_SM_Machete_01_use_laser": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_any_child": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_any_parent": true,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_grip_animation": 6,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_is_melee": true,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_is_scoped": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_is_two_handed": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_position": [
+        0.0,
+        -10.399999618530273,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_rotation": [
+        0.0,
+        -0.20000000298023224,
+        -9.399999618530273
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisNailBat_C_SM_NailBat_use_laser": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_id": "",
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_label": "",
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_picker": 1,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_any_child": true,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_any_parent": true,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_delete_accessory_override": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_grip_animation": 12,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_is_melee": true,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_is_scoped": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_is_two_handed": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_position": [
+        -0.800000011920929,
+        -7.199999809265137,
+        0.8999999761581421
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_rotation": [
+        0.0,
+        0.4000000059604645,
+        -10.300000190734863
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_show_debug": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_GenesisPlank_C_SM_Plank_01_use_laser": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_end_time": 0.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_existing_guid": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_id": "",
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_label": "",
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_socket_name": "",
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_marker_picker": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_picker": 1,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_accessory_start_time": 0.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_any_child": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_any_parent": true,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_delete_accessory_override": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_grip_animation": 4,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_is_melee": true,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_is_scoped": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_is_two_handed": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_rotation": [
+        0.0,
+        -0.10000000149011612,
+        -10.199999809265137
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_brightness": 2.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_max_fov": 20.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_min_fov": 2.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_show_debug": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_strip_child_suffix_length": false,
+    "uevr_attachments_BP_JaggedMesser_C_SM_JaggedMasser_use_laser": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_id": "",
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_label": "",
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_picker": 1,
+    "uevr_attachments_BP_Knife_C_SM_Knife_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_any_child": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_any_parent": true,
+    "uevr_attachments_BP_Knife_C_SM_Knife_delete_accessory_override": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_grip_animation": 15,
+    "uevr_attachments_BP_Knife_C_SM_Knife_is_melee": true,
+    "uevr_attachments_BP_Knife_C_SM_Knife_is_scoped": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_is_two_handed": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_position": [
+        1.0,
+        -4.699999809265137,
+        0.6000000238418579
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_rotation": [
+        9.300000190734863,
+        0.4000000059604645,
+        -8.699999809265137
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_brightness": 2.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_show_debug": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Knife_C_SM_Knife_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Knife_C_SM_Knife_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Knife_C_SM_Knife_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Knife_C_SM_Knife_use_laser": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_id": "",
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_label": "",
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_picker": 1,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_any_child": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_any_parent": true,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_delete_accessory_override": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_grip_animation": 4,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_is_melee": true,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_is_scoped": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_is_two_handed": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_position": [
+        0.0,
+        -2.4000000953674316,
+        0.30000001192092896
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_rotation": [
+        0.0,
+        0.6000000238418579,
+        -9.800000190734863
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_show_debug": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Machete_C_SM_Machete_01_use_laser": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_end_time": 0.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_existing_guid": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_id": "",
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_label": "",
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_socket_name": "",
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_marker_picker": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_picker": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_accessory_start_time": 0.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_any_child": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_any_parent": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_delete_accessory_override": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_grip_animation": 1,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_is_melee": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_is_scoped": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_is_two_handed": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_rotation": [
+        0.0,
+        -90.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_brightness": 2.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_max_fov": 20.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_min_fov": 2.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_show_debug": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_strip_child_suffix_length": false,
+    "uevr_attachments_BP_MedKit_C_SK_MedipackLarge_use_laser": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_activation_distance": 7.699999809265137,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_activation_hand": 2,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_attach_type": 3,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_grip_animation": 10,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_id": "917668c2-72f7-403e-84bc-73583f1924be",
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_label": "Left Hand",
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_location": [
+        3.9000000953674316,
+        6.099999904632568,
+        -4.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_rotation": [
+        88.5,
+        90.19999694824219,
+        4.699999809265137
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_socket_list": 4,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_socket_name": "Root",
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_picker": 1,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_any_child": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_any_parent": true,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_delete_accessory_override": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_grip_animation": 11,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_is_melee": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_is_scoped": true,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_is_two_handed": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_position": [
+        -2.700000047683716,
+        -0.8999999761581421,
+        0.6000000238418579
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_rotation": [
+        0.0,
+        0.20000000298023224,
+        -6.199999809265137
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_brightness": 1.031999945640564,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_deactivate_distance": 20.85300064086914,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_max_fov": 20.115999221801758,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.049999237060547
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_objective_lens_rotation": [
+        90.0,
+        90.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_ocular_lens_location": [
+        0.05000000074505806,
+        -1.5,
+        13.350000381469727
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_ocular_lens_rotation": [
+        90.0,
+        0.0,
+        -90.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_ocular_lens_scale": 0.47699999809265137,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_show_debug": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Revolver_C_SK_Revolver_Magnum_use_laser": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_end_time": 0.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_existing_guid": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_id": "",
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_label": "",
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_socket_name": "",
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_marker_picker": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_picker": 1,
+    "uevr_attachments_BP_SMG_C_SK_SMG_accessory_start_time": 0.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_any_child": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_any_parent": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_delete_accessory_override": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_grip_animation": 5,
+    "uevr_attachments_BP_SMG_C_SK_SMG_is_melee": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_is_scoped": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_is_two_handed": true,
+    "uevr_attachments_BP_SMG_C_SK_SMG_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_position": [
+        -1.2999999523162842,
+        0.800000011920929,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_rotation": [
+        0.0,
+        0.20000000298023224,
+        -4.900000095367432
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_brightness": 2.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_max_fov": 20.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_min_fov": 2.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_show_debug": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_SMG_C_SK_SMG_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_SMG_C_SK_SMG_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SMG_C_SK_SMG_strip_child_suffix_length": false,
+    "uevr_attachments_BP_SMG_C_SK_SMG_use_laser": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_id": "",
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_label": "",
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_picker": 1,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_any_child": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_any_parent": true,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_delete_accessory_override": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_grip_animation": 4,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_is_melee": true,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_is_scoped": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_is_two_handed": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_position": [
+        -0.20000000298023224,
+        -1.7000000476837158,
+        0.4000000059604645
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_rotation": [
+        3.700000047683716,
+        0.4000000059604645,
+        -9.600000381469727
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_brightness": 2.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_show_debug": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Sawblade_C_SM_Saw_use_laser": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_end_time": 0.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_existing_guid": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_id": "",
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_label": "",
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_socket_name": "",
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_marker_picker": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_picker": 1,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_accessory_start_time": 0.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_any_child": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_any_parent": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_delete_accessory_override": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_grip_animation": 3,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_is_melee": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_is_scoped": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_is_two_handed": true,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_position": [
+        0.0,
+        6.300000190734863,
+        0.699999988079071
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_rotation": [
+        -20.799999237060547,
+        0.0,
+        -4.5
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_brightness": 2.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_max_fov": 20.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_min_fov": 2.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_show_debug": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_strip_child_suffix_length": false,
+    "uevr_attachments_BP_Shotgun_C_SK_shotgun_winchester_use_laser": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_end_time": 0.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_existing_guid": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_id": "",
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_label": "",
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_socket_name": "",
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_marker_picker": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_picker": 1,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_accessory_start_time": 0.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_any_child": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_any_parent": true,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_delete_accessory_override": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_grip_animation": 15,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_is_melee": true,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_is_scoped": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_is_two_handed": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_position": [
+        0.0,
+        -10.899999618530273,
+        0.800000011920929
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_rotation": [
+        0.0,
+        -0.20000000298023224,
+        -6.800000190734863
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_brightness": 2.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_max_fov": 20.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_min_fov": 2.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_show_debug": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_strip_child_suffix_length": false,
+    "uevr_attachments_BP_SkullcrusherBat_C_SM_Baseball_02_use_laser": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_any_child": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_any_parent": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_is_melee": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_is_scoped": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_position": [
+        0.800000011920929,
+        -0.20000000298023224,
+        2.0999999046325684
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_rotation": [
+        7.199999809265137,
+        -90.0,
+        0.5
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_BeerBottle_use_laser": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_any_child": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_any_parent": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_is_melee": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_is_scoped": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_position": [
+        -2.299999952316284,
+        -1.399999976158142,
+        0.6000000238418579
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_rotation": [
+        9.100000381469727,
+        0.20000000298023224,
+        -4.800000190734863
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_absintheBottle_01_use_laser": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_any_child": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_any_parent": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_is_melee": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_is_scoped": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_position": [
+        -1.5,
+        -1.600000023841858,
+        1.5
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_rotation": [
+        9.0,
+        0.6000000238418579,
+        -10.600000381469727
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_beerBottle_02_use_laser": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_any_child": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_any_parent": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_is_melee": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_is_scoped": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_position": [
+        -2.299999952316284,
+        -1.399999976158142,
+        0.6000000238418579
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_rotation": [
+        9.100000381469727,
+        0.20000000298023224,
+        -4.800000190734863
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_vodkaBottle_01_use_laser": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_any_child": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_any_parent": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_is_melee": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_is_scoped": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_position": [
+        -2.200000047683716,
+        -1.5,
+        0.5
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_rotation": [
+        9.100000381469727,
+        0.5,
+        -4.900000095367432
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_01_use_laser": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_any_child": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_any_parent": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_is_melee": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_is_scoped": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_position": [
+        1.2999999523162842,
+        -1.5,
+        2.5
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_rotation": [
+        0.0,
+        -90.0,
+        -6.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableBottle_C_SM_whiskyBottle_02_use_laser": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_end_time": 0.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_existing_guid": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_id": "",
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_label": "",
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_socket_name": "",
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_marker_picker": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_picker": 1,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_accessory_start_time": 0.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_any_child": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_any_parent": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_delete_accessory_override": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_grip_animation": 16,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_is_melee": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_is_scoped": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_is_two_handed": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_position": [
+        -0.800000011920929,
+        0.20000000298023224,
+        1.7000000476837158
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_rotation": [
+        12.600000381469727,
+        0.10000000149011612,
+        1.7000000476837158
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_brightness": 2.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_max_fov": 20.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_min_fov": 2.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_show_debug": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_strip_child_suffix_length": false,
+    "uevr_attachments_BP_ThrowableStone_C_SM_ThrowableRock_use_laser": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_end_time": 0.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_existing_guid": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_activation_distance": 0.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_activation_hand": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_attach_type": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_grip_animation": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_grip_priority": "1",
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_id": "",
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_label": "",
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_location": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_socket_list": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_socket_name": "",
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_test_left_hand": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_item_test_right_hand": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_marker_picker": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_picker": 1,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_accessory_start_time": 0.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_any_child": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_any_parent": true,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_delete_accessory_override": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_grip_animation": 15,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_is_melee": true,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_is_scoped": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_is_two_handed": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_melee_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_position": [
+        0.800000011920929,
+        -4.599999904632568,
+        -0.699999988079071
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_rotation": [
+        0.0,
+        91.0999984741211,
+        -9.899999618530273
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_brightness": 2.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_deactivate_distance": 50.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_hide_ocular_lens_on_disable": true,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_max_fov": 20.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_min_fov": 2.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_objective_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_objective_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_ocular_lens_location": [
+        0.0,
+        0.0,
+        20.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_ocular_lens_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_ocular_lens_scale": 1.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_show_debug": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_zoom_exponential": 0.5,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_scope_zoom_speed": 1.0,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_sights_position_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_sights_rotation_offset": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_strip_child_suffix_length": false,
+    "uevr_attachments_BP_TireIron_C_SK_TireIron_01_use_laser": false,
+    "uevr_attachments_left_hand_flip_x": false,
+    "uevr_attachments_left_hand_flip_y": false,
+    "uevr_attachments_left_hand_flip_z": false,
+    "uevr_attachments_left_hand_position": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_left_hand_rotation": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "uevr_attachments_left_hand_scale": [
+        1.0,
+        1.0,
+        1.0
+    ],
+    "uevr_attachments_use_left_hand_offsets": false,
+    "use_uevr_attachments_strip_parent_name_numeric_suffix": false
+}

@@ -1,0 +1,120 @@
+1528.673 reload caught: pawn AM_FP_ATT_SMG_Reload_halfClip at 0.04, gun AM_SMG_Reload_halfClip; clip 29 (tactical), clip bone Magazine_jnt
+1528.676 state idle -> await_clip
+1532.856 state await_clip -> holding_clip
+1532.858 clip taken from the pouch
+1534.349 state holding_clip -> inserting
+1534.352 insert glide from (4.0 -0.6 -8.3), rock -8 deg
+1534.549 clip seated
+1534.552 state inserting -> finishing
+1534.557 native reload resumed at 20x
+1534.580 reload finished
+1534.582 cleanup (done)
+1534.588 state finishing -> idle
+1534.900 ammo: clip 29 -> 31
+1550.774 reload caught: pawn AM_FP_ATT_SMG_Reload_halfClip at 0.03, gun AM_SMG_Reload_halfClip; clip 28 (tactical), clip bone Magazine_jnt
+1550.777 state idle -> await_clip
+1551.891 state await_clip -> holding_clip
+1551.893 clip taken from the pouch
+1554.695 clip let go - dropped
+1554.698 state holding_clip -> await_clip
+1560.064 state await_clip -> holding_clip
+1560.066 clip taken from the pouch
+1562.444 clip let go - dropped
+1562.447 state holding_clip -> await_clip
+1566.045 state await_clip -> holding_clip
+1566.047 clip taken from the pouch
+1567.434 clip let go - dropped
+1567.436 state holding_clip -> await_clip
+1569.301 state await_clip -> holding_clip
+1569.303 clip taken from the pouch
+1570.524 clip let go - dropped
+1570.527 state holding_clip -> await_clip
+1573.237 state await_clip -> holding_clip
+1573.239 clip taken from the pouch
+1574.499 clip let go - dropped
+1574.502 state holding_clip -> await_clip
+1578.520 state await_clip -> holding_clip
+1578.522 clip taken from the pouch
+1580.579 clip let go - dropped
+1580.582 state holding_clip -> await_clip
+1584.044 state await_clip -> holding_clip
+1584.045 clip taken from the pouch
+1585.535 clip let go - dropped
+1585.538 state holding_clip -> await_clip
+1588.126 state await_clip -> holding_clip
+1588.128 clip taken from the pouch
+1589.455 clip let go - dropped
+1589.458 state holding_clip -> await_clip
+1592.289 state await_clip -> holding_clip
+1592.291 clip taken from the pouch
+1594.872 clip let go - dropped
+1594.875 state holding_clip -> await_clip
+1597.219 state await_clip -> holding_clip
+1597.221 clip taken from the pouch
+1598.309 clip let go - dropped
+1598.313 state holding_clip -> await_clip
+1603.382 state await_clip -> holding_clip
+1603.384 clip taken from the pouch
+1604.739 clip let go - dropped
+1604.742 state holding_clip -> await_clip
+1606.882 state await_clip -> holding_clip
+1606.884 clip taken from the pouch
+1611.744 state holding_clip -> inserting
+1611.746 insert glide from (1.1 0.5 -8.0), rock -8 deg
+1611.947 clip seated
+1611.950 state inserting -> finishing
+1611.957 native reload resumed at 20x
+1611.983 reload finished
+1611.985 cleanup (done)
+1611.992 state finishing -> idle
+1612.307 ammo: clip 28 -> 31
+1627.648 reload caught: pawn AM_Revenant_FirstPerson_Pistol_Reload_HalfClip at 0.03, gun AM_Colt_1911_Reload_halfClip; clip 3 (tactical), clip bone Magazine_jnt
+1627.651 state idle -> await_clip
+1628.649 state await_clip -> holding_clip
+1628.652 clip taken from the pouch
+1636.032 clip let go - dropped
+1636.035 state holding_clip -> await_clip
+1637.400 state await_clip -> holding_clip
+1637.402 clip taken from the pouch
+1638.505 state holding_clip -> inserting
+1638.508 insert glide from (-2.0 -2.9 -9.6), rock 0 deg
+1638.689 clip seated
+1638.691 state inserting -> finishing
+1638.697 native reload resumed at 20x
+1638.787 reload finished
+1638.790 cleanup (done)
+1638.798 state finishing -> idle
+1639.103 ammo: clip 3 -> 8
+1643.742 reload caught: pawn AM_Revenant_FirstPerson_Pistol_Reload at 0.00, gun AM_Colt_1911_Reload; clip 0 (empty), clip bone Magazine_jnt
+1643.745 state idle -> await_clip
+1644.808 state await_clip -> holding_clip
+1644.811 clip taken from the pouch
+1646.140 clip let go - dropped
+1646.143 state holding_clip -> await_clip
+1666.578 state await_clip -> holding_clip
+1666.580 clip taken from the pouch
+1667.743 state holding_clip -> inserting
+1667.745 insert glide from (-1.2 -2.0 -9.7), rock 0 deg
+1667.936 clip seated
+1667.939 rack: Slide_jnt copy ready (held back 4.40 cm)
+1667.947 state inserting -> await_rack
+1667.952 waiting for the rack
+1668.881 state await_rack -> racking
+1669.250 state racking -> await_rack
+1669.309 slide racked
+1669.313 state await_rack -> finishing
+1669.320 native reload resumed at 20x
+1669.403 reload finished
+1669.406 cleanup (done)
+1669.412 state finishing -> idle
+1669.719 ammo: clip 0 -> 7
+1739.036 reload caught: pawn AM_FP_ATT_AK-47_Reload_halfClip at 0.02, gun AM_AK-47_Reload_halfclip; clip 28 (tactical), clip bone Magazine_jnt
+1739.038 state idle -> await_clip
+1740.269 state await_clip -> holding_clip
+1740.271 clip taken from the pouch
+1742.185 clip let go - dropped
+1742.188 state holding_clip -> await_clip
+1748.221 state await_clip -> holding_clip
+1748.223 clip taken from the pouch
+1750.151 clip let go - dropped
+1750.154 state holding_clip -> await_clip

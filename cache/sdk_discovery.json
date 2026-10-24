@@ -1,0 +1,131 @@
+{
+  "entries": {
+    "frendertarget_vtable_indices": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "display_gamma_index": 6,
+        "render_target_texture_index": 2
+      }
+    },
+    "frhitexture_get_native_resource": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "vtable_index": 5
+      }
+    },
+    "fscene_offsets": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "frame_count_offset": 19936,
+        "get_frame_count_vtable_index": 154,
+        "increment_frame_count_vtable_index": 155,
+        "start_frame_vtable_index": 152
+      }
+    },
+    "fsceneview_constructor": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "rva": 70925408
+      }
+    },
+    "fsceneviewfamily_offsets": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "render_target_offset": 48,
+        "scene_interface_offset": 64,
+        "views_offset": 8
+      }
+    },
+    "ftexture_render_target_resource_vtable_offset": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "offset": 80
+      }
+    },
+    "ftexture_rhi_resource_offset": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "offset": 16
+      }
+    },
+    "utexture_render_resource_offset": {
+      "module": {
+        "engine_version": "",
+        "file_size": 193476552,
+        "image_size": 198037504,
+        "path": "D:\\SteamLibrary\\steamapps\\common\\Clive Barker's Hellraiser - Revival\\Hellraiser\\Binaries\\Win64\\Hellraiser-Win64-Shipping.exe",
+        "time_date_stamp": 2177457752,
+        "version_ls": 65536,
+        "version_ms": 327686,
+        "write_time": 134365438066393985
+      },
+      "payload": {
+        "offset": 288
+      }
+    }
+  },
+  "schema_version": 1
+}
