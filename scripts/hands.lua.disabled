@@ -1,0 +1,17 @@
+local uevrUtils = require('libs/uevr_utils')
+local hands = require('libs/hands')
+local controllers = require('libs/controllers')
+
+function on_level_change(level)
+	controllers.createController(0)
+	controllers.createController(1)
+	hands.destroyHands() -- destroy the previous pair; hands.reset() only forgets it and leaks live components
+
+	local paramsFile = 'hands_parameters' -- found in the [game profile]/data directory
+	local configName = 'Main' -- the name you gave your config
+	local animationName = 'Shared' -- the name you gave your animation
+	hands.createFromConfig(paramsFile, configName, animationName)
+end
+
+-- Input handling is automatic (libs/hands_animation.lua). Do NOT add on_xinput_get_state + hands.handleInput(state, false, ...):
+-- it overrides the per-attachment weapon poses with the generic grip/trigger poses.
