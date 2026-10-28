@@ -111,11 +111,14 @@ local PROFILE_DEFAULTS = { -- a weapon without its own value for a widget
     mr_hold_loc = { 4.0, 0.0, -1.0 }, mr_hold_rot = { 0.0, -90.0, 90.0 },
     mr_insert_radius = 8.0, mr_insert_time = 0.16, mr_insert_depth = 5.0, mr_rock_angle = 0.0, mr_rock_pivot = { 0.0, 0.0, 0.0 },
     mr_rack_point = { 0.0, -3.0, 8.0 }, mr_rack_radius = 9.0, mr_slide_travel = 4.4, mr_rack_done = 0.85,
-    mr_rack_hand_loc = { 0.0, 0.0, 0.0 },
+    mr_rack_hand_loc = { 0.0, 0.0, 0.0 }, mr_rack_hand_rot = { 0.0, 0.0, 0.0 },
 }
 local PER_WEAPON_IDS = { "mr_pouch_loc", "mr_pouch_rot", "mr_grab_radius", "mr_pose", "mr_hold_loc", "mr_hold_rot",
     "mr_insert_radius", "mr_insert_time", "mr_insert_depth", "mr_rock_angle", "mr_rock_pivot",
-    "mr_rack_point", "mr_rack_radius", "mr_slide_travel", "mr_rack_done", "mr_rack_hand_loc" }
+    "mr_rack_point", "mr_rack_radius", "mr_slide_travel", "mr_rack_done", "mr_rack_hand_loc", "mr_rack_hand_rot",
+    "mr_rack_hand_loc_ik", "mr_rack_hand_rot_ik" }
+-- IK modes place the hand on the slide with their own values; a weapon without them starts from its Hands values
+local IK_SEEDED_FROM = { mr_rack_hand_loc_ik = "mr_rack_hand_loc", mr_rack_hand_rot_ik = "mr_rack_hand_rot" }
 
 -- Hand pose while holding a clip: a left-hand attachment pose from data/hands_parameters.json (wizard ids)
 local POSE_IDS = { "" }
@@ -170,7 +173,12 @@ table.insert(_G.HR_SECTIONS, { order = 5.8, label = "Manual Reload", layout = {
     { widgetType = "slider_float", id = "mr_slide_travel", label = "Pull travel (cm)", initialValue = 4.4, range = {1.0, 20.0}, speed = 0.05 },
     { widgetType = "slider_float", id = "mr_rack_done", label = "Pulled far enough at (fraction of the travel)", initialValue = 0.85, range = {0.3, 1.0}, speed = 0.01 },
     { widgetType = "checkbox", id = "mr_rack_hand", label = "All weapons: left hand holds on to the slide / handle while racking", initialValue = true },
-    { widgetType = "drag_float3", id = "mr_rack_hand_loc", label = "Hand on the slide: move it (gun space cm: x / y=forward / z=up)", initialValue = { 0.0, 0.0, 0.0 }, range = {-30, 30}, speed = 0.1 },
+    { widgetType = "drag_float3", id = "mr_rack_hand_loc", label = "Hands mode - hand on the slide: move it (gun space cm: x / y=forward / z=up)", initialValue = { 0.0, 0.0, 0.0 }, range = {-30, 30}, speed = 0.1 },
+    { widgetType = "drag_float3", id = "mr_rack_hand_rot", label = "Hands mode - hand on the slide: rotate it (hand space: pitch / yaw / roll)", initialValue = { 0.0, 0.0, 0.0 }, range = {-180, 180}, speed = 0.5 },
+    { widgetType = "drag_float3", id = "mr_rack_hand_loc_ik", label = "IK modes - hand on the slide: move it (gun space cm: x / y=forward / z=up)", initialValue = { 0.0, 0.0, 0.0 }, range = {-30, 30}, speed = 0.1 },
+    { widgetType = "drag_float3", id = "mr_rack_hand_rot_ik", label = "IK modes - hand on the slide: rotate it (hand space: pitch / yaw / roll)", initialValue = { 0.0, 0.0, 0.0 }, range = {-180, 180}, speed = 0.5 },
+    { widgetType = "checkbox", id = "mr_rack_hand_preview", label = "Preview: hold the slide now (no reload needed; follows your wrist angle)", initialValue = false },
+    { widgetType = "checkbox", id = "mr_debug_rack", label = "Debug: show the rack grab area (sphere = reach, dot = left hand point; shrinks when in reach)", initialValue = false },
     { widgetType = "spacing" },
     { widgetType = "slider_float", id = "mr_finish_rate", label = "Game reload fast-forward (x speed)", initialValue = 20.0, range = {2.0, 40.0}, speed = 0.5 },
     { widgetType = "checkbox", id = "mr_haptics", label = "Haptic pulses (grab / seat / rack)", initialValue = true },
@@ -245,6 +253,19 @@ local function profileValue(profile, id)
 end
 
 local function loadProfileToUI(profile)
+    -- first time a weapon is held with this build: its IK values start as copies of its Hands values (then separate)
+    for ikId, handsId in pairs(IK_SEEDED_FROM) do
+        local saved = weaponParams[profile.id]
+        if saved == nil or saved[ikId] == nil then
+            local v = toArray(profileValue(profile, handsId))
+            if type(v) == "table" then
+                saved = saved or {}
+                weaponParams[profile.id] = saved
+                saved[ikId] = { v[1], v[2], v[3] }
+                paramsDirtyAt = os.clock()
+            end
+        end
+    end
     for _, id in ipairs(PER_WEAPON_IDS) do
         local v = profileValue(profile, id)
         if id == "mr_pose" then v = poseIndexFor(v) end
@@ -896,9 +917,9 @@ end
 -- ---------------------------------------------------------------------------------------------
 -- Slide rack
 -- ---------------------------------------------------------------------------------------------
-local function rackPointLocal(pull)
+local function rackPointLocal(pull, profile)
     local x, y, z = cfgVec("mr_rack_point", { 0.0, -3.0, 8.0 })
-    return addV({ X = x, Y = y, Z = z }, mulV(cur.profile.slideAxis, pull))
+    return addV({ X = x, Y = y, Z = z }, mulV((profile or cur.profile).slideAxis, pull))
 end
 
 local function setSlidePull(pull)
@@ -964,28 +985,41 @@ local function handGlideTime()
     return type(v) == "number" and v or 0.15
 end
 
--- pose for the current pull, gun space: the virtual controller (IK) or the glove on it (Hands mode)
+-- pose for the current pull, gun space: the virtual controller (IK) or the glove on it (Hands mode).
+-- mr_rack_hand_rot turns the virtual controller in its own frame; a preview (rh.preview) sits on the closed slide.
+-- IK modes use their own pair (mr_rack_hand_loc_ik / _rot_ik).
 local function rackHandTarget(rh)
-    local x, y, z = cfgVec("mr_rack_hand_loc", { 0.0, 0.0, 0.0 })
-    local p = addV(rackPointLocal(cur.rack.pull), { X = x, Y = y, Z = z })
-    if rh.ik then return p, rh.ctrlRot end
-    local r = uevrUtils.rotator(rh.ctrlRot.Pitch, rh.ctrlRot.Yaw, rh.ctrlRot.Roll)
-    local rot = kismet_math_library:ComposeRotators(uevrUtils.rotator(rh.gloveRot.Pitch, rh.gloveRot.Yaw, rh.gloveRot.Roll), r)
-    return addV(p, rotateV(rh.gloveLoc, rh.ctrlRot)), copyR(rot)
+    local suffix = rh.ik and "_ik" or ""
+    local x, y, z = cfgVec("mr_rack_hand_loc" .. suffix, { 0.0, 0.0, 0.0 })
+    local p = addV(rackPointLocal(rh.preview and 0 or cur.rack.pull, rh.profile), { X = x, Y = y, Z = z })
+    local rp, ry, rr = cfgVec("mr_rack_hand_rot" .. suffix, { 0.0, 0.0, 0.0 })
+    local ctrl = copyR(kismet_math_library:ComposeRotators(uevrUtils.rotator(rp, ry, rr),
+        uevrUtils.rotator(rh.ctrlRot.Pitch, rh.ctrlRot.Yaw, rh.ctrlRot.Roll)))
+    if rh.ik then return p, ctrl end
+    local rot = kismet_math_library:ComposeRotators(uevrUtils.rotator(rh.gloveRot.Pitch, rh.gloveRot.Yaw, rh.gloveRot.Roll),
+        uevrUtils.rotator(ctrl.Pitch, ctrl.Yaw, ctrl.Roll))
+    return addV(p, rotateV(rh.gloveLoc, ctrl)), copyR(rot)
+end
+
+-- the left controller's rotation in gun space (the grab-time hand angle)
+local function ctrlRotOnGun(ctrl, gun)
+    return copyR(kismet_math_library:InverseTransformRotation(gun:K2_GetComponentToWorld(), ctrl:K2_GetComponentRotation()))
 end
 
 local function setGloveRelative(glove, loc, rot)
     uevrUtils.set_component_relative_transform(glove, loc, rot, { X = 1, Y = 1, Z = 1 })
 end
 
-local function attachRackHand(now)
+-- previewGun / previewProfile: mr_rack_hand_preview outside a reload (the hand on the closed slide, no rack)
+local function attachRackHand(now, previewGun, previewProfile)
     rackHand = nil
-    if configui.getValue("mr_rack_hand") == false or cur.rack == nil then return end
+    if configui.getValue("mr_rack_hand") == false or (previewGun == nil and cur.rack == nil) then return end
+    local gun = previewGun or cur.gun
     local ok, err = pcall(function()
         local ctrl = controllers.getController(Handed.Left, true)
         if ctrl == nil then return end
-        local ctrlRot = ctrl:K2_GetComponentRotation()
-        local rh = { ik = ikHandsMode(), ctrlRot = copyR(kismet_math_library:InverseTransformRotation(cur.gun:K2_GetComponentToWorld(), ctrlRot)) }
+        local rh = { ik = ikHandsMode(), ctrlRot = ctrlRotOnGun(ctrl, gun),
+            preview = previewGun ~= nil, gun = gun, profile = previewProfile }
         if not rh.ik then
             local glove = hands ~= nil and hands.getHandComponent(Handed.Left) or nil
             if glove == nil or glove.K2_AttachTo == nil then return end
@@ -995,7 +1029,7 @@ local function attachRackHand(now)
             rh.glove = glove
             rh.snap = { parent = glove.AttachParent, socket = glove.AttachSocketName and glove.AttachSocketName:to_string() or "",
                 loc = copyV(glove.RelativeLocation), rot = copyR(glove.RelativeRotation) }
-            glove:K2_AttachTo(cur.gun, fname(""), 1, false) -- keep world: glides from where it is
+            glove:K2_AttachTo(gun, fname(""), 1, false) -- keep world: glides from where it is
             rh.glide = { t0 = now, dur = handGlideTime(), loc = copyV(glove.RelativeLocation), rot = copyR(glove.RelativeRotation) }
         end
         rackHand = rh
@@ -1027,11 +1061,18 @@ local function tickRackHand(now)
             kismet_math_library:RLerp(uevrUtils.rotator(g.rot.Pitch, g.rot.Yaw, g.rot.Roll), uevrUtils.rotator(rh.snap.rot.Pitch, rh.snap.rot.Yaw, rh.snap.rot.Roll), e, true))
         return
     end
-    if cur.rack == nil or cur.gun == nil then return end
+    if rh.preview then
+        -- as if grabbed this frame: the hand angle follows the controller
+        if not exists(rh.gun) then return end
+        local ctrl = controllers.getController(Handed.Left, true)
+        if ctrl ~= nil then rh.ctrlRot = ctrlRotOnGun(ctrl, rh.gun) end
+    elseif cur.rack == nil or cur.gun == nil then
+        return
+    end
     local loc, rot = rackHandTarget(rh)
     if rh.ik then
         rh.attached = true
-        pcall(function() uevrUtils.executeUEVRCallbacks("on_accessory_attach", Handed.Left, cur.gun, "", 0, loc, rot) end)
+        pcall(function() uevrUtils.executeUEVRCallbacks("on_accessory_attach", Handed.Left, rh.gun, "", 0, loc, rot) end)
         return
     end
     local e = glideEase(rh.glide, now)
@@ -1065,6 +1106,30 @@ releaseRackHand = function(now)
         rh.returning = true
     end)
     if not ok then rackHand = nil end
+end
+
+-- mr_rack_hand_preview: outside a reload the left hand sits on the closed slide in the rack pose, so
+-- mr_rack_hand_loc / _rot can be tuned without reloading. Let go when unticked, on a weapon or hands-mode change,
+-- in a cutscene / menu, or when a reload starts (its own rack attaches the hand again).
+local function updateRackPreview(now, gun, profile)
+    local rh = rackHand
+    local want = configui.getValue("mr_rack_hand_preview") == true and configui.getValue("mr_rack_hand") ~= false
+        and state == S_IDLE and gun ~= nil and profile ~= nil
+    if rh ~= nil and rh.preview and not rh.returning then
+        if want and rh.gun == gun and rh.ik == ikHandsMode() then return end
+        releaseRackHand(now)
+        -- a reload that just started has no hand pose of its own yet (that comes with the clip grab)
+        if state == S_IDLE or state == S_AWAIT_MAG then setHandPose(false) end
+        if state == S_IDLE then suspendAccessories(false) end
+        return
+    end
+    if want and rh == nil then
+        attachRackHand(now, gun, profile)
+        if rackHand ~= nil then
+            setHandPose(true)
+            suspendAccessories(true) -- no proximity grips (the Colt's "Left Hand") on the pinned hand
+        end
+    end
 end
 
 local SPRING_S = 0.05
@@ -1130,6 +1195,77 @@ local function updateRack(now)
 end
 
 -- ---------------------------------------------------------------------------------------------
+-- Debug: rack grab area (mr_debug_rack). Shown while a supported gun is held, also outside a reload (tuning without
+-- ammo): a sphere of mr_rack_radius at the grab point (the zone updateRack tests) and a dot at the left controller
+-- point it measures from (not the visible hand). With that point in reach the sphere shrinks to a dot (gun visible).
+-- Spheres are components on the pawn, as physical_melee.lua's contact spheres.
+-- ---------------------------------------------------------------------------------------------
+local DEBUG_SPHERE_MESH = "StaticMesh /Engine/BasicShapes/Sphere.Sphere" -- 100 cm diameter
+local DEBUG_SPHERE_MAT = "Material /Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial"
+local DEBUG_SMC_CLASS = "Class /Script/Engine.StaticMeshComponent"
+local DEBUG_DOT_CM, DEBUG_HAND_DOT_CM = 2.0, 1.2 -- diameters
+local debugSpheres = {} -- [1] grab area, [2] hand point
+local rackDebugGun, rackDebugProfile = nil, nil -- set by tickBody while a supported gun is usable
+
+local function hideRackDebug()
+    for _, comp in pairs(debugSpheres) do
+        pcall(function() if exists(comp) then comp:SetHiddenInGame(true, false) end end)
+    end
+end
+
+local function getDebugSphere(index)
+    local comp = debugSpheres[index]
+    if comp ~= nil and not exists(comp) then comp = nil debugSpheres[index] = nil end
+    if comp ~= nil then return comp end
+    local pawn = uevr.api:get_local_pawn(0)
+    local smcClass = uevr.api:find_uobject(DEBUG_SMC_CLASS)
+    if pawn == nil or smcClass == nil then return nil end
+    local identityT = { Rotation = { X = 0, Y = 0, Z = 0, W = 1 }, Translation = { X = 0, Y = 0, Z = 0 }, Scale3D = { X = 1, Y = 1, Z = 1 } }
+    local ok, created = pcall(function() return pawn:AddComponentByClass(smcClass, true, identityT, false) end)
+    if not ok or created == nil or created == false then return nil end
+    comp = created
+    pcall(function() comp:SetMobility(2) end)
+    local mesh = uevr.api:find_uobject(DEBUG_SPHERE_MESH)
+    if mesh ~= nil then pcall(function() comp:SetStaticMesh(mesh) end) end
+    local mat = uevr.api:find_uobject(DEBUG_SPHERE_MAT)
+    if mat ~= nil then pcall(function() comp:SetMaterial(0, mat) end) end
+    pcall(function() comp:SetCollisionEnabled(0) end)
+    pcall(function() comp:SetCastShadow(false) end)
+    debugSpheres[index] = comp
+    return comp
+end
+
+local function placeDebugSphere(index, loc, diameterCm)
+    local comp = getDebugSphere(index)
+    if comp == nil then return end
+    local s = diameterCm / 100.0
+    pcall(function()
+        comp:SetHiddenInGame(false, false)
+        comp:K2_SetWorldLocation(vec(loc.X, loc.Y, loc.Z), false, reusable_hit_result, false)
+        comp:SetWorldScale3D(vec(s, s, s))
+    end)
+end
+
+local function updateRackDebug()
+    local gun, profile = rackDebugGun, rackDebugProfile
+    if configui.getValue("mr_debug_rack") ~= true or gun == nil or profile == nil or not exists(gun) then
+        hideRackDebug()
+        return
+    end
+    -- during a rack the grab point moves with the slide (held back / pulled), as updateRack tests it
+    local pull = 0
+    if cur.rack ~= nil and cur.gun == gun and (state == S_AWAIT_RACK or state == S_RACK) then pull = cur.rack.pull end
+    local x, y, z = cfgVec("mr_rack_point", { 0.0, -3.0, 8.0 })
+    local grabWorld = gunPoint(gun, addV({ X = x, Y = y, Z = z }, mulV(profile.slideAxis, pull)))
+    local radius = cfgNum("mr_rack_radius", 9.0)
+    local hand = controllers.getControllerLocation(Handed.Left)
+    local inReach = hand ~= nil and lenV(subV(hand, grabWorld)) <= radius
+    placeDebugSphere(1, grabWorld, inReach and DEBUG_DOT_CM or radius * 2)
+    if hand ~= nil then placeDebugSphere(2, hand, DEBUG_HAND_DOT_CM)
+    elseif debugSpheres[2] ~= nil then pcall(function() if exists(debugSpheres[2]) then debugSpheres[2]:SetHiddenInGame(true, false) end end) end
+end
+
+-- ---------------------------------------------------------------------------------------------
 -- Input: the left grip that grabs a clip / the slide is kept from the game (and two-handing) until released
 -- Priority 14: before the interaction pointer (12) and hands_animation (10), like the pointer's grab.
 -- ---------------------------------------------------------------------------------------------
@@ -1161,6 +1297,7 @@ local lastPawn = nil
 
 local function tickBody(now, dt, pressed, released)
     local pawn = uevr.api:get_local_pawn(0)
+    rackDebugGun, rackDebugProfile = nil, nil
     tickParts(now)
     updateFallers(dt, pawn)
     checkAmmoLog(now)
@@ -1173,6 +1310,8 @@ local function tickBody(now, dt, pressed, released)
             for _, p in ipairs({ cur.held, cur.seated, cur.slide }) do if p ~= nil and not exists(p.comp) then p.comp = nil end end
             cleanup(false, "pawn changed")
         end
+        debugSpheres = {} -- they belong to the old pawn
+        if rackHand ~= nil and rackHand.preview then rackHand = nil setHandPose(false) suspendAccessories(false) end
         lastPawn = pawn
     end
     if pawn == nil then destroyPouch() return end
@@ -1216,22 +1355,24 @@ local function tickBody(now, dt, pressed, released)
     end
 
     if not enabled or profile == nil or reason ~= nil then
+        updateRackPreview(now, nil, nil)
         destroyPouch()
         nearPouch, nearSlide = false, false
         if state == S_IDLE then status(not enabled and "off" or (profile == nil and "no supported gun" or ("paused (" .. reason .. ")"))) end
         return
     end
 
+    rackDebugGun, rackDebugProfile = gun, profile
+
     if now >= nextSparePoll then
         nextSparePoll = now + 0.5
         pcall(function() spareAmmo = equipment:GetAmmoInInventory() end)
     end
 
-    if state == S_IDLE then
-        -- the cube in the left hand (Genesis): no free hand - the game's reload plays as usual
-        local cubeHeld = _G.hrCubeAim ~= nil and _G.hrCubeAim() ~= nil
-        if not cubeHeld then tryIntercept(pawn, equipment, gun, profile) end
-    end
+    -- the cube in the left hand (Genesis): no free hand - the game's reload plays as usual, no preview either
+    local cubeHeld = _G.hrCubeAim ~= nil and _G.hrCubeAim() ~= nil
+    updateRackPreview(now, not cubeHeld and gun or nil, not cubeHeld and profile or nil)
+    if state == S_IDLE and not cubeHeld then tryIntercept(pawn, equipment, gun, profile) end
 
     local showPouch = spareAmmo > 0 and (state == S_IDLE or state == S_AWAIT_MAG)
     updatePouch(gun, profile, showPouch)
@@ -1282,6 +1423,8 @@ local function tick()
     local ok, err = pcall(tickBody, now, dt, pressed, released)
     local okHand, errHand = pcall(tickRackHand, now) -- after the body: the slide's pull of this frame
     if not okHand then log("rack hand: " .. tostring(errHand)) rackHand = nil end
+    local okDebug, errDebug = pcall(updateRackDebug) -- after the body: the slide's pull of this frame
+    if not okDebug then log("rack debug: " .. tostring(errDebug)) end
     -- a press locked the hand for a grab that did not start: give the hand its input back
     if locked and not poseActive and handsAnimation ~= nil then
         pcall(function() handsAnimation.setInputLocked(Handed.Left, false) end)
@@ -1308,6 +1451,7 @@ uevrUtils.registerPreLevelChangeCallback(function(level)
     cur.equipment, cur.gun, cur.profile, cur.pawn, cur.insert, cur.rack, cur.grabGlide = nil, nil, nil, nil, nil, nil, nil
     lastPawn, swallowGrip, nearPouch, nearSlide = nil, false, false, false
     rackHand = nil
+    debugSpheres, rackDebugGun, rackDebugProfile = {}, nil, nil
     setHandPose(false)
     suspendAccessories(false)
     state = S_IDLE

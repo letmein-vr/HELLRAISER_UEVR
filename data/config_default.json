@@ -22,7 +22,6 @@
     "rightAccessoryWhenActivePriority": "0",
     "rightArmWhenActive": 1,
     "rightArmWhenActivePriority": "0",
-    "uevr_input_isDisabledOverride": false,
     "weaponWhenActive": 2,
     "weaponWhenActivePriority": "0"
 }

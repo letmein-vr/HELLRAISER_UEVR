@@ -11,6 +11,11 @@
 #include <vector>
 
 #include "uevr/API.hpp"
+// uevr_plugin_required_version (exported by uevr/Plugin.hpp) reports the header's minor version, and UEVR unloads
+// plugins that ask for a newer minor than it has. The merged headers are 2.41 (owned FName, controller input tail),
+// official UEVR is 2.39, and this plugin uses nothing newer than 2.39 - so ask for 2.39.
+#undef UEVR_PLUGIN_VERSION_MINOR
+#define UEVR_PLUGIN_VERSION_MINOR 39
 #include "uevr/Plugin.hpp"
 
 // UE5 FVector / FRotator (doubles)

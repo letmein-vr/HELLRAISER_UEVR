@@ -96,6 +96,7 @@
     "kp_wide_highlight": true,
     "menu_game_aim": true,
     "mr_debug_log": true,
+    "mr_debug_rack": false,
     "mr_enabled": true,
     "mr_finish_rate": 20.0,
     "mr_grab_glide": 0.1,
@@ -135,14 +136,30 @@
     "mr_rack_done": 0.85,
     "mr_rack_hand": true,
     "mr_rack_hand_loc": [
-        2.200000047683716,
-        5.800000190734863,
-        7.699999809265137
+        3.5,
+        2.4000000953674316,
+        1.600000023841858
+    ],
+    "mr_rack_hand_loc_ik": [
+        6.400000095367432,
+        2.299999952316284,
+        2.299999952316284
+    ],
+    "mr_rack_hand_preview": false,
+    "mr_rack_hand_rot": [
+        0.0,
+        0.0,
+        0.0
+    ],
+    "mr_rack_hand_rot_ik": [
+        0.0,
+        0.0,
+        0.0
     ],
     "mr_rack_point": [
         0.0,
-        -3.0,
-        1.2000000476837158
+        4.300000190734863,
+        6.699999809265137
     ],
     "mr_rack_radius": 10.56,
     "mr_rock_angle": 0.0,
@@ -203,6 +220,12 @@
     "th_fraction": 0.55,
     "th_grab_button": 1,
     "th_grab_radius": 14.0,
+    "th_lh_ik_off_x": 0,
+    "th_lh_ik_off_y": 0,
+    "th_lh_ik_off_z": 0,
+    "th_lh_ik_rot_pitch": 0,
+    "th_lh_ik_rot_roll": 0,
+    "th_lh_ik_rot_yaw": 0,
     "th_lh_off_x": 0,
     "th_lh_off_y": 0,
     "th_lh_off_z": 0,

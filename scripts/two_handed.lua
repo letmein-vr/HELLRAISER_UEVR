@@ -79,13 +79,20 @@ table.insert(_G.HR_SECTIONS, { order = 2, label = "Two-Handed Aiming", layout = 
             { widgetType = "button", id = "th_capture_pose", label = "Get left hand pose from current mesh", size = {260, 24} },
             { widgetType = "button", id = "th_clear_pose", label = "Clear left hand pose", size = {180, 24} },
             { widgetType = "spacing" },
-            { widgetType = "text", label = "-- Left hand placement while two-handing (weapon-local, saved per attachment)" },
+            { widgetType = "text", label = "-- Left hand placement while two-handing, Hands mode (weapon-local, saved per attachment)" },
             { widgetType = "slider_float", id = "th_lh_off_x", label = "LH Offset X", initialValue = 0.0, range = {-30.0, 30.0} },
             { widgetType = "slider_float", id = "th_lh_off_y", label = "LH Offset Y", initialValue = 0.0, range = {-30.0, 30.0} },
             { widgetType = "slider_float", id = "th_lh_off_z", label = "LH Offset Z", initialValue = 0.0, range = {-30.0, 30.0} },
             { widgetType = "slider_float", id = "th_lh_rot_pitch", label = "LH Rot Pitch", initialValue = 0.0, range = {-180.0, 180.0} },
             { widgetType = "slider_float", id = "th_lh_rot_yaw", label = "LH Rot Yaw", initialValue = 0.0, range = {-180.0, 180.0} },
             { widgetType = "slider_float", id = "th_lh_rot_roll", label = "LH Rot Roll", initialValue = 0.0, range = {-180.0, 180.0} },
+            { widgetType = "text", label = "-- Left hand placement while two-handing, IK modes (weapon-local, saved per attachment)" },
+            { widgetType = "slider_float", id = "th_lh_ik_off_x", label = "IK LH Offset X", initialValue = 0.0, range = {-30.0, 30.0} },
+            { widgetType = "slider_float", id = "th_lh_ik_off_y", label = "IK LH Offset Y", initialValue = 0.0, range = {-30.0, 30.0} },
+            { widgetType = "slider_float", id = "th_lh_ik_off_z", label = "IK LH Offset Z", initialValue = 0.0, range = {-30.0, 30.0} },
+            { widgetType = "slider_float", id = "th_lh_ik_rot_pitch", label = "IK LH Rot Pitch", initialValue = 0.0, range = {-180.0, 180.0} },
+            { widgetType = "slider_float", id = "th_lh_ik_rot_yaw", label = "IK LH Rot Yaw", initialValue = 0.0, range = {-180.0, 180.0} },
+            { widgetType = "slider_float", id = "th_lh_ik_rot_roll", label = "IK LH Rot Roll", initialValue = 0.0, range = {-180.0, 180.0} },
             { widgetType = "checkbox", id = "th_force", label = "Force two-handing ON (dev)", initialValue = false },
 }})
 
@@ -121,6 +128,32 @@ local function getWeaponParams(id)
     return params[id]
 end
 
+-- Left-hand placement sliders: Hands mode (lh*) and IK modes (lhIk*) have their own values per weapon
+local LH_SLIDERS = {
+    { id = "th_lh_off_x", field = "lhOffX", ik = "lhIkOffX", ikId = "th_lh_ik_off_x" },
+    { id = "th_lh_off_y", field = "lhOffY", ik = "lhIkOffY", ikId = "th_lh_ik_off_y" },
+    { id = "th_lh_off_z", field = "lhOffZ", ik = "lhIkOffZ", ikId = "th_lh_ik_off_z" },
+    { id = "th_lh_rot_pitch", field = "lhRotPitch", ik = "lhIkRotPitch", ikId = "th_lh_ik_rot_pitch" },
+    { id = "th_lh_rot_yaw", field = "lhRotYaw", ik = "lhIkRotYaw", ikId = "th_lh_ik_rot_yaw" },
+    { id = "th_lh_rot_roll", field = "lhRotRoll", ik = "lhIkRotRoll", ikId = "th_lh_ik_rot_roll" },
+}
+
+-- a weapon without IK values starts from its Hands values (copied once, separate afterwards); true = changed
+local function seedIKLeftHand(p)
+    local changed = false
+    for _, s in ipairs(LH_SLIDERS) do
+        if p[s.ik] == nil then p[s.ik] = p[s.field] or 0 changed = true end
+    end
+    return changed
+end
+
+-- the weapon's left-hand offset for the current hands mode: loc {X,Y,Z}, rot {Pitch,Yaw,Roll}
+local function leftHandOffset(p, ik)
+    local function v(s) return (ik and p[s.ik] or p[s.field]) or 0 end
+    local s = LH_SLIDERS
+    return { X = v(s[1]), Y = v(s[2]), Z = v(s[3]) }, { Pitch = v(s[4]), Yaw = v(s[5]), Roll = v(s[6]) }
+end
+
 -- Shows the weapon's saved values in the sliders. No callbacks (perf pass 2026-10-17): the slider callbacks only wrote
 -- the same values back into params and saved two_handed_parameters.json - ~10 file writes on every weapon switch.
 -- The left-hand offsets are applied on the next grab (the grip release on a weapon switch happens first).
@@ -131,12 +164,11 @@ local function loadWeaponParamsToUI(id)
     configui.setValue("th_off_x", p.offX or 0, true)
     configui.setValue("th_off_y", p.offY or 0, true)
     configui.setValue("th_off_z", p.offZ or 0, true)
-    configui.setValue("th_lh_off_x", p.lhOffX or 0, true)
-    configui.setValue("th_lh_off_y", p.lhOffY or 0, true)
-    configui.setValue("th_lh_off_z", p.lhOffZ or 0, true)
-    configui.setValue("th_lh_rot_pitch", p.lhRotPitch or 0, true)
-    configui.setValue("th_lh_rot_yaw", p.lhRotYaw or 0, true)
-    configui.setValue("th_lh_rot_roll", p.lhRotRoll or 0, true)
+    if seedIKLeftHand(p) then saveParams() end
+    for _, s in ipairs(LH_SLIDERS) do
+        configui.setValue(s.id, p[s.field] or 0, true)
+        configui.setValue(s.ikId, p[s.ik] or 0, true)
+    end
 end
 
 for _, id in ipairs({"th_fraction", "th_off_x", "th_off_y", "th_off_z"}) do
@@ -427,17 +459,52 @@ local leftBaseRel = nil   -- { loc={X,Y,Z}, rot={Pitch,Yaw,Roll} } captured righ
 -- IK helpers are defined further down (after the glove helpers they mirror)
 local ikBase = nil
 local applyIKAccessory = nil
+local ikAim = nil -- IK pivot state (see "IK modes: weapon pivot"); attachIKLeftHand reads its frame
+
+-- IK modes, two-hand frame (2026-10-28): both IK hands target this invisible SceneComponent (on the pawn, unattached),
+-- placed each post-stereo at the two-handed gun pose computed from the controllers; the gun itself stays on the rig's
+-- hand_r (weaponhook), so gun and hands come out of the same IK solve. Targeting the gun instead made the left hand
+-- one frame behind the gun (the solve read the gun before / after the post-stereo move): lag + float.
+-- Created ahead of the grab while an IK two-handable gun is held: libs/ik.lua only accepts a target that
+-- UEVR_UObjectHook.exists() knows, which a freshly created component may not be yet.
+local SCENE_COMPONENT_CLASS = "Class /Script/Engine.SceneComponent"
+local twoHandFrame = nil
+local twoHandFramePawn = nil -- the frame lives and dies with this pawn (save load = new pawn: never touch the old one)
+
+local function frameUsable(frame)
+    if frame == nil then return false end
+    local ok, r = pcall(function() return UEVR_UObjectHook.exists(frame) end)
+    return ok and r == true
+end
+
+local function ensureTwoHandFrame()
+    local pawn = uevr.api:get_local_pawn(0)
+    if pawn ~= twoHandFramePawn then twoHandFrame, twoHandFramePawn = nil, nil end
+    if twoHandFrame ~= nil then return twoHandFrame end
+    local class = uevr.api:find_uobject(SCENE_COMPONENT_CLASS)
+    if pawn == nil or class == nil then return nil end
+    local identityT = { Rotation = { X = 0, Y = 0, Z = 0, W = 1 }, Translation = { X = 0, Y = 0, Z = 0 }, Scale3D = { X = 1, Y = 1, Z = 1 } }
+    local ok, created = pcall(function() return pawn:AddComponentByClass(class, true, identityT, false) end) -- manual attachment: stays unattached
+    if not ok or created == nil or created == false then return nil end
+    pcall(function() created:SetMobility(2) end) -- movable
+    twoHandFrame, twoHandFramePawn = created, pawn
+    return twoHandFrame
+end
+
+local function placeTwoHandFrame(frame, loc, rot)
+    frame:K2_SetWorldLocationAndRotation(uevrUtils.vector(loc.X, loc.Y, loc.Z), rot, false, getHitResult(), true)
+end
 
 local function applyLeftOffset()
     leftGlide = nil
     if not active or leftBaseRel == nil then return end
     local pmc = hands.getHandComponent(Handed.Left)
     if not alive(pmc) then return end
-    local p = getWeaponParams(currentWeaponID) or {}
+    local o, r = leftHandOffset(getWeaponParams(currentWeaponID) or {}, false)
     pcall(function()
         uevrUtils.set_component_relative_transform(pmc,
-            { X = leftBaseRel.loc.X + (p.lhOffX or 0), Y = leftBaseRel.loc.Y + (p.lhOffY or 0), Z = leftBaseRel.loc.Z + (p.lhOffZ or 0) },
-            { Pitch = leftBaseRel.rot.Pitch + (p.lhRotPitch or 0), Yaw = leftBaseRel.rot.Yaw + (p.lhRotYaw or 0), Roll = leftBaseRel.rot.Roll + (p.lhRotRoll or 0) },
+            { X = leftBaseRel.loc.X + o.X, Y = leftBaseRel.loc.Y + o.Y, Z = leftBaseRel.loc.Z + o.Z },
+            { Pitch = leftBaseRel.rot.Pitch + r.Pitch, Yaw = leftBaseRel.rot.Yaw + r.Yaw, Roll = leftBaseRel.rot.Roll + r.Roll },
             { X = 1, Y = 1, Z = 1 })
     end)
 end
@@ -454,22 +521,20 @@ local function captureLeftBase()
     end)
 end
 
-for _, id in ipairs({"th_lh_off_x", "th_lh_off_y", "th_lh_off_z", "th_lh_rot_pitch", "th_lh_rot_yaw", "th_lh_rot_roll"}) do
-    configui.onUpdate(id, function(value)
-        local p = getWeaponParams(currentWeaponID)
-        if p == nil then return end
-        if id == "th_lh_off_x" then p.lhOffX = value
-        elseif id == "th_lh_off_y" then p.lhOffY = value
-        elseif id == "th_lh_off_z" then p.lhOffZ = value
-        elseif id == "th_lh_rot_pitch" then p.lhRotPitch = value
-        elseif id == "th_lh_rot_yaw" then p.lhRotYaw = value
-        elseif id == "th_lh_rot_roll" then p.lhRotRoll = value end
-        saveParams()
-        uevrUtils.setTimeout(1, function()          -- draw thread -> game thread
-            applyLeftOffset()                        -- glove path (no-op without a glove component)
-            if ikBase ~= nil then applyIKAccessory() end -- IK path: re-issue the attach with the new offsets
-        end)
+local function onLeftHandSlider(field, value)
+    local p = getWeaponParams(currentWeaponID)
+    if p == nil then return end
+    seedIKLeftHand(p) -- an edit before the weapon's values were shown must not leave the other IK fields empty
+    p[field] = value
+    saveParams()
+    uevrUtils.setTimeout(1, function()          -- draw thread -> game thread
+        applyLeftOffset()                        -- glove path (no-op without a glove component)
+        if ikBase ~= nil then applyIKAccessory() end -- IK path: re-issue the attach with the new offsets
     end)
+end
+for _, s in ipairs(LH_SLIDERS) do
+    configui.onUpdate(s.id, function(value) onLeftHandSlider(s.field, value) end)
+    configui.onUpdate(s.ikId, function(value) onLeftHandSlider(s.ik, value) end)
 end
 
 -- ---------------------------------------------------------------------------------------------
@@ -479,7 +544,7 @@ end
 -- parent socket + offset (rotated into the parent's frame) with rotation = parent rot composed with
 -- localRot, until "on_accessory_detach"(hand). We attach to the weapon mesh root ("" socket) with the
 -- grip point converted to weapon-local space, and the controller's grab-time rotation relative to the
--- weapon so the hand keeps its grip orientation while the gun pivots. The per-weapon lhOff/lhRot
+-- weapon so the hand keeps its grip orientation while the gun pivots. The per-weapon IK lhIkOff/lhIkRot
 -- sliders are added on top (weapon-local), same as the glove path.
 -- ---------------------------------------------------------------------------------------------
 local function ikMode()
@@ -499,12 +564,12 @@ local function weaponLocalOffset(weaponMesh, worldPoint, worldRot)
 end
 
 applyIKAccessory = function()
-    if not active or ikBase == nil or not alive(ikBase.weaponMesh) then return end
-    local p = getWeaponParams(currentWeaponID) or {}
+    if not active or ikBase == nil or not alive(ikBase.parent) then return end
+    local o, r = leftHandOffset(getWeaponParams(currentWeaponID) or {}, true)
     pcall(function()
-        uevrUtils.executeUEVRCallbacks("on_accessory_attach", Handed.Left, ikBase.weaponMesh, "", 0,
-            { X = ikBase.loc.X + (p.lhOffX or 0), Y = ikBase.loc.Y + (p.lhOffY or 0), Z = ikBase.loc.Z + (p.lhOffZ or 0) },
-            { Pitch = ikBase.rot.Pitch + (p.lhRotPitch or 0), Yaw = ikBase.rot.Yaw + (p.lhRotYaw or 0), Roll = ikBase.rot.Roll + (p.lhRotRoll or 0) })
+        uevrUtils.executeUEVRCallbacks("on_accessory_attach", Handed.Left, ikBase.parent, "", 0,
+            { X = ikBase.loc.X + o.X, Y = ikBase.loc.Y + o.Y, Z = ikBase.loc.Z + o.Z },
+            { Pitch = ikBase.rot.Pitch + r.Pitch, Yaw = ikBase.rot.Yaw + r.Yaw, Roll = ikBase.rot.Roll + r.Roll })
         ikAccessoryAttached = true
     end)
 end
@@ -517,9 +582,18 @@ local function attachIKLeftHand(weaponMesh, gripPoint)
         local ctrlRot = alive(leftCtrl) and leftCtrl:K2_GetComponentRotation() or nil
         local target = (configui.getValue("th_snap_left_hand") ~= false and gripPoint) or ctrlLoc or gripPoint
         if target == nil then return end
-        local lp, lr = weaponLocalOffset(weaponMesh, target, ctrlRot)
+        -- two-hand frame (placed at the un-pivoted gun by beginIKAim): offsets relative to it; else to the gun
+        local frame = ikAim ~= nil and ikAim.frame or nil
+        local lp, lr
+        if frame ~= nil then
+            lp = kismet_math_library:InverseTransformLocation(ikAim.baseT, target)
+            lr = ctrlRot ~= nil and kismet_math_library:InverseTransformRotation(ikAim.baseT, ctrlRot) or nil
+        else
+            lp, lr = weaponLocalOffset(weaponMesh, target, ctrlRot)
+        end
         ikBase = {
             weaponMesh = weaponMesh,
+            parent = frame or weaponMesh,
             loc = { X = lp.X, Y = lp.Y, Z = lp.Z },
             rot = lr ~= nil and { Pitch = lr.Pitch, Yaw = lr.Yaw, Roll = lr.Roll } or { Pitch = 0, Yaw = 0, Roll = 0 },
         }
@@ -547,7 +621,11 @@ end
 -- at the right controller's pose in the un-pivoted gun's local space. ik.lua reads that as a virtual controller, i.e.
 -- the real controller swung about the hand with the gun, and applies the solver's end-bone offsets to it as usual, so
 -- the hand stays on the grip and only rotates. (No feedback loop: the gun's base comes from the controller, not the bone.)
-local ikAim = nil -- { gripLocal = {X,Y,Z} }: left controller at grab time, in the un-pivoted gun's local space
+-- With the two-hand frame (normal case) the pivoted pose goes onto the frame, not the gun: both hands target the frame,
+-- the gun stays on hand_r at its grip and so follows the right hand of the same solve (locked, like one-handed).
+-- Without it (frame not usable yet) the gun itself is moved and targeted, as before.
+-- ikAim (declared above) = { gripLocal = {X,Y,Z} (left controller at grab, un-pivoted gun space), baseT (un-pivoted
+-- gun at grab), frame (two-hand frame or nil) }
 local ikRightAttached = false
 local activeInIKMode = false
 
@@ -570,14 +648,22 @@ local function beginIKAim(weaponMesh, leftHand)
     if baseT == nil or not alive(leftHand) then return end
     pcall(function()
         local lp = kismet_math_library:InverseTransformLocation(baseT, leftHand:K2_GetComponentLocation())
-        ikAim = { gripLocal = { X = lp.X, Y = lp.Y, Z = lp.Z } }
+        ikAim = { gripLocal = { X = lp.X, Y = lp.Y, Z = lp.Z }, baseT = baseT }
     end)
     if ikAim == nil or ctrlT == nil then return end
+    local frame = ensureTwoHandFrame()
+    if frameUsable(frame) then
+        local ok = pcall(function()
+            local bt = baseT.Translation
+            placeTwoHandFrame(frame, bt, kismet_math_library:Quat_Rotator(baseT.Rotation)) -- no swing at grab
+        end)
+        if ok then ikAim.frame = frame end
+    end
     pcall(function()
         local rel = kismet_math_library:MakeRelativeTransform(ctrlT, baseT)
         local t = rel.Translation
         local r = kismet_math_library:Quat_Rotator(rel.Rotation)
-        uevrUtils.executeUEVRCallbacks("on_accessory_attach", Handed.Right, weaponMesh, "", 0,
+        uevrUtils.executeUEVRCallbacks("on_accessory_attach", Handed.Right, ikAim.frame or weaponMesh, "", 0,
             { X = t.X, Y = t.Y, Z = t.Z }, { Pitch = r.Pitch, Yaw = r.Yaw, Roll = r.Roll })
         ikRightAttached = true
     end)
@@ -585,7 +671,11 @@ end
 
 -- true when the gun was placed here (false: not on the IK hand yet - the caller falls back to the UObjectHook path)
 local function applyIKAim(weaponMesh, leftHand)
-    if ikAim == nil then beginIKAim(weaponMesh, leftHand) end -- gun handed to the IK hand after the grab
+    if ikAim == nil then
+        beginIKAim(weaponMesh, leftHand) -- gun handed to the IK hand after the grab
+        -- the left hand was attached to the gun at the grab: re-attach it to the frame
+        if ikAim ~= nil and ikAim.frame ~= nil then pcall(function() attachIKLeftHand(weaponMesh, getGripPoint(weaponMesh)) end) end
+    end
     if ikAim == nil then return false end
     local baseT, pivot = ikWeaponBase(weaponMesh)
     if baseT == nil then return false end
@@ -612,7 +702,11 @@ local function applyIKAim(weaponMesh, leftHand)
             newLoc = { X = pivot.X + off.X, Y = pivot.Y + off.Y, Z = pivot.Z + off.Z }
         end
     end
-    weaponMesh:K2_SetWorldLocationAndRotation(uevrUtils.vector(newLoc.X, newLoc.Y, newLoc.Z), newRot, false, getHitResult(), false)
+    if ikAim.frame ~= nil and ikAim.frame == twoHandFrame then
+        placeTwoHandFrame(ikAim.frame, newLoc, newRot) -- the hands follow it; the gun follows hand_r
+    else
+        weaponMesh:K2_SetWorldLocationAndRotation(uevrUtils.vector(newLoc.X, newLoc.Y, newLoc.Z), newRot, false, getHitResult(), false)
+    end
     return true
 end
 
@@ -644,8 +738,8 @@ local function activate(weaponMesh, gripPoint)
     activeInIKMode = ikMode()
     local animName = attachments.getCurrentGripAnimation(Handed.Right)
     if ikMode() then
+        beginIKAim(weaponMesh, controllers.getController(0, true)) -- first: places the two-hand frame
         attachIKLeftHand(weaponMesh, gripPoint)
-        beginIKAim(weaponMesh, controllers.getController(0, true))
     else
         parentHandToWeapon(Handed.Right, weaponMesh, nil)
         local preLoc, preRot = parentHandToWeapon(Handed.Left, weaponMesh, configui.getValue("th_snap_left_hand") ~= false and gripPoint or nil)
@@ -712,6 +806,7 @@ uevrUtils.registerPreLevelChangeCallback(function(level)
     ikRightAttached = false
     ikBase = nil
     ikAim = nil
+    twoHandFrame, twoHandFramePawn = nil, nil -- went with the old world
     pivotArgs = nil
     snapshots = {}
     leftGlide = nil
@@ -780,6 +875,9 @@ local function tick()
         updateMarker(nil, nil)
         return
     end
+
+    -- IK modes: have the two-hand frame ready before a grab (ik.lua needs it known to UObjectHook)
+    if ikMode() then pcall(ensureTwoHandFrame) end
 
     local rightHand = controllers.getController(1, true)
     local leftHand = controllers.getController(0, true)
