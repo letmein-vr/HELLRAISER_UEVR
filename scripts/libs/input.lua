@@ -1255,14 +1255,39 @@ local function vectorRotate_Quat(vec, quat)
 end
 vectorRotate_Quat = uevrUtils.profiler:wrap("Input vectorRotate_Quat", vectorRotate_Quat)
 
+-- Pawn position freeze (Hellraiser 2026-11-01): fn() -> true while the pawn must stay where the game put it (seated
+-- sequences). Then roomscale does not move the pawn and the standing origin is left alone, so the HMD's physical
+-- offset (walking, leaning, the head pivot when turning) moves only the view. On release the origin is re-anchored to
+-- the HMD without moving the pawn, so the offset gathered meanwhile is dropped instead of applied in one jump.
+local pawnPositionFrozenCallback = nil
+local pawnPositionWasFrozen = false
+function M.setPawnPositionFrozenCallback(fn)
+	pawnPositionFrozenCallback = fn
+end
+local function isPawnPositionFrozen()
+	if pawnPositionFrozenCallback == nil then return false end
+	local ok, frozen = pcall(pawnPositionFrozenCallback)
+	return ok and frozen == true
+end
+
 local function updatePawnPositionRoomscale(world_to_meters)
 	local pawnPositionMode = getParameter("pawnPositionMode")
 	if pawnPositionMode ~= M.PawnPositionMode.NONE and rootComponent ~= nil and decoupledYaw ~= nil then
+		if isPawnPositionFrozen() then
+			pawnPositionWasFrozen = true
+			return
+		end
 		uevr.params.vr.get_standing_origin(temp_vec3f)
 
 		local origin = {X=temp_vec3f.X,Y=temp_vec3f.Y,Z=temp_vec3f.Z}
 		temp_quatf:set(0,0,0,0)
 		uevr.params.vr.get_pose(uevr.params.vr.get_hmd_index(), temp_vec3f, temp_quatf)
+		if pawnPositionWasFrozen then
+			pawnPositionWasFrozen = false
+			temp_vec3f.Y = origin.Y
+			uevr.params.vr.set_standing_origin(temp_vec3f)
+			return
+		end
 
 		--delta is how much the real world position of the hmd is changed from the real world origin
 		local delta = {X=(temp_vec3f.X-origin.X)*world_to_meters, Y=(temp_vec3f.Y-origin.Y)*world_to_meters, Z=(temp_vec3f.Z-origin.Z)*world_to_meters}

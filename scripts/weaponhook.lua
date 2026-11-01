@@ -403,22 +403,23 @@ local function isIKMode()
     return _G.getHandsMode ~= nil and _G.getHandsMode() == 2
 end
 
--- right-hand solver's end_bone_offset / end_bone_rotation from data/ik_parameters.json (re-read per hand-over so
--- IK panel tuning is picked up on the next weapon / mode change)
+-- right-hand solver's end_bone_offset / end_bone_rotation (and its id) from data/ik_parameters.json (re-read per
+-- hand-over so IK panel tuning is picked up on the next weapon / mode change)
 local function rightHandOffsets()
-    local offset, rotation = {0, 0, 0}, {0, 0, 0}
+    local offset, rotation, solverId = {0, 0, 0}, {0, 0, 0}, nil
     pcall(function()
         local params = json.load_file("ik_parameters.json")
         local profileName = params and params["_profileState"] and params["_profileState"]["currentEditingProfile"] or "default"
         local profile = params and (params[profileName] or params["default"])
-        for _, solver in pairs(profile and profile["solvers"] or {}) do
+        for id, solver in pairs(profile and profile["solvers"] or {}) do
             if solver["end_control_type"] == 1 then -- ik.ControllerType.RIGHT_CONTROLLER
                 offset = solver["end_bone_offset"] or offset
                 rotation = solver["end_bone_rotation"] or rotation
+                solverId = id
             end
         end
     end)
-    return offset, rotation
+    return offset, rotation, solverId
 end
 
 -- the right-hand IK target from this frame's controller pose (what libs/ik.lua solves hand_r to):
@@ -576,6 +577,18 @@ _G.hrIKWeaponBase = function(mesh, refreshOffsets)
     local relT = kismet_math_library:MakeTransform(uevrUtils.vector(rel.loc.X, rel.loc.Y, rel.loc.Z),
         uevrUtils.rotator(rel.rot.Pitch, rel.rot.Yaw, rel.rot.Roll), uevrUtils.vector(1, 1, 1))
     return kismet_math_library:ComposeTransforms(relT, handT), pivot, ctrlT
+end
+
+-- weapon_recoil.lua (IK modes): what it needs to kick the right-hand IK target so the gun on hand_r gets the kick -
+-- { solverId, offset = {x,y,z}, rotation = {p,y,r} (the saved solver values, controller space), rel = the gun's cached
+-- grip relative to that target } - or nil when the gun is not on the IK hand
+_G.hrIKKickInfo = function(mesh)
+    if ikHeld == nil or ikHeld.mesh ~= mesh or not alive(mesh) then return nil end
+    local rel = ikRelative[mesh:get_address()]
+    if rel == nil then return nil end
+    local off, rotOff, solverId = rightHandOffsets()
+    if solverId == nil then return nil end
+    return { solverId = solverId, offset = off, rotation = rotOff, rel = rel }
 end
 
 uevrUtils.registerPostCalculateStereoViewCallback(function(device, view_index, world_to_meters, position, rotation, is_double)

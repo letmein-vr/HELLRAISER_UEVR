@@ -702,6 +702,11 @@ local function applyIKAim(weaponMesh, leftHand)
             newLoc = { X = pivot.X + off.X, Y = pivot.Y + off.Y, Z = pivot.Z + off.Z }
         end
     end
+    -- weapon kick (weapon_recoil.lua) on top of the pivot, in the gun's frame
+    if _G.hrKickWorld ~= nil then
+        local ok, kLoc, kRot = pcall(_G.hrKickWorld, newLoc, newRot)
+        if ok and kLoc ~= nil then newLoc, newRot = kLoc, kRot end
+    end
     if ikAim.frame ~= nil and ikAim.frame == twoHandFrame then
         placeTwoHandFrame(ikAim.frame, newLoc, newRot) -- the hands follow it; the gun follows hand_r
     else
@@ -726,6 +731,8 @@ local function applyPivot()
     -- an IK gun still on UObjectHook): the OW2 / Cronos turret rotation
     if not (ikMode() and applyIKAim(a.weaponMesh, a.leftHand)) then
         twoHandedAiming.applyTwoHandedRotation(a.weaponMesh, a.rightHand, a.leftHand)
+        -- weapon kick (weapon_recoil.lua) on top of the pivot; both hands are parented to the gun meanwhile
+        if _G.hrKickComponentWorld ~= nil then pcall(_G.hrKickComponentWorld, a.weaponMesh) end
     end
 end
 
@@ -734,6 +741,8 @@ end
 -- ---------------------------------------------------------------------------------------------
 local function activate(weaponMesh, gripPoint)
     if active then return end
+    -- the right hand's rest is snapshotted below: never a kicked one (weapon_recoil.lua)
+    if _G.hrRecoilRestoreHand ~= nil then pcall(_G.hrRecoilRestoreHand) end
     active = true
     activeInIKMode = ikMode()
     local animName = attachments.getCurrentGripAnimation(Handed.Right)

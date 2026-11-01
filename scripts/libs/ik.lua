@@ -284,6 +284,14 @@ function M.getCurrentMesh(index)
     return nil
 end
 
+-- Runtime-only solver parameter change on the current rig (not saved; the next param load / rig rebuild restores the
+-- saved value), e.g. the weapon kick's end_bone_offset / end_bone_rotation (Hellraiser 2026-11-01, from Borderlands 4).
+function M.setSolverRuntimeParameter(solverId, paramName, value)
+	if #_rigInstances > 0 then
+		_rigInstances[#_rigInstances]:setSolverParameter(solverId, paramName, value)
+	end
+end
+
 function M.lockWristAxis(solverId, pitch, yaw, roll)
 	if #_rigInstances > 0 then
 		local rig = _rigInstances[#_rigInstances]

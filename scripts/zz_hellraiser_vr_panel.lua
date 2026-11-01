@@ -34,6 +34,7 @@ local DEV_RULES = {
     ["Genesis Cube"]      = { "gc_target_yaw", "gc_target_pitch", "gc_throw_yaw", "gc_throw_pitch" },
     ["Throwables"]        = { "thr_enabled" },
     ["Manual Reload"]     = { "mr_enabled", "mr_rack" },
+    ["Recoil"]            = { "hr_recoil_enabled", "hr_recoil_strength_loc", "hr_recoil_strength_rot", "hr_recoil_two_handed" },
 }
 
 -- Sections whose main part is shown without a collapsible header: plain toggles together at the top of the panel
@@ -45,6 +46,8 @@ local FLAT_SECTIONS = {
     ["Controls"]          = true,
     ["Throwables"]        = true,
     ["Manual Reload"]     = true,
+    ["Recoil"]            = true,
+    ["Flashlight"]        = true,
 }
 
 local function splitSection(section)

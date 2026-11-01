@@ -109,7 +109,8 @@ local function applyPawnSide()
     local cam = getPlayerCamera(pawn)
     if cam ~= nil then
         pcall(function()
-            local rot = want("cs_pawn_rot")
+            -- seated right-hand mode (uevrmenus.lua) turns it off: the camera follows the hand-placed FPCameraActor
+            local rot = want("cs_pawn_rot") and not (_G.hrSeatedHandCamera ~= nil and _G.hrSeatedHandCamera())
             if cam.bUsePawnControlRotation ~= nil and cam.bUsePawnControlRotation ~= rot then cam.bUsePawnControlRotation = rot end
         end)
         pcall(function()

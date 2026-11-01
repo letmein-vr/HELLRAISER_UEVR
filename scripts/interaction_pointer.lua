@@ -225,15 +225,25 @@ local function ensurePointer(controller, hex)
     return capsule
 end
 
-local function getPointerOffset()
-    local rot = uevrUtils.rotator(cfgNum("ip_rot_pitch", 0), cfgNum("ip_rot_yaw", 0), cfgNum("ip_rot_roll", 0))
-    local loc = uevrUtils.vector(cfgNum("ip_off_x", 0), cfgNum("ip_off_y", 0), cfgNum("ip_off_z", 0))
+-- Seated (chair puzzle, 2026-11-01): the pointer moves to the RIGHT controller and the game camera rides its ray - see
+-- tick() and uevrmenus.lua. The offset sliders are tuned for the left hand, so yaw / roll / right offset are mirrored on
+-- the right one.
+local pointerHand = Handed.Left
+-- seated with the right-hand pointer switched on ("Seated (chair)" panel section, uevrmenus.lua)
+local function seatedPointer()
+    return configui.getValue("seat_right_pointer") ~= false and _G.hrIsSeated ~= nil and _G.hrIsSeated()
+end
+local function getPointerOffset(hand)
+    local m = (hand or pointerHand) == Handed.Right and -1 or 1
+    local rot = uevrUtils.rotator(cfgNum("ip_rot_pitch", 0), cfgNum("ip_rot_yaw", 0) * m, cfgNum("ip_rot_roll", 0) * m)
+    local loc = uevrUtils.vector(cfgNum("ip_off_x", 0), cfgNum("ip_off_y", 0) * m, cfgNum("ip_off_z", 0))
     return loc, rot
 end
 
--- world-space pointer origin / direction: the controller transform with the slider offset applied (controller space)
-local function getPointerRay(controllerLocation, controllerRotation)
-    local offsetLoc, offsetRot = getPointerOffset()
+-- world-space pointer origin / direction (+ rotation): the controller transform with the slider offset applied
+-- (controller space)
+local function getPointerRay(controllerLocation, controllerRotation, hand)
+    local offsetLoc, offsetRot = getPointerOffset(hand)
     local f = kismet_math_library:GetForwardVector(controllerRotation)
     local r = kismet_math_library:GetRightVector(controllerRotation)
     local u = kismet_math_library:GetUpVector(controllerRotation)
@@ -243,7 +253,17 @@ local function getPointerRay(controllerLocation, controllerRotation)
         controllerLocation.Y + f.Y * ox + r.Y * oy + u.Y * oz,
         controllerLocation.Z + f.Z * ox + r.Z * oy + u.Z * oz)
     local worldRot = kismet_math_library:ComposeRotators(offsetRot, controllerRotation)
-    return origin, kismet_math_library:GetForwardVector(worldRot)
+    return origin, kismet_math_library:GetForwardVector(worldRot), worldRot
+end
+
+-- the seated right-hand ray as a world pose (origin, rotation) or nil: uevrmenus.lua puts the game camera on it, so the
+-- game's own focus check aims exactly along the beam
+_G.hrSeatedPointerPose = function()
+    local loc = controllers.getControllerLocation(Handed.Right)
+    local rot = controllers.getControllerRotation(Handed.Right)
+    if loc == nil or rot == nil then return nil end
+    local origin, _, worldRot = getPointerRay(loc, rot, Handed.Right)
+    return origin, worldRot
 end
 
 -- capsule axis = local Z: (90,0,0) turns it onto X, then the slider rotation; centred half its length along it.
@@ -374,8 +394,12 @@ local function scanCandidates(pawn)
     if pickableClass == nil then pickableClass = uevrUtils.get_class(PICKABLE_CLASS) end
     local containers = {}
     pcall(function() containers = scanContainers(ploc, (reach + 300.0) * (reach + 300.0)) end)
+    -- seated: the chair puzzle keeps its later stages' points in place but inactive (TaskState 0, the live one 1 - MCP
+    -- 2026-11-01), several of them on the same spot - only live ones, or the beam locks onto a dead point
+    local activeOnly = seatedPointer()
     for _, comp in ipairs(uevrUtils.find_all_of(INTERACT_CLASS, false) or {}) do
         pcall(function()
+            if activeOnly and comp.TaskState ~= 1 then return end
             local owner = comp:GetOwner()
             if owner == nil or owner == pawn then return end
             local loc = comp:K2_GetComponentLocation()
@@ -472,12 +496,12 @@ local function hideAll()
     setReticleVisible(false)
 end
 
-local function blockedReason()
+local function blockedReason(seated)
     if _G.hrIsInMenu ~= nil and _G.hrIsInMenu() then return "menu" end
     if _G.hrCutsceneActive == true then return "cutscene" end
     if _G.hrIsVideoPlaying ~= nil and _G.hrIsVideoPlaying() then return "video" end
     if _G.hrIsInFocusPuzzle ~= nil and _G.hrIsInFocusPuzzle() then return "puzzle / inspection" end
-    if _G.hrIsSeated ~= nil and _G.hrIsSeated() then return "seated" end
+    if not seated and _G.hrIsSeated ~= nil and _G.hrIsSeated() then return "seated" end
     if _G.isTwoHandingActive == true then return "two-handing" end
     if _G.hrCubeAim ~= nil and _G.hrCubeAim() ~= nil then return "cube in the left hand" end
     return nil
@@ -871,8 +895,15 @@ local function tickHeld(pawn, pc, controller)
     return true
 end
 
+-- Seated (chair puzzle, 2026-11-01): the puzzle's interact points are on the tied body, under the head. xaero wanted
+-- the right controller to pick them instead of the gaze, so while seated the pointer runs from the RIGHT controller
+-- (on its own switch, even with the normal pointer off) and only draws the beam: no grabbing and NO steering. Steering
+-- turns the control rotation, and the seated anim (ABP_ChairFree_C aim offsets) bends the body - and the camera bone
+-- the view sits on - toward it, so the VR view swung with the hand. Instead uevrmenus.lua freezes the aim and puts the
+-- game camera (FPCameraActor, which the game's focus check aims along) on this ray (_G.hrSeatedPointerPose).
 local function tick()
-    if configui.getValue("ip_enabled") == false then
+    local seated = seatedPointer()
+    if configui.getValue("ip_enabled") == false and not seated then
         if held ~= nil then releaseHeld(uevr.api:get_local_pawn(0)) end
         grabCandidate = nil
         stopSteering()
@@ -882,9 +913,10 @@ local function tick()
         return
     end
 
+    pointerHand = seated and Handed.Right or Handed.Left
     local pawn = uevr.api:get_local_pawn(0)
     local pc = uevr.api:get_player_controller(0)
-    local controller = controllers.getController(Handed.Left, true)
+    local controller = controllers.getController(pointerHand, true)
     if pawn == nil or pc == nil or controller == nil then
         stopSteering()
         hideAll()
@@ -892,7 +924,7 @@ local function tick()
         return
     end
 
-    local reason = blockedReason()
+    local reason = blockedReason(seated)
     if reason ~= nil then
         if held ~= nil then releaseHeld(pawn) end
         grabCandidate = nil
@@ -917,23 +949,26 @@ local function tick()
         return
     end
 
-    if tickHeld(pawn, pc, controller) then return end
+    if seated then
+        if held ~= nil then releaseHeld(pawn) end
+    elseif tickHeld(pawn, pc, controller) then return end
 
     if now >= nextScan then
         nextScan = now + SCAN_INTERVAL
         scanCandidates(pawn)
     end
 
-    local controllerLocation = controllers.getControllerLocation(Handed.Left)
-    local controllerRotation = controllers.getControllerRotation(Handed.Left)
+    local controllerLocation = controllers.getControllerLocation(pointerHand)
+    local controllerRotation = controllers.getControllerRotation(pointerHand)
     if controllerLocation == nil or controllerRotation == nil then stopSteering() return end
     local origin, dir = getPointerRay(controllerLocation, controllerRotation)
 
     local target, targetDist = pickCandidate(origin, dir)
     if target ~= nil and not lineOfSightClear(origin, target, targetDist, pawn, now) then target = nil end
 
-    -- grab: what a left-trigger pull would take now; a pull since the last tick starts it
-    local grabEntry, grabKind = findGrabCandidate(controllerLocation, target, targetDist)
+    -- grab: what a left-trigger pull would take now; a pull since the last tick starts it (never while seated)
+    local grabEntry, grabKind = nil, nil
+    if not seated then grabEntry, grabKind = findGrabCandidate(controllerLocation, target, targetDist) end
     grabCandidate = grabEntry
     if triggerPressed then
         triggerPressed = false
@@ -981,6 +1016,12 @@ local function tick()
         updateReticle(origin, endPoint, colorEntry.hex)
     else
         setReticleVisible(false)
+    end
+
+    if seated then
+        stopSteering()
+        status(onItem and ("seated, right hand on " .. tostring(target.name)) or string.format("seated, right hand (no target, %d interactables near)", #candidates))
+        return
     end
 
     -- steer the game camera at the target so the game's own focus selects it (A then works as normal)

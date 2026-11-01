@@ -142,19 +142,35 @@ uevrUtils.registerMontageChangeCallback(function(montage, montageName)
     chairMontagePlaying = string.find(name, "chiar", 1, true) ~= nil or string.find(name, "chair", 1, true) ~= nil
 end)
 uevrUtils.registerPreLevelChangeCallback(function(level) chairMontagePlaying = false end)
+-- The chair sequence also runs its own anim blueprint on Pawn.Mesh (ABP_ChairFree_C) for as long as the player is tied,
+-- and the movement mode does not hold: after the first interaction (nail out of the hand) the game sets the pawn back
+-- to Walking (1) while it is still tied (MCP 2026-11-01) - every seated rule then dropped (IK arms back and stretched,
+-- body freeze and hand camera off). Collision (off while tied) is not used: video_cutscenes.lua takes it as its
+-- scripted-sequence signal. Read once per tick; the class name only when the anim class changes.
+local chairAnim = { class = nil, isChair = false, active = false }
+uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
+    local active = false
+    pcall(function()
+        local pawn = uevr.api:get_local_pawn(0)
+        local inst = pawn ~= nil and pawn.Mesh ~= nil and pawn.Mesh:GetAnimInstance() or nil
+        if inst == nil then return end
+        local cls = inst:get_class()
+        if cls ~= chairAnim.class then
+            chairAnim.class = cls
+            chairAnim.isChair = string.find(string.lower(cls:get_fname():to_string()), "chair", 1, true) ~= nil
+        end
+        active = chairAnim.isChair
+    end)
+    chairAnim.active = active
+end)
+uevrUtils.registerPreLevelChangeCallback(function(level) chairAnim.class, chairAnim.isChair, chairAnim.active = nil, false, false end)
 local function isSeated()
-    if chairMontagePlaying then return true end
+    if chairMontagePlaying or chairAnim.active then return true end
     local pawn = uevr.api:get_local_pawn(0)
     return pawn ~= nil and pawn.MovementMode == MOVE_FLYING and pawn.LadderReference == nil
 end
 _G.hrIsSeated = isSeated
-input.setViewPositionOverride(function()
-    if not isSeated() then return nil end
-    local cam = uevr.api:get_local_pawn(0).FPCameraActor
-    if cam == nil then return nil end
-    local l = cam:K2_GetComponentLocation()
-    return l.X, l.Y, l.Z
-end)
+-- (the seated view position override is set further down, with the seated camera)
 -- Focus puzzles (lockpicking, 2026-10-09): the game moves the view target to the puzzle's camera task
 -- (PlayerController:GetViewTarget() = BP_TASK_FocusEnvPuzzle_C instead of the pawn; MCP, lockpick
 -- BP_EnvPuzzleBaseActor_LockpickPuzzle_C with bPuzzleActive) and reads BOTH sticks for the puzzle. With input.lua on, its
@@ -218,6 +234,133 @@ montage.addStateRule("rule_focus_puzzle", "* Rule: Puzzle / Inspection", functio
 -- seated: the body keeps the yaw the game gave it (input.lua LOCKED rotation mode would turn it with the head) and the
 -- stick does not turn it; the head looks around freely on top
 input.setBodyYawFrozenCallback(isSeated)
+-- ... and stays where the game sat it (2026-11-01): seated the pawn is unattached (MovementMode 5, no attach parent -
+-- MCP), so input.lua's roomscale (pawnPositionMode FOLLOWS) pushed the root by every HMD translation, including the
+-- few cm the headset travels when the head only turns. Frozen, the HMD offset moves only the view (leaning still works).
+-- (The seated anim also bends the body toward the control rotation - see the seated camera below.)
+_G.HR_SECTIONS = _G.HR_SECTIONS or {}
+table.insert(_G.HR_SECTIONS, { order = 6.65, label = "Seated (chair)", layout = { -- between "Interaction Pointer" (6.6) and "Inspected Items" (6.7)
+    { widgetType = "checkbox", id = "seat_freeze_position", label = "Keep the body still while seated (real-world movement moves only the view)", initialValue = true },
+    { widgetType = "slider_float", id = "seat_camera_back", label = "Seated camera pulled back (cm, 0 = game's)", range = {0.0, 60.0}, initialValue = 25.0, speed = 0.5 },
+    -- read by interaction_pointer.lua (pointer look, range and selection angle come from the Interaction Pointer section)
+    { widgetType = "checkbox", id = "seat_right_pointer", label = "Point with the right controller instead of looking (seated)", initialValue = true },
+}})
+input.setPawnPositionFrozenCallback(function()
+    return configui.getValue("seat_freeze_position") ~= false and isSeated()
+end)
+-- Seated view + game camera (2026-11-01). The game camera = Pawn.FPCameraActor, a ChildActorComponent on Pawn.Mesh bone
+-- camera_jnt (relative 0); its child actor's CineCamera (Pawn.PlayerCameraComponent) is the camera manager's view.
+-- The VR view sits at a seated anchor: camera_jnt pulled back along the pawn's facing by "Seated camera pulled back" -
+-- the chair puzzle's interact points (BP_TASK_Interaction_C_0..7, 18 deg focus cones) sit 42-49 cm under the bone,
+-- three of them ~10 cm BEHIND it (MCP). The game camera is re-placed every tick (the anim moves the bone), by mode:
+--   * gaze (seat_right_pointer off): on the anchor. The game's focus aims from it along the control rotation (= gaze),
+--     so gaze and prompts stay matched.
+--   * right hand (seat_right_pointer on): on the right-hand pointer ray (_G.hrSeatedPointerPose, interaction_pointer.lua).
+--     The game's focus check (InteractManager) aims along FPCameraActor's own ComponentToWorld (pawn +0xC08 - MCP) and its
+--     on-screen test projects through the CineCamera, which stops using the control rotation, so both follow the beam.
+--     The aim is frozen at the pawn's facing (input.lua aim method UEVR + control rotation = pawn yaw): ABP_ChairFree_C
+--     bends the body toward the control rotation (AimingAngle -> rotation-offset blendspaces), which moved camera_jnt -
+--     and the view with it - whenever the head, a controller aim or the pointer turned it.
+-- Leaving the seat or the mode (or a script reset) puts the game's values back (same live pawn only). FPCameraActor goes
+-- back to identity on its bone - the game's own placement (MCP; the other community profile snaps it there every frame
+-- too). A value captured on entering could be our own leftover (a reset mid-seat once left it at the hand's offset).
+local seatedCamera = { comp = nil, socket = nil, handPlaced = false, aimOwned = false, cineCam = nil, cineSaved = nil }
+local function cameraBack()
+    local back = configui.getValue("seat_camera_back")
+    return type(back) == "number" and back or 25.0
+end
+local function handCameraActive()
+    return configui.getValue("seat_right_pointer") ~= false and _G.hrSeatedPointerPose ~= nil and isSeated()
+end
+_G.hrSeatedHandCamera = handCameraActive -- camera_stabilize.lua leaves the CineCamera's bUsePawnControlRotation alone meanwhile
+local function seatedViewAnchor(pawn)
+    if seatedCamera.socket == nil then seatedCamera.socket = uevrUtils.fname_from_string("camera_jnt") end
+    local p = pawn.Mesh:GetSocketLocation(seatedCamera.socket)
+    local f = pawn:GetActorForwardVector()
+    local back = cameraBack()
+    return p.X - f.X * back, p.Y - f.Y * back, p.Z
+end
+input.setViewPositionOverride(function()
+    if not isSeated() then return nil end
+    return seatedViewAnchor(uevr.api:get_local_pawn(0))
+end)
+local function restoreSeatedCamera()
+    local s = seatedCamera
+    local comp = s.comp
+    s.comp, s.handPlaced = nil, false
+    if comp == nil then return end
+    pcall(function()
+        local pawn = uevr.api:get_local_pawn(0)
+        if pawn ~= nil and pawn.FPCameraActor == comp then
+            comp:K2_SetRelativeLocationAndRotation(uevrUtils.vector(0, 0, 0), uevrUtils.rotator(0, 0, 0), false, reusable_hit_result, false)
+        end
+    end)
+end
+local function releaseHandAim()
+    local s = seatedCamera
+    if s.aimOwned then
+        s.aimOwned = false
+        pcall(function() input.setOverrideAimMethod(nil) end)
+    end
+    if s.cineCam ~= nil then
+        local cc, saved = s.cineCam, s.cineSaved
+        s.cineCam, s.cineSaved = nil, nil
+        pcall(function()
+            local pawn = uevr.api:get_local_pawn(0)
+            if pawn ~= nil and pawn.PlayerCameraComponent == cc then cc.bUsePawnControlRotation = saved end
+        end)
+    end
+end
+uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
+    local seated = isSeated()
+    local hand = seated and handCameraActive()
+    if not hand then
+        releaseHandAim()
+        if seatedCamera.handPlaced then restoreSeatedCamera() end -- its rotation is the hand's: back to the bone first
+    end
+    if not seated or (not hand and cameraBack() <= 0) then
+        if seatedCamera.comp ~= nil then restoreSeatedCamera() end
+        return
+    end
+    pcall(function()
+        local pawn = uevr.api:get_local_pawn(0)
+        local cam = pawn.FPCameraActor
+        if cam == nil or pawn.Mesh == nil then return end
+        if seatedCamera.comp ~= cam then
+            restoreSeatedCamera()
+            seatedCamera.comp = cam
+        end
+        if hand then
+            local origin, rot = _G.hrSeatedPointerPose()
+            if origin == nil then return end
+            seatedCamera.aimOwned = true
+            input.setOverrideAimMethod(input.AimMethod.UEVR)
+            local pc = uevr.api:get_player_controller(0)
+            if pc ~= nil then pc:SetControlRotation(uevrUtils.rotator(0, pawn:K2_GetActorRotation().Yaw, 0)) end
+            local cc = pawn.PlayerCameraComponent
+            if cc ~= nil and cc.bUsePawnControlRotation == true then
+                if seatedCamera.cineCam ~= cc then seatedCamera.cineCam, seatedCamera.cineSaved = cc, true end
+                cc.bUsePawnControlRotation = false
+            end
+            cam:K2_SetWorldLocationAndRotation(origin, rot, false, reusable_hit_result, false)
+            seatedCamera.handPlaced = true
+        else
+            local x, y, z = seatedViewAnchor(pawn)
+            cam:K2_SetWorldLocation(uevrUtils.vector(x, y, z), false, reusable_hit_result, false)
+        end
+    end)
+end)
+uevrUtils.registerPreLevelChangeCallback(function(level)
+    -- the level's pawn goes with it: forget everything without touching it (the aim method is input.lua's own state)
+    if seatedCamera.aimOwned then pcall(function() input.setOverrideAimMethod(nil) end) end
+    seatedCamera.comp, seatedCamera.handPlaced = nil, false
+    seatedCamera.aimOwned, seatedCamera.cineCam, seatedCamera.cineSaved = false, nil, nil
+end)
+-- a script reset mid-seat drops this state: hand the game camera back first (the new instance starts clean)
+uevr.params.sdk.callbacks.on_script_reset(function()
+    releaseHandAim()
+    restoreSeatedCamera()
+end)
 -- ... and the game itself turns the pawn toward the control rotation (which input.lua points at the gaze for aiming):
 -- CharacterMovement.bUseControllerDesiredRotation = true with an instant RotationRate (MCP, seated). Off while
 -- seated, the game's value restored afterwards.
