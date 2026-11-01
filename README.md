@@ -20,6 +20,7 @@ A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for
 ### Weapons and combat
 
 - **Weapon in hand.** The equipped weapon sits in your right hand (or on the IK hand) and aims where you point it. Bullets come out of the barrel thanks to a small native plugin (HellraiserAimFix.dll, source in `source/HellraiserAimFix`).
+- **Weapon recoil.** Every shot kicks the gun in your hand, taken from the game's own firing animation, so each weapon kicks the way it does in the flat game - back into your hand with muzzle flip, then recovering. Works in Hands and IK modes and while two-handing; distance and rotation strength are adjustable.
 - **Two-handed aiming.** Bring your left hand to the gun and grab with the left grip; the gun then pivots between both hands. Pistols and the revolver also take the left hand as a support grip. The hand glides on and off the gun.
 - **Dynamic reticule.** A weapon reticule at the barrel's aim point, with size, distance and brightness settings.
 - **Revolver scope.** The revolver's scope upgrade is a real picture-in-picture scope; zoom with the right stick.
@@ -77,13 +78,14 @@ A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for
 
 ## Tuning
 
-Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, without editing files. The main panel has the everyday switches (hand mode, two-handing, holsters, throwing, manual reload, physical melee, pointer, UI); detailed tuning for each feature sits under **Dev Config** at the bottom:
+Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, without editing files. The main panel has the everyday switches (hand mode, two-handing, holsters, throwing, manual reload, recoil, physical melee, pointer, UI); detailed tuning for each feature sits under **Dev Config** at the bottom:
 
 - **Attachments** – per-weapon position, rotation and melee flag.
 - **Hands / IK Arms + Body** – rig offsets, shoulders, legs.
 - **Two-Handed Aiming** – grab button, radius, glide, left-hand pose.
 - **Physical Melee** – swing speed, contact size, anim speed, touched-spot aim and hit width.
 - **Manual Reload** – pouch position, magazine hold, insert and rack settings, per weapon.
+- **Recoil** – kick strength, recovery time after release, motion limits, keeping the gun raised for a clean first shot.
 - **Throwables, Genesis Cube, Holsters, Interaction Pointer, Inspected Items, Keypads, Player Capsule, Camera** – their own sections.
 
 ## Under the hood
