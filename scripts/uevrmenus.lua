@@ -164,12 +164,20 @@ uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
     chairAnim.active = active
 end)
 uevrUtils.registerPreLevelChangeCallback(function(level) chairAnim.class, chairAnim.isChair, chairAnim.active = nil, false, false end)
+-- Tied to the chair itself (chair montage / anim). The chair-only handling below (body position freeze, camera pulled
+-- back, right-hand pointer + game camera on the hand) keys on this, NOT on isSeated: in-world cutscenes put the pawn
+-- in Flying too (EP_0 prologue, MCP 2026-11-02), and there the hand camera moved the view target (FPCameraActor) onto
+-- the right controller.
+local function isChairSeated()
+    return chairMontagePlaying or chairAnim.active
+end
 local function isSeated()
-    if chairMontagePlaying or chairAnim.active then return true end
+    if isChairSeated() then return true end
     local pawn = uevr.api:get_local_pawn(0)
     return pawn ~= nil and pawn.MovementMode == MOVE_FLYING and pawn.LadderReference == nil
 end
 _G.hrIsSeated = isSeated
+_G.hrIsChairSeated = isChairSeated
 -- (the seated view position override is set further down, with the seated camera)
 -- Focus puzzles (lockpicking, 2026-10-09): the game moves the view target to the puzzle's camera task
 -- (PlayerController:GetViewTarget() = BP_TASK_FocusEnvPuzzle_C instead of the pawn; MCP, lockpick
@@ -246,7 +254,7 @@ table.insert(_G.HR_SECTIONS, { order = 6.65, label = "Seated (chair)", layout = 
     { widgetType = "checkbox", id = "seat_right_pointer", label = "Point with the right controller instead of looking (seated)", initialValue = true },
 }})
 input.setPawnPositionFrozenCallback(function()
-    return configui.getValue("seat_freeze_position") ~= false and isSeated()
+    return configui.getValue("seat_freeze_position") ~= false and isChairSeated()
 end)
 -- Seated view + game camera (2026-11-01). The game camera = Pawn.FPCameraActor, a ChildActorComponent on Pawn.Mesh bone
 -- camera_jnt (relative 0); its child actor's CineCamera (Pawn.PlayerCameraComponent) is the camera manager's view.
@@ -270,7 +278,7 @@ local function cameraBack()
     return type(back) == "number" and back or 25.0
 end
 local function handCameraActive()
-    return configui.getValue("seat_right_pointer") ~= false and _G.hrSeatedPointerPose ~= nil and isSeated()
+    return configui.getValue("seat_right_pointer") ~= false and _G.hrSeatedPointerPose ~= nil and isChairSeated()
 end
 _G.hrSeatedHandCamera = handCameraActive -- camera_stabilize.lua leaves the CineCamera's bUsePawnControlRotation alone meanwhile
 local function seatedViewAnchor(pawn)
@@ -282,7 +290,13 @@ local function seatedViewAnchor(pawn)
 end
 input.setViewPositionOverride(function()
     if not isSeated() then return nil end
-    return seatedViewAnchor(uevr.api:get_local_pawn(0))
+    local pawn = uevr.api:get_local_pawn(0)
+    if isChairSeated() then return seatedViewAnchor(pawn) end
+    -- other Flying scenes (in-world cutscenes): the view at the game camera, as before the chair work
+    local cam = pawn.FPCameraActor
+    if cam == nil then return nil end
+    local l = cam:K2_GetComponentLocation()
+    return l.X, l.Y, l.Z
 end)
 local function restoreSeatedCamera()
     local s = seatedCamera
@@ -312,7 +326,7 @@ local function releaseHandAim()
     end
 end
 uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
-    local seated = isSeated()
+    local seated = isChairSeated()
     local hand = seated and handCameraActive()
     if not hand then
         releaseHandAim()

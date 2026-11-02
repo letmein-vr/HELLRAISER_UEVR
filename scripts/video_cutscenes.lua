@@ -16,6 +16,12 @@
 --     (the other profile also counted AM_FP_REC / AM_REC, but here those are the in-combat flinches and knock-backs).
 -- The last three drive one montage state rule, "* Rule: Cutscene (death / scripted)", seeded like
 -- "* Rule: Cutscene (AnimMontage_*)"; videos have "* Rule: Video playing". Both are tunable in the Montages panel.
+--   * Camera pitch (2026-11-01): those rules hand the view to the game camera (input off, aim Game), but UEVR's
+--     decoupled pitch (config VR_DecoupledPitch=true, needed in play) throws away the camera's pitch, so a cutscene
+--     that tilts the camera lost the tilt. While a cutscene (either rule, incl. the AnimMontage_* one -
+--     _G.hrCutsceneActive from weaponhook.lua) or a video is active, decoupled pitch is switched off and the view
+--     follows the game's pitch; switched back on afterwards, only if this script turned it off (the other community
+--     profile does the same).
 
 local uevrUtils = require('libs/uevr_utils')
 local configui  = require('libs/configui')
@@ -28,6 +34,7 @@ table.insert(_G.HR_SECTIONS, { order = 7.5, label = "Cutscenes & Videos", layout
     { widgetType = "checkbox", id = "cx_death",    label = "Death camera counts as a cutscene", initialValue = true },
     { widgetType = "checkbox", id = "cx_signals",  label = "Collision off / controller rotation off count as a cutscene", initialValue = true },
     { widgetType = "checkbox", id = "cx_montages", label = "Montages AM_FP_SOM / AM_Forced / AfterFall / Dialogue count as a cutscene", initialValue = true },
+    { widgetType = "checkbox", id = "cx_game_pitch", label = "Cutscenes / videos: camera follows the game's pitch (decoupled pitch off)", initialValue = true },
     { widgetType = "text", id = "cx_status", label = "Status: -" },
 }})
 
@@ -44,7 +51,32 @@ local state = {
     video = false, videoPlayer = nil, videoOpenedAt = 0, videoStoppedSince = nil,
     death = false, signals = false, signalSince = nil, montage = false,
     cutscene = false, videoActive = false, uiOwned = false, nextPoll = 0,
+    pitchOwned = false, -- decoupled pitch was switched off by this script
 }
+
+local function restoreDecoupledPitch()
+    if not state.pitchOwned then return end
+    state.pitchOwned = false
+    pcall(function() uevrUtils.set_decoupled_pitch(true) end)
+    print("[video_cutscenes] decoupled pitch back on")
+end
+
+local function updateDecoupledPitch()
+    local want = enabled("cx_game_pitch") and (state.cutscene or state.videoActive or _G.hrCutsceneActive == true)
+    if want then
+        if not state.pitchOwned then
+            local on = true
+            pcall(function() on = uevrUtils.get_decoupled_pitch() end)
+            if on then
+                pcall(function() uevrUtils.set_decoupled_pitch(false) end)
+                state.pitchOwned = true
+                print("[video_cutscenes] decoupled pitch off (cutscene / video)")
+            end
+        end
+    else
+        restoreDecoupledPitch()
+    end
+end
 
 -- ---------------------------------------------------------------------------------------------
 -- Bink videos
@@ -170,8 +202,11 @@ local function poll(now)
         state.uiOwned = false
     end
 
-    configui.setLabel("cx_status", string.format("Status: video %s, death %s, signals %s, montage %s",
-        state.video and "yes" or "no", state.death and "yes" or "no", state.signals and "yes" or "no", state.montage and "yes" or "no"))
+    updateDecoupledPitch()
+
+    configui.setLabel("cx_status", string.format("Status: video %s, death %s, signals %s, montage %s, game pitch %s",
+        state.video and "yes" or "no", state.death and "yes" or "no", state.signals and "yes" or "no", state.montage and "yes" or "no",
+        state.pitchOwned and "yes" or "no"))
 end
 
 uevr.sdk.callbacks.on_pre_engine_tick(function(engine, delta)
@@ -186,7 +221,12 @@ uevrUtils.registerPreLevelChangeCallback(function(level)
     if state.uiOwned then pcall(function() ui.setCustomState("viewLocked", nil) end) end
     state.uiOwned = false
     state.death, state.signals, state.signalSince, state.montage, state.cutscene = false, false, nil, false, false
+    restoreDecoupledPitch() -- the next level starts in play (a cutscene there switches it off again)
     hookBink() -- no-op once hooked
+end)
+
+uevr.params.sdk.callbacks.on_script_reset(function()
+    restoreDecoupledPitch()
 end)
 
 -- ---------------------------------------------------------------------------------------------

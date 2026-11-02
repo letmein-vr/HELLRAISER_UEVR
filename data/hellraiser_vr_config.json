@@ -10,6 +10,7 @@
     "cs_vignette": true,
     "ctl_swap_xb": true,
     "cx_death": true,
+    "cx_game_pitch": true,
     "cx_montages": true,
     "cx_signals": false,
     "cx_video": true,

@@ -231,7 +231,7 @@ end
 local pointerHand = Handed.Left
 -- seated with the right-hand pointer switched on ("Seated (chair)" panel section, uevrmenus.lua)
 local function seatedPointer()
-    return configui.getValue("seat_right_pointer") ~= false and _G.hrIsSeated ~= nil and _G.hrIsSeated()
+    return configui.getValue("seat_right_pointer") ~= false and _G.hrIsChairSeated ~= nil and _G.hrIsChairSeated()
 end
 local function getPointerOffset(hand)
     local m = (hand or pointerHand) == Handed.Right and -1 or 1
