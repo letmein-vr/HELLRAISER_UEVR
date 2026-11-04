@@ -252,6 +252,8 @@ private:
     Vec3 m_left_aim_loc{};
     Rot3 m_left_aim_rot{};
     double m_left_aim_time{-1.0};
+    double m_game_aim_time{-1.0};     // custom event "HellraiserGameAim": shots keep the game's aim while fresh
+    uint32_t m_skipped_game_aim{0};
     uint32_t m_tk_updates{0};
     uint32_t m_tk_redirects{0};
 

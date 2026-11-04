@@ -27,6 +27,7 @@ local DEV_RULES = {
     ["Keypads"]           = true,
     ["Menus"]             = true,
     ["Cutscenes & Videos"] = true,
+    ["Boss Grab"]         = true,
     ["Hands"]             = { "hands_mode" },
     ["Two-Handed Aiming"] = { "th_enabled" },
     ["Holsters"]          = { "hz_enabled" },

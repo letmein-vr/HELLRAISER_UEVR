@@ -535,6 +535,14 @@ void HellraiserAimFixPlugin::on_custom_event(const char* event_name, const char*
         m_head_aim_time = now_seconds();
         return;
     }
+    // Scripted aim (scripts/vr_strangle_game_aim.lua, 2026-11-03): sent every tick while the game aims a sequence itself (the
+    // Mingled Terror strangle blocks aiming and points the escape shots itself). While fresh, fire traces stay exactly
+    // as the game made them.
+    if (std::strcmp(event_name, "HellraiserGameAim") == 0) {
+        std::scoped_lock _{m_mutex};
+        m_game_aim_time = now_seconds();
+        return;
+    }
     if (std::strcmp(event_name, "HellraiserLeftAim") == 0) {
         Vec3 l{};
         Rot3 r{};
@@ -868,9 +876,17 @@ bool HellraiserAimFixPlugin::redirect(const ShotContext& ctx, Vec3* start, Vec3*
     const double aim_dot = ctx.valid ? dot(dir, ctx.cam_fwd) : -1.0;
     const bool near_aim = aim_dot >= std::cos(deg2rad(m_cfg.max_angle_from_aim));
 
+    bool game_aim = false;
+    {
+        std::scoped_lock _{m_mutex};
+        game_aim = m_game_aim_time >= 0.0 && now_seconds() - m_game_aim_time <= m_cfg.left_aim_max_age;
+    }
+
     bool overridden = false;
     Vec3 new_dir{};
-    if (ctx.valid && len > 1.0 && from_cam <= m_cfg.start_tolerance && near_aim) {
+    if (game_aim) {
+        ++m_skipped_game_aim;
+    } else if (ctx.valid && len > 1.0 && from_cam <= m_cfg.start_tolerance && near_aim) {
         // keep the game's spread: rotate the shot direction by camera-forward -> barrel
         new_dir = normalize(rotate_from_to(dir, ctx.cam_fwd, ctx.barrel));
         if (m_cfg.mode == 1 && API::VR::is_hmd_active()) {
@@ -890,7 +906,7 @@ bool HellraiserAimFixPlugin::redirect(const ShotContext& ctx, Vec3* start, Vec3*
             what, narrow(object_name(ctx.caller)).c_str(), len, from_cam, dir.x, dir.y, dir.z,
             ctx.valid ? dot(dir, ctx.cam_fwd) : 0.0, ctx.valid ? dot(dir, ctx.barrel) : 0.0,
             ctx.muzzle.x, ctx.muzzle.y, ctx.muzzle.z,
-            overridden ? "OVERRIDDEN" : (!ctx.valid ? "no muzzle/camera" : (!near_aim ? "kept (not along the aim)" :
+            overridden ? "OVERRIDDEN" : game_aim ? "kept (game aim)" : (!ctx.valid ? "no muzzle/camera" : (!near_aim ? "kept (not along the aim)" :
                 (from_cam > m_cfg.start_tolerance ? "kept (not from camera)" : "kept (mode 0)"))));
     }
     return overridden;
@@ -1040,8 +1056,8 @@ void HellraiserAimFixPlugin::on_pre_engine_tick(API::UGameEngine*, float) {
     if (!m_hooks_ok || !m_cfg.debug) return;
     if (t - m_last_debug_log < 10.0) return;
     m_last_debug_log = t;
-    API::get()->log_info("HellraiserAimFix[sum]: fireTraces=%u overrides=%u keptNotAlongAim=%u keptNotFromCamera=%u noMuzzle=%u telekinesisUpdates=%u fromLeftHand=%u aimRaysFromLeftHand=%u puzzleCameraQueriesFromLeftHand=%u interactChecksFromHead=%u",
-        m_fire_traces, m_overrides, m_skipped_angle, m_skipped_far, m_no_muzzle, m_tk_updates, m_tk_redirects, m_tk_rays, m_tk_camera_queries,
+    API::get()->log_info("HellraiserAimFix[sum]: fireTraces=%u overrides=%u keptNotAlongAim=%u keptNotFromCamera=%u keptGameAim=%u noMuzzle=%u telekinesisUpdates=%u fromLeftHand=%u aimRaysFromLeftHand=%u puzzleCameraQueriesFromLeftHand=%u interactChecksFromHead=%u",
+        m_fire_traces, m_overrides, m_skipped_angle, m_skipped_far, m_skipped_game_aim, m_no_muzzle, m_tk_updates, m_tk_redirects, m_tk_rays, m_tk_camera_queries,
         m_head_swaps);
 }
 
