@@ -49,6 +49,7 @@ local FLAT_SECTIONS = {
     ["Manual Reload"]     = true,
     ["Recoil"]            = true,
     ["Flashlight"]        = true,
+    ["Immersive HUD"]     = true,
 }
 
 local function splitSection(section)

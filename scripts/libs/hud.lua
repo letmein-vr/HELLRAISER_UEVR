@@ -20,7 +20,8 @@ Usage
 	hud.init(isDeveloperMode, logLevel) still works on its own; setup() calls it.
 
 	This module takes pieces of a game's flat (2D) HUD and either hides them or shows them as world space
-	widgets attached to a controller, the HMD, a VR hand mesh bone or a pawn mesh socket. Each piece is an
+	widgets attached to a controller, the HMD, a VR hand mesh bone (the libs/hands hand, or the libs/ik arms mesh
+	when there is no hands-lib hand; a blank bone is then hand_l / hand_r) or a pawn mesh socket. Each piece is an
 	"element". An element can be
 
 		hud.Mode.DIRECT - a whole top level UserWidget (one that the game adds to the viewport by itself) is
@@ -1152,9 +1153,18 @@ local function resolveTarget(definition)
 	local kind = target.type or M.Target.LEFT_CONTROLLER
 	local socket = target.socket or ""
 	if kind == M.Target.LEFT_HAND or kind == M.Target.RIGHT_HAND then
-		if hands == nil then return nil end
 		local hand = kind == M.Target.LEFT_HAND and Handed.Left or Handed.Right
-		return uevrUtils.getValid(hands.getHandComponent(hand, target.componentName)), socket
+		local parent = hands ~= nil and uevrUtils.getValid(hands.getHandComponent(hand, target.componentName)) or nil
+		if parent == nil then
+			-- No hands-lib hand (the mod is in IK mode): the IK rig's arms mesh carries both hands. Only used when a
+			-- script already loaded libs/ik, so games without IK never load it. A blank socket means the hand bone.
+			local ik = package.loaded["libs/ik"]
+			if type(ik) == "table" and ik.getCurrentMesh ~= nil then
+				parent = uevrUtils.getValid(ik.getCurrentMesh())
+				if parent ~= nil and socket == "" then socket = hand == Handed.Left and "hand_l" or "hand_r" end
+			end
+		end
+		return parent, socket
 	elseif kind == M.Target.PAWN_MESH then
 		return uevrUtils.getValid(pawn, { target.meshProperty or "Mesh" }), socket
 	elseif kind == M.Target.CUSTOM then

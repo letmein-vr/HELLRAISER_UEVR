@@ -1,0 +1,149 @@
+{
+    "elements": {
+        "element_1": {
+            "appearance": {
+                "blendMode": 2,
+                "brightness": 1.0,
+                "exposure": true,
+                "twoSided": true
+            },
+            "enabled": true,
+            "id": "element_1",
+            "label": "Health",
+            "mode": "region",
+            "regionPadding": 8,
+            "resolutionScale": 1.4500000476837158,
+            "target": {
+                "socket": "hand_l",
+                "type": "left_hand"
+            },
+            "transform": {
+                "position": [
+                    -2.5999999046325684,
+                    4.300000190734863,
+                    -8.899999618530273
+                ],
+                "rotation": [
+                    18.0,
+                    167.0,
+                    -164.0
+                ],
+                "widthCm": 19.399999618530273
+            },
+            "widget": {
+                "child": "Image_HealthIndicator",
+                "class": "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/PlayerInfo/W_PlayerInfo.W_PlayerInfo_C"
+            }
+        },
+        "element_2": {
+            "appearance": {
+                "blendMode": 1,
+                "brightness": 0.20000000298023224,
+                "exposure": true,
+                "exposureStrength": 1.0099999904632568,
+                "twoSided": true
+            },
+            "id": "element_2",
+            "label": "Ammo",
+            "mode": "region",
+            "regionPadding": 8,
+            "resolutionScale": 2,
+            "target": {
+                "socket": "hand_r",
+                "type": "right_hand"
+            },
+            "transform": {
+                "position": [
+                    -11.899999618530273,
+                    -3.700000047683716,
+                    10.899999618530273
+                ],
+                "rotation": [
+                    0.0,
+                    1.0,
+                    -6.0
+                ],
+                "widthCm": 5.599999904632568
+            },
+            "widget": {
+                "child": "W_CurrentEquipment/HorizontalBox_Ammo",
+                "class": "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/EquipmentLoadout/W_EquipmentLoadout.W_EquipmentLoadout_C"
+            }
+        },
+        "element_3": {
+            "appearance": {
+                "blendMode": 1,
+                "exposure": true,
+                "twoSided": true
+            },
+            "id": "element_3",
+            "label": "HUD",
+            "mode": "region",
+            "regionPadding": 8,
+            "regionRest": true,
+            "resolutionScale": 2,
+            "target": {
+                "type": "hmd"
+            },
+            "transform": {
+                "position": [
+                    27.299999237060547,
+                    6.300000190734863,
+                    -3.9000000953674316
+                ],
+                "rotation": [
+                    0.0,
+                    180.0,
+                    0.0
+                ],
+                "widthCm": 31.0
+            },
+            "widget": {
+                "class": "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/EquipmentLoadout/W_EquipmentLoadout.W_EquipmentLoadout_C"
+            }
+        },
+        "element_4": {
+            "appearance": {
+                "blendMode": 1,
+                "exposure": true,
+                "twoSided": true
+            },
+            "id": "element_4",
+            "label": "Loadout",
+            "mode": "region",
+            "regionBounds": "content",
+            "regionPadding": 8,
+            "resolutionScale": 2,
+            "target": {
+                "socket": "hand_r",
+                "type": "right_hand"
+            },
+            "transform": {
+                "position": [
+                    -11.800000190734863,
+                    12.300000190734863,
+                    12.199999809265137
+                ],
+                "rotation": [
+                    0.0,
+                    -0.5,
+                    -4.5
+                ],
+                "widthCm": 12
+            },
+            "widget": {
+                "child": "W_EquipmentLoadout_WeaponSelection/Overlay_EquipmentSlots",
+                "class": "WidgetBlueprintGeneratedClass /Game/Blueprints/Widgets/HUD/EquipmentLoadout/W_EquipmentLoadout.W_EquipmentLoadout_C"
+            }
+        }
+    },
+    "exposureSource": "postprocess",
+    "exposureStops": 0.0,
+    "order": [
+        "element_1",
+        "element_2",
+        "element_3",
+        "element_4"
+    ],
+    "redrawRate": 0
+}
