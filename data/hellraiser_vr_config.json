@@ -27,7 +27,8 @@
     "gc_target_yaw": 22.125999450683594,
     "gc_throw_pitch": 0.0,
     "gc_throw_yaw": 22.687999725341797,
-    "hands_mode": 1,
+    "hands_mode": 2,
+    "hr_immersive_hud": true,
     "hr_recoil_block_low_ready": true,
     "hr_recoil_enabled": true,
     "hr_recoil_max_cm": 12.0,
@@ -110,7 +111,7 @@
     "mr_enabled": true,
     "mr_finish_rate": 20.0,
     "mr_grab_glide": 0.1,
-    "mr_grab_radius": 12.0,
+    "mr_grab_radius": 13.0,
     "mr_haptics": true,
     "mr_hold_hands_adjust": [
         -1.600000023841858,
@@ -118,24 +119,24 @@
         0.0
     ],
     "mr_hold_loc": [
-        2.0,
-        5.199999809265137,
-        -1.0
+        2.9000000953674316,
+        4.099999904632568,
+        4.5
     ],
     "mr_hold_rot": [
-        -13.0,
-        -89.5,
-        2.5
+        -4.5,
+        -87.5,
+        41.5
     ],
-    "mr_insert_depth": 7.42,
-    "mr_insert_radius": 15.520999908447266,
-    "mr_insert_time": 0.175,
+    "mr_insert_depth": 5.0,
+    "mr_insert_radius": 11.0,
+    "mr_insert_time": 0.2,
     "mr_log": false,
     "mr_pose": 10,
     "mr_pouch_loc": [
-        5.5,
-        -17.0,
-        -58.0
+        3.5,
+        -23.0,
+        -58.5
     ],
     "mr_pouch_rot": [
         0.0,
@@ -146,14 +147,14 @@
     "mr_rack_done": 0.85,
     "mr_rack_hand": true,
     "mr_rack_hand_loc": [
-        3.5,
-        2.4000000953674316,
-        1.600000023841858
+        7.400000095367432,
+        -1.2999999523162842,
+        1.2000000476837158
     ],
     "mr_rack_hand_loc_ik": [
-        6.400000095367432,
-        2.299999952316284,
-        2.299999952316284
+        8.0,
+        -2.0999999046325684,
+        1.7000000476837158
     ],
     "mr_rack_hand_preview": false,
     "mr_rack_hand_rot": [
@@ -168,15 +169,15 @@
     ],
     "mr_rack_point": [
         0.0,
-        4.300000190734863,
-        6.699999809265137
+        24.799999237060547,
+        14.399999618530273
     ],
-    "mr_rack_radius": 10.56,
-    "mr_rock_angle": 0.0,
+    "mr_rack_radius": 13.725000381469727,
+    "mr_rock_angle": -8.0,
     "mr_rock_pivot": [
         0.0,
-        0.0,
-        0.0
+        16.0,
+        9.5
     ],
     "mr_shell_port": [
         0.0,
@@ -188,7 +189,7 @@
         27.0,
         5.0
     ],
-    "mr_slide_travel": 4.4,
+    "mr_slide_travel": 6.2,
     "pm_accept_stab": true,
     "pm_aim_touch_point": true,
     "pm_anim_rate": 4.0,
@@ -227,27 +228,28 @@
     "seat_camera_back": 0.0,
     "seat_freeze_position": true,
     "seat_right_pointer": true,
+    "sg_game_aim": true,
     "th_apply_pose": true,
     "th_enabled": true,
     "th_force": false,
     "th_fraction": 0.55,
     "th_grab_button": 1,
     "th_grab_radius": 14.0,
-    "th_lh_ik_off_x": 0,
-    "th_lh_ik_off_y": 0,
-    "th_lh_ik_off_z": 0,
-    "th_lh_ik_rot_pitch": 0,
-    "th_lh_ik_rot_roll": 0,
-    "th_lh_ik_rot_yaw": 0,
-    "th_lh_off_x": 0,
-    "th_lh_off_y": 0,
-    "th_lh_off_z": 0,
-    "th_lh_rot_pitch": 0,
-    "th_lh_rot_roll": 0,
-    "th_lh_rot_yaw": 0,
-    "th_off_x": 0,
+    "th_lh_ik_off_x": 4.311999797821045,
+    "th_lh_ik_off_y": -1.125,
+    "th_lh_ik_off_z": -1.5,
+    "th_lh_ik_rot_pitch": 8.920999526977539,
+    "th_lh_ik_rot_roll": -10.496000289916992,
+    "th_lh_ik_rot_yaw": 0.0,
+    "th_lh_off_x": 2.299999952316284,
+    "th_lh_off_y": -0.949999988079071,
+    "th_lh_off_z": -1.2369999885559082,
+    "th_lh_rot_pitch": -10.42300033569336,
+    "th_lh_rot_roll": -9.446000099182129,
+    "th_lh_rot_yaw": 1.0499999523162842,
+    "th_off_x": 7.75,
     "th_off_y": 0,
-    "th_off_z": 0,
+    "th_off_z": -4.75,
     "th_offhand_glide": 0.15,
     "th_release_radius": 35.0,
     "th_show_marker": false,
