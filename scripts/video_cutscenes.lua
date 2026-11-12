@@ -256,5 +256,6 @@ montage.addStateRule("rule_cutscene_state", "* Rule: Cutscene (death / scripted)
 })
 
 _G.hrIsVideoPlaying = function() return state.videoActive end
+_G.hrIsCutscene = function() return state.cutscene == true end -- death / scripted cutscene signals (vr_tutorial.lua)
 
 print("[video_cutscenes] loaded")

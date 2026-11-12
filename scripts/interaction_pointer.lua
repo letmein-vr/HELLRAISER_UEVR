@@ -533,6 +533,7 @@ end, 15)
 local LT_THRESHOLD = 100
 local held = nil              -- the item in the hand (see startHold)
 local grabCandidate = nil     -- what a trigger pull would grab now (set by the tick, read by the input callback)
+_G.hrIsHoldingItem = function() return held ~= nil end -- an LT-grabbed item is in the left hand (vr_tutorial.lua)
 local triggerDown, triggerPressed, triggerReleased, swallowTrigger = false, false, false, false
 
 local function exists(obj)

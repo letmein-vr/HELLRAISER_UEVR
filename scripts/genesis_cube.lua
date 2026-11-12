@@ -29,6 +29,7 @@ local RTS_PARENT_BONE_SPACE = 3
 
 local handBoneFName, cubeBoneFName = nil, nil
 local held = nil            -- { box, root, mesh, target, pawnMesh }
+_G.hrIsCubeHeld = function() return held ~= nil end -- the cube is on the VR left hand (vr_tutorial.lua)
 local nextAttachTry = 0
 local offsetSeedChecked = false
 

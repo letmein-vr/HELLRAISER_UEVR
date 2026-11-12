@@ -1,0 +1,18 @@
+{
+    "hud_player_element_1_always": false,
+    "hud_player_element_1_enabled": true,
+    "hud_player_element_1_opacity": 1.0,
+    "hud_player_element_1_size": 1.0,
+    "hud_player_element_2_always": false,
+    "hud_player_element_2_enabled": true,
+    "hud_player_element_2_opacity": 1.0,
+    "hud_player_element_2_size": 1.0,
+    "hud_player_element_3_always": false,
+    "hud_player_element_3_enabled": true,
+    "hud_player_element_3_opacity": 1.0,
+    "hud_player_element_3_size": 1.0,
+    "hud_player_element_4_always": false,
+    "hud_player_element_4_enabled": true,
+    "hud_player_element_4_opacity": 1.0,
+    "hud_player_element_4_size": 1.0
+}

@@ -64,7 +64,10 @@ Usage
                 print("Widget changed:", active)
             end)
 
-    ui.setCustomState(stateKey, value, priority) -- allow you to force a specific state value, overriding normal behavior
+    ui.setCustomState(stateKey, value, priority, (optional)owner) -- allow you to force a specific state value, overriding normal behavior
+            Each owner (any string, e.g. the script name) has its own entry per stateKey; the highest priority wins. Clearing
+            (value nil) only removes that owner's entry. Without owner all callers share one entry (old behavior).
+    ui.ignoreWidget(widget) / ui.unignoreWidget(widget) - UI state skips / stops skipping this widget in the viewport scan
 	    Use nil to reset the state to its default behavior.
         example:
             ui.setCustomState("handsEnabled", false, 2)
@@ -301,15 +304,52 @@ uevrUtils.registerUEVRCallback("is_hands_hidden", function()
 	return uiState["handsEnabled"] ~= nil and (not uiState["handsEnabled"]) or nil, uiState["handsEnabledPriority"]
 end)
 
-local customUIState = {}
-function M.setCustomState(stateKey, value, priority)
-    if stateKey ~= nil then
-        if value ~= nil then
-            customUIState[stateKey] = {value = value, priority = priority or 0}
-        else
-            customUIState[stateKey] = nil
+-- Hellraiser 2026-11-12: one entry per (stateKey, owner) instead of one per stateKey. Several scripts share
+-- viewLocked (menus.lua, inspect_vr.lua, uevrmenus.lua seated, video_cutscenes.lua, libs/tutorial.lua); with one
+-- slot, clearing it (value nil) also dropped another script's still-wanted value. The highest priority wins, the
+-- most recent set on a tie. owner nil = the shared legacy slot, so existing callers behave as before.
+local customUIState = {}   -- [stateKey] = { [owner] = { value, priority, seq } }
+local customStateSeq = 0
+local LEGACY_OWNER = "_default"
+function M.setCustomState(stateKey, value, priority, owner)
+    if stateKey == nil then return end
+    owner = owner or LEGACY_OWNER
+    local owners = customUIState[stateKey]
+    if value ~= nil then
+        if owners == nil then
+            owners = {}
+            customUIState[stateKey] = owners
+        end
+        customStateSeq = customStateSeq + 1
+        owners[owner] = {value = value, priority = priority or 0, seq = customStateSeq}
+    elseif owners ~= nil then
+        owners[owner] = nil
+        if next(owners) == nil then customUIState[stateKey] = nil end
+    end
+end
+
+-- The winning custom entry for stateKey (highest priority, latest on a tie), or nil
+local function getCustomState(stateKey)
+    local best = nil
+    for _, data in pairs(customUIState[stateKey] or {}) do
+        if best == nil or data.priority > best.priority or (data.priority == best.priority and data.seq > best.seq) then
+            best = data
         end
     end
+    return best
+end
+
+-- UI state skips these widgets (by address) while they are in the viewport, so a host widget that borrows a game
+-- widget class (libs/widget.lua createHostWidget) never matches that game widget's rules
+local ignoredWidgets = {}
+function M.ignoreWidget(widget)
+    if uevrUtils.getValid(widget) == nil then return end
+    ignoredWidgets[widget:get_address()] = true
+end
+
+function M.unignoreWidget(widget)
+    if widget == nil then return end
+    ignoredWidgets[widget:get_address()] = nil
 end
 
 local function updateStateIfHigherPriority(data, stateKey, valueKey)
@@ -400,7 +440,7 @@ local function updateUIState()
 
         for index, widget in pairs(foundWidgets) do
             --if widget:IsInViewport() then --check not really needed since GetAllWidgetsOfClass with the last param true should only return viewport widgets.also currentCustomViewportWidgets might not be in viewport
-            if requireWidgetOpenState == false or (widget.GetOpenState ~= nil and widget:GetOpenState() == 0) then
+            if ignoredWidgets[widget:get_address()] == nil and (requireWidgetOpenState == false or (widget.GetOpenState ~= nil and widget:GetOpenState() == 0)) then
                 if requireWidgetVisibility == false or widget:GetVisibility() == 0 or widget:GetVisibility() == 3 or widget:GetVisibility() == 4 then -- (widget.IsVisible ~= nil and widget:IsVisible()) then
                     --get the widget data from the configurations
                     local id = widget:get_class():get_full_name()
@@ -443,12 +483,12 @@ local function updateUIState()
         end
     end
 
-    for stateKey, data in pairs(customUIState) do
-        if data.value ~= nil then
-            if data.priority >= uiState[stateKey .. "Priority"] then
-                uiState[stateKey] = data.value
-                uiState[stateKey .. "Priority"] = data.priority or 0
-            end
+    for stateKey, _ in pairs(customUIState) do
+        local data = getCustomState(stateKey)
+        -- keys without a UI state of their own (no priority yet) still apply
+        if data ~= nil and data.priority >= (uiState[stateKey .. "Priority"] or 0) then
+            uiState[stateKey] = data.value
+            uiState[stateKey .. "Priority"] = data.priority
         end
     end
 

@@ -3,7 +3,7 @@
 --
 -- Only attachments flagged "Two Handed" in Attachment Configuration (attachments_parameters.json
 -- "two_handed": true) can be two-handed. To grab: bring the left controller to the fore-grip point on
--- the weapon and hold the grab button (left trigger by default, or left grip; see the panel). While held:
+-- the weapon and hold the grab button (left grip by default, or left trigger; see the panel). While held:
 --   * the weapon mesh is rotated every frame so its barrel points from the right hand towards the
 --     left hand (libs/two_handed_aiming.lua, applied in the post-stereo callback, i.e. after
 --     UObjectHook has positioned the weapon on the right controller - same timing Cronos uses),
@@ -57,7 +57,7 @@ _G.HR_SECTIONS = _G.HR_SECTIONS or {}
 table.insert(_G.HR_SECTIONS, { order = 2, label = "Two-Handed Aiming", layout = {
             { widgetType = "checkbox", id = "th_enabled", label = "Enable Two-Handing", initialValue = true },
             { widgetType = "slider_float", id = "th_offhand_glide", label = "Off-hand glide time onto / off the gun when two-handing (s, 0 = snap)", initialValue = 0.15, range = {0.0, 0.6} },
-            { widgetType = "combo", id = "th_grab_button", label = "Grab button", initialValue = 2, selections = {"Left grip", "Left trigger"} },
+            { widgetType = "combo", id = "th_grab_button", label = "Grab button", initialValue = 1, selections = {"Left grip", "Left trigger"} },
             { widgetType = "checkbox", id = "th_suppress_left_grip", label = "Hide grab button from game while two-handing", initialValue = true },
             { widgetType = "checkbox", id = "th_snap_left_hand", label = "Snap left hand to grip point", initialValue = true },
             { widgetType = "slider_float", id = "th_grab_radius", label = "Grab radius (cm)", initialValue = 14.0, range = {3.0, 40.0} },

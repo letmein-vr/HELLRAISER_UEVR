@@ -1,0 +1,3 @@
+# Runtime player state written by the mod (VR tutorial finished / gesture learned / last page) - never shipped;
+# the launcher carries each player's own copy over on updates.
+data/tutorial_state.json
