@@ -43,12 +43,17 @@ A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for
 - **Puzzles.** Lockpicks, keypads and other focus puzzles switch to the game's camera and controls automatically; keypad buttons get a clearer highlight.
 - **Seated and scripted scenes.** Being tied to the chair, ladders and in-world cutscenes hand control to the game where needed and give it back afterwards.
 
+### Immersive HUD
+
+- **HUD on your hands.** The health indicator sits on your left hand, and the ammo count and weapon slots sit on your right hand next to the gun. The rest of the equipment display floats in front of you. The game's own widgets drive them, so they update, fade and animate exactly as in the flat game, and they keep their brightness in dark and bright areas.
+- **One switch.** Turn **Immersive HUD** off at the top of the Hellraiser VR panel to get the game's flat HUD back.
+
 ### Camera and comfort
 
 - **Steady camera.** Camera shake, camera animations, the screen vignette and the blood splash overlay are disabled.
 - **Correct body and eye height,** with an adjustable player collision capsule so you fit through tight spots.
 - **Quick turn.** Hold the left stick down and click the right stick to turn 180°.
-- **Head-locked UI.** The HUD follows your view in gameplay; menus and pause screens are locked in place in front of you. Distance, size and position are adjustable.
+- **Head-locked UI.** The rest of the game's UI (objectives, notifications, prompts) follows your view in gameplay; menus and pause screens are locked in place in front of you. Distance, size and position are adjustable.
 - **X / B swap** for a more natural VR button layout (on by default).
 
 ## Controls
@@ -78,7 +83,7 @@ A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for
 
 ## Tuning
 
-Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, without editing files. The main panel has the everyday switches (hand mode, two-handing, holsters, throwing, manual reload, recoil, physical melee, pointer, UI); detailed tuning for each feature sits under **Dev Config** at the bottom:
+Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, without editing files. The main panel has the everyday switches (hand mode, two-handing, holsters, Immersive HUD, throwing, manual reload, recoil, physical melee, pointer, UI); detailed tuning for each feature sits under **Dev Config** at the bottom:
 
 - **Attachments** – per-weapon position, rotation and melee flag.
 - **Hands / IK Arms + Body** – rig offsets, shoulders, legs.
