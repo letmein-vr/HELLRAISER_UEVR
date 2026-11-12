@@ -1,6 +1,6 @@
 # Clive Barker's Hellraiser: Revival – UEVR VR Profile
 
-A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for UEVR, with visible hands or IK arms, guns that shoot where you point them, physical melee, manual reloads, a Genesis cube that works from your left hand, physical throwing and a stable, comfortable camera. Special thanks to praydog, jbusfield (for his libs framework), and joeyhodge!
+A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for UEVR, with visible hands or IK arms, guns that shoot where you point them, physical melee, manual reloads, a Genesis cube that works from your left hand, physical throwing and a stable, comfortable camera. Special thanks to praydog, jbusfield (for his libs framework, HUD inspiration), Lukasblaster (HUD inspiration) and joeyhodge!
 
 ![Hellraiser VR](screenshots/hellraiservr.png)
 
