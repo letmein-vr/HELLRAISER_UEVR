@@ -104,6 +104,11 @@ Usage
 		                         (the trigger pull then reaches the game and other scripts as usual). Asked only once
 		                         the gesture is detected. Default nil, always allowed. (Hellraiser addition)
 		openGesturePage        - page it opens when no step is saved. Default 1, skipping the intro
+		gestureCloses          - true makes the open gesture also close the open tutorial, on any page (the same as
+		                         the close action: "done" on the last step, otherwise "closed"). The pull that opened
+		                         it never closes it: the hand is ignored until its trigger is released. It also counts
+		                         as the gesture being done. Default false. (Cronos addition)
+		gestureClosesIntro     - the same, but only while the intro is showing. Default false. (Cronos addition)
 		interactionPrompt      - text the waiting intro shows. Default "Try the gesture now"
 		interactionColor       - its color. Default "#4ADE80FF"
 		rememberPage           - saves the current step in tutorial_state.json. The open gesture and Start continue
@@ -137,6 +142,8 @@ Usage
     tutorial:refresh() - counts the files again and drops imported images. Use after changing the files.
     tutorial:isCompleted() - true once the tutorial has closed with "done".
     tutorial:resetCompleted() - forgets completion so showOnce shows it again.
+    tutorial:setCompleted(value) - remembers (or with false forgets) completion, so showOnce skips the tutorial.
+		(Cronos addition)
     tutorial:forceInteractionAtStartup(value) - when true, the intro waits for the open gesture until it has been
 		done once. See Open gesture.
     tutorial:isAwaitingInteraction() - true while the intro is waiting for the open gesture.
@@ -156,8 +163,10 @@ Usage
 
 local uevrUtils = require('libs/uevr_utils')
 local widgetModule = require('libs/widget')
--- loaded when a tutorial is first shown
-local ui = nil
+-- Loaded with the lib, not on first use: UEVR resolves the profile's scripts folder only while scripts load, so a
+-- require from a tick or input callback searches the game's Binaries folder and fails (Cronos: "module 'libs/ui' not
+-- found" on the first show; Hellraiser never hit it because menus.lua had loaded ui.lua at startup)
+local ui = require('libs/ui')
 
 local M = {}
 
@@ -241,6 +250,8 @@ local DEFAULT_OPTIONS = {
 	openGesture = "EYESCRATCH",
 	openGestureHand = Handed.Left,
 	openGesturePage = 1,
+	gestureCloses = false,
+	gestureClosesIntro = false,
 	interactionPrompt = "Try the gesture now",
 	interactionColor = "#4ADE80FF",
 	rememberPage = true,
@@ -264,7 +275,7 @@ local pendingAction = nil
 local pendingGesture = nil  -- tutorial whose open gesture was done, handled on the next engine tick
 local gestureHand = nil     -- hand whose trigger stays hidden until released after the gesture
 local gestureTutorials = {} -- tutorials with an open gesture
-local gestures = nil        -- libs/gestures, loaded on first use
+local gestures = require('libs/gestures') -- with the lib, see ui above
 local stateData = nil -- tutorial_state.json: { [id] = { completed, interactionDone, page } }
 -- uevr_utils reports the first level after a script reset as a level change, and widgets made before it are
 -- destroyed, so tutorials shown before then wait for it
@@ -582,17 +593,25 @@ local function layoutPage(self, shown)
 	local top = -totalH / 2
 	local navY = top + imageH + NAV_GAP + navH / 2
 	local leftCenter = uevrUtils.vector2D(0, 0.5)
+	-- the whole layout moves by options.pageOffset(self) (Slate units), so a game script can place the page without
+	-- changing UEVR's saved UI offsets (Stalker 2 / Cronos addition)
+	local ox, oy = 0, 0
+	if o.pageOffset ~= nil then
+		local okOffset, x, y = pcall(o.pageOffset, self)
+		if okOffset then ox, oy = tonumber(x) or 0, tonumber(y) or 0 end
+	end
+	local function at(x, y) return uevrUtils.vector2D(x + ox, y + oy) end
 
-	self.image:addToWidget(host, { align = center, alignment = uevrUtils.vector2D(0.5, 0), offset = uevrUtils.vector2D(0, top), zOrder = 1 })
+	self.image:addToWidget(host, { align = center, alignment = uevrUtils.vector2D(0.5, 0), offset = at(0, top), zOrder = 1 })
 
 	local function placeGroup(group, x)
 		for _, item in ipairs(group) do
 			if item.hasIcon then
 				-- the render scale shrinks the icon about its center, so place it by its center
-				item.icon:addToWidget(host, { align = center, offset = uevrUtils.vector2D(x + o.iconSize / 2, navY), zOrder = 2 })
+				item.icon:addToWidget(host, { align = center, offset = at(x + o.iconSize / 2, navY), zOrder = 2 })
 			end
 			if item.labelX ~= nil then
-				item.label:setLayout({ align = center, alignment = leftCenter, offset = uevrUtils.vector2D(x + item.labelX, navY), zOrder = 2 })
+				item.label:setLayout({ align = center, alignment = leftCenter, offset = at(x + item.labelX, navY), zOrder = 2 })
 			end
 			x = x + item.width + ITEM_GAP
 		end
@@ -607,7 +626,7 @@ local function layoutPage(self, shown)
 			-- right edge of the bar, left of any right aligned items
 			local counterX = barW / 2 - (#groups.right > 0 and (groups.right.width + ITEM_GAP) or 0)
 			self.counter:setText(self.page .. " / " .. self.count)
-			self.counter:addToWidget(host, { align = center, alignment = uevrUtils.vector2D(1, 0.5), offset = uevrUtils.vector2D(counterX, navY), zOrder = 2 })
+			self.counter:addToWidget(host, { align = center, alignment = uevrUtils.vector2D(1, 0.5), offset = at(counterX, navY), zOrder = 2 })
 		end
 	end
 
@@ -615,14 +634,14 @@ local function layoutPage(self, shown)
 		local awaiting = self:isAwaitingInteraction()
 		self.prompt:setVisible(awaiting)
 		if awaiting then
-			self.prompt:addToWidget(host, { align = center, offset = uevrUtils.vector2D(0, navY), zOrder = 2 })
+			self.prompt:addToWidget(host, { align = center, offset = at(0, navY), zOrder = 2 })
 			barW = math.max(barW, measureText(self.prompt, o.interactionPrompt, o.fontSize))
 		end
 	end
 
 	if self.backdrop ~= nil then
 		self.backdrop:setSize(uevrUtils.vector2D(barW + o.padding * 2, totalH + o.padding * 2))
-		self.backdrop:addToWidget(host, { align = center, zOrder = 0 })
+		self.backdrop:addToWidget(host, { align = center, offset = at(0, 0), zOrder = 0 })
 	end
 end
 
@@ -656,6 +675,10 @@ end
 
 function Tutorial:resetCompleted()
 	setCompleted(self, false)
+end
+
+function Tutorial:setCompleted(value)
+	setCompleted(self, value ~= false)
 end
 
 
@@ -914,8 +937,16 @@ function M.closeAll()
 	end
 end
 
+-- Only XInput slot 0 carries the VR controllers. A game that also polls slots 1-3 gets released pads there, and
+-- reading those would make every held button look newly pressed on the next slot-0 call (Cronos addition; newer
+-- uevr_utils.lua filters this in its dispatcher already)
+local function isVRSlot(userIndex)
+	return userIndex == nil or userIndex == 0
+end
+
 -- Input is read before every other handler. Buttons held when a page opens do not count as presses
 local function captureInput(retval, userIndex, state)
+	if not isVRSlot(userIndex) then return end
 	local tutorial = openTutorials[#openTutorials]
 	if tutorial == nil and releaseMask == 0 then return end
 	local gamepad = state.Gamepad
@@ -940,9 +971,16 @@ local function captureInput(retval, userIndex, state)
 	end
 end
 
--- Detects the open gesture for closed tutorials and for an intro waiting for it. Runs before captureInput, which
--- hides the controller from everything after it while a tutorial is open
+-- An open tutorial that the open gesture closes (gestureCloses, or gestureClosesIntro while the intro shows)
+local function gestureClosesOpen(tutorial)
+	if tutorial.host == nil then return false end
+	return tutorial.options.gestureCloses == true or (tutorial.options.gestureClosesIntro == true and tutorial.page == 0)
+end
+
+-- Detects the open gesture for closed tutorials, for an intro waiting for it and for an open tutorial it closes. Runs
+-- before captureInput, which hides the controller from everything after it while a tutorial is open
 local function captureGesture(retval, userIndex, state)
+	if not isVRSlot(userIndex) then return end
 	local gamepad = state.Gamepad
 	if gestureHand ~= nil then
 		local isLeft = gestureHand == Handed.Left
@@ -957,7 +995,7 @@ local function captureGesture(retval, userIndex, state)
 	end
 	if pendingGesture ~= nil then return end
 	for _, tutorial in ipairs(gestureTutorials) do
-		if tutorial.host == nil or tutorial:isAwaitingInteraction() then
+		if tutorial.host == nil or tutorial:isAwaitingInteraction() or gestureClosesOpen(tutorial) then
 			if gestures == nil then gestures = require('libs/gestures') end
 			local id = gestures.Gesture[tutorial.options.openGesture]
 			local hand = tutorial.options.openGestureHand
@@ -975,6 +1013,7 @@ end
 
 -- Clears anything other handlers pressed while a tutorial is open
 local function suppressInput(retval, userIndex, state)
+	if not isVRSlot(userIndex) then return end
 	local tutorial = openTutorials[#openTutorials]
 	if tutorial == nil then
 		if releaseMask ~= 0 then clearInput(state.Gamepad, releaseMask, false) end
@@ -992,7 +1031,9 @@ local function runPendingAction()
 			tutorial:completeInteraction()
 			tutorial:show(resumePage(tutorial, tutorial.options.openGesturePage))
 		else
+			local closeIt = gestureClosesOpen(tutorial)
 			tutorial:completeInteraction()
+			if closeIt then tutorial:runAction("close") end
 		end
 	end
 	if pendingTutorial == nil then return end

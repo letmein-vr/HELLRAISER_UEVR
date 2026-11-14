@@ -273,5 +273,6 @@
     "thr_speed": 1.0,
     "thr_yaw": 0.0,
     "tut_gesture": true,
-    "tut_pause": true
+    "tut_pause": true,
+    "tut_startup": true
 }
