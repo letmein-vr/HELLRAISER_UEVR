@@ -48,6 +48,13 @@ A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for
 - **HUD on your hands.** The health indicator sits on your left hand, and the ammo count and weapon slots sit on your right hand next to the gun. The rest of the equipment display floats in front of you. The game's own widgets drive them, so they update, fade and animate exactly as in the flat game, and they keep their brightness in dark and bright areas.
 - **One switch.** Turn **Immersive HUD** off at the top of the Hellraiser VR panel to get the game's flat HUD back.
 
+### VR tutorial
+
+- **Learn the controls in the headset.** Illustrated pages explain every VR feature: settings, aiming, two hands, melee, manual reload, holsters, the Genesis cube, throwing, interacting, moving and puzzles.
+- **Shown once in gameplay.** It pops up when you first reach gameplay (never in the main menu) until you close it with **B** or the eye gesture.
+- **Eye gesture.** Bring your left controller up to your eyes and pull the left trigger to open it at any time, and do it again to close it. The game pauses while it is open.
+- **Options** in the Hellraiser VR panel ("VR Tutorial") and on the launcher's Gameplay tab: show at gameplay start, the gesture, pausing, and showing it again.
+
 ### Camera and comfort
 
 - **Steady camera.** Camera shake, camera animations, the screen vignette and the blood splash overlay are disabled.
@@ -74,16 +81,21 @@ A full motion-controller VR conversion of Clive Barker's Hellraiser: Revival for
 | Genesis cube | Aim with the left hand |
 | Inspected item / puzzles | Right stick |
 | Revolver scope zoom | Right stick up / down |
+| VR tutorial (open / close) | Left controller at your eyes, pull left trigger |
+| VR tutorial pages | A next, X back, B close, Y don't show at startup |
 
 ## Installation
 
-1. Install my custom UEVR (see above).
+**Easiest:** download `HellraiserVR_Launcher.exe` from the [releases](https://github.com/letmein-vr/HELLRAISER_UEVR/releases). It installs the profile and its UEVR build, keeps the profile updated, lets you pick the VR options, then starts the game and injects VR.
+
+**Manual:**
+1. Install my custom UEVR (see above, or `UEVR.zip` from the release).
 2. Import this profile in UEVR (or copy the files into `%APPDATA%\UnrealVRMod\Hellraiser-Win64-Shipping`).
 3. Start the game and inject UEVR at the main menu.
 
 ## Tuning
 
-Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, without editing files. The main panel has the everyday switches (hand mode, two-handing, holsters, Immersive HUD, throwing, manual reload, recoil, physical melee, pointer, UI); detailed tuning for each feature sits under **Dev Config** at the bottom:
+Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, without editing files. The main panel has the everyday switches (hand mode, two-handing, holsters, Immersive HUD, throwing, manual reload, recoil, physical melee, pointer, UI, VR tutorial); detailed tuning for each feature sits under **Dev Config** at the bottom:
 
 - **Attachments** – per-weapon position, rotation and melee flag.
 - **Hands / IK Arms + Body** – rig offsets, shoulders, legs.
@@ -95,6 +107,6 @@ Everything is adjustable in the **Hellraiser VR** panel in the UEVR overlay, wit
 
 ## Under the hood
 
-Built on jbusfield's shared uevrlib Lua framework, running on my UEVR backend. Game-specific logic lives in small scripts on top of the framework (hands bootstrap, weapon handling, physical melee, manual reload, throwables, the Genesis cube, interaction, puzzles and camera handling).
+Built on jbusfield's shared uevrlib Lua framework (including the tutorial lib from his Atomic Heart profile), running on my UEVR backend. Game-specific logic lives in small scripts on top of the framework (hands bootstrap, weapon handling, physical melee, manual reload, throwables, the Genesis cube, interaction, puzzles and camera handling).
 
 The native plugin (HellraiserAimFix.dll) hooks the game's own trace calls: gun shots start at the barrel, the melee hit check is moved onto the weapon and aimed at the spot it touched, and the Genesis cube's targeting and throws aim from the left hand. Its source is in `source/HellraiserAimFix` (build paths in its CMakeLists.txt point at local folders and need adjusting).
