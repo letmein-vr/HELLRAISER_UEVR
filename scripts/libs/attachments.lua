@@ -2382,17 +2382,35 @@ function M.detachAttachmentsFromMesh(mesh)
     end
 end
 
+-- Animation ids sorted by label (then id). pairs() order over string keys changes with every new Lua state, so an
+-- unsorted list gave every pose a different dropdown index each session and rewrote attachments_config_dev.json
+-- (the pose itself is saved by id in attachments_parameters.json and was never affected) (Hellraiser 2026-11-14)
+local function sortedAnimationIDs(animationIDList)
+	local ids = {}
+	for id, _ in pairs(animationIDList) do table.insert(ids, id) end
+	local function key(id)
+		local data = animationIDList[id]
+		return string.lower(tostring(type(data) == "table" and data["label"] or id))
+	end
+	table.sort(ids, function(a, b)
+		local ka, kb = key(a), key(b)
+		if ka ~= kb then return ka < kb end
+		return tostring(a) < tostring(b)
+	end)
+	return ids
+end
+
 local function getAnimationLabelsArray(animationIDList)
 	local labels = {"Default", "None"}
-	for id, data in pairs(animationIDList) do
-		table.insert(labels, data["label"])
+	for _, id in ipairs(sortedAnimationIDs(animationIDList)) do
+		table.insert(labels, animationIDList[id]["label"])
 	end
 	return labels
 end
 
 local function getAnimationIDsArray(animationIDList)
 	local ids = {"", "attachment_none"}
-	for id, data in pairs(animationIDList) do
+	for _, id in ipairs(sortedAnimationIDs(animationIDList)) do
 		table.insert(ids, id)
 	end
 	return ids

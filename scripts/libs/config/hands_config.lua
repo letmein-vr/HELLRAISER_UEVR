@@ -1253,8 +1253,19 @@ local function updateAttachmentListUI()
 	attachmentLabels = {}
 	attachmentIDs = {}
 	if configuration ~= nil and configuration["attachments"] ~= nil then
-		for id, data in pairs(configuration["attachments"]) do
-			table.insert(attachmentLabels, data["label"])
+		-- sorted by label (then id): pairs() order over string keys changes with every new Lua state, which reshuffled
+		-- this list (and its saved index) each session (Hellraiser 2026-11-14)
+		local list = configuration["attachments"]
+		local ids = {}
+		for id, _ in pairs(list) do table.insert(ids, id) end
+		local function key(id) return string.lower(tostring(type(list[id]) == "table" and list[id]["label"] or id)) end
+		table.sort(ids, function(a, b)
+			local ka, kb = key(a), key(b)
+			if ka ~= kb then return ka < kb end
+			return tostring(a) < tostring(b)
+		end)
+		for _, id in ipairs(ids) do
+			table.insert(attachmentLabels, list[id]["label"])
 			table.insert(attachmentIDs, id)
 		end
 	end
